@@ -1,0 +1,700 @@
+    .banner-height3 {
+        min-height: 827px;
+        @media screen {
+        @media (max-width: 767px) {
+            min-height: 770px;
+        }
+    } 
+    }
+
+    .banner-height6 {
+        min-height: 824px;
+    }
+
+    .banner-height7 {
+        min-height: 899px;
+    }
+
+    .banner-height8 {
+        min-height: 550px;
+    }
+
+    .heading-recovered {
+        padding-top: 285px;
+    }
+
+    .top-overlap94 {
+        margin-top: -94px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .banner-sub-text {
+        h3 {
+            color: $light-color;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: $Bold-text;
+        }
+        p {
+            color: $light-color;
+            line-height: 24px;
+        }
+    }
+
+    .height-5 {
+        height: 515px;
+        position: relative;
+    }
+
+    .height-6 {
+        height: 505px;
+    }
+
+    .cus-pad-dr {
+        padding: 118px 120px 101px !important;
+        position: relative;
+    }
+
+    .overlayslide-dr {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 150;
+        top: 0;
+        left: 0;
+    }
+
+    .border-cls131 {
+        position: relative;
+        &:before {
+            content: '';
+            right: -15px;
+            top: 22.5%;
+            width: 15px;
+            height: 49%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+        &:after {
+            content: '';
+            left: -15px;
+            top: 22.5%;
+            width: 15px;
+            height: 49%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+    }
+
+    .border-cls118 {
+        position: relative;
+        &:before {
+            content: '';
+            right: -15px;
+            top: 23.1%;
+            width: 15px;
+            height: 57.4%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+        &:after {
+            content: '';
+            left: -15px;
+            top: 23.1%;
+            width: 15px;
+            height: 57.4%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+    }
+
+    .border-cls120 {
+        position: relative;
+        &:before {
+            content: '';
+            right: -15px;
+            top: 23.4%;
+            width: 15px;
+            height: 56.8%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+        &:after {
+            content: '';
+            left: -15px;
+            top: 23.4%;
+            width: 15px;
+            height: 56.8%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+    }
+
+    .border-cls94 {
+        position: relative;
+        &:before {
+            content: '';
+            right: -15px;
+            top: 18.6%;
+            width: 15px;
+            height: 56.8%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+        &:after {
+            content: '';
+            left: -15px;
+            top: 18.6%;
+            width: 15px;
+            height: 56.8%;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+    }
+
+    .text-new {
+        p {
+            color: #959595 !important;
+            font: 14px "MontserratRG";
+            line-height: 22px;
+            padding-bottom: 0px;
+            margin-top: 5px;
+        }
+        h5 {
+            color: #ffffff;
+            font: 18px "Montserrat-Bold";
+            line-height: 22px;
+            padding-top: 20px;
+        }
+        &:before {
+            position: absolute;
+            left: 40px;
+            top: -30px;
+            content: '';
+            width: 35px;
+            height: 35px;
+            background: url(../images/sprite.png) no-repeat;
+            background-size: 1000px;
+            background-position: -140px -805px;
+        }
+    }
+
+    .main-mission-div {
+        .medanta-mission {
+            color: $light-color;
+            padding: 199px 0 0 0;
+            .mission-p {
+                font-size: 19px;
+                line-height: 24px;
+                max-width: 1000px;
+
+            }
+        }
+        .mission-wrap {
+            color: $light-color;
+            padding-top: 43px;
+            padding-bottom: 90px;
+            .sub-mission {
+                text-align: center;
+                margin-bottom: 50px;
+                position: relative;
+                &:last-child {
+                    &:after {
+                        width: 0;
+                    }
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-color: #eaeaea;
+                    height: 100%;
+                    width: 1px;
+                    right: -15px;
+                    top: 0px;
+                    margin-top: 60px;
+                }
+                .inner-p {
+                    min-height: inherit;
+                    .upper-p {
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-family: $Black-text;
+                        margin-top: 16px;
+                        padding: 0 0px 0 30px;
+                    }
+                    .lower-p {
+                        font-size: 14px;
+                        line-height: 22px;
+                        padding: 20px 10px 0 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hospital-one-roof {
+        .left-text {
+            width: 50%;
+            padding: 95px 0 0 100px;
+            .roof-heading {
+                font-size: 36px;
+                line-height: 36px;
+                font-family: $Black-text;
+                color: $primary-text-color;
+                padding-bottom: 20px;
+            }
+            .campus_anchor {
+                border: 2px solid $secondary-text-color;
+                border-radius: 5px;
+                padding: 5px 32px;
+            }
+        }
+    }
+
+    .wc-healthcare-heading {
+        font-size: 36px;
+        line-height: 34px;
+        font-family: $Black-text;
+        padding-top: 205px;
+        max-width: 750px;
+        margin: 0 auto;
+        padding-left: 35px;
+    }
+
+    .wc-healthcare {
+        height: 755px;
+        color: $light-color !important;
+        .wc-healthcare-para {
+            font-family: $Light-text;
+            padding-top: 21px;
+            max-width: 780px;
+            margin: 0 auto;
+            padding-bottom: 25px;
+        }
+    }
+
+    .wc-healthcare-anchor {
+        border: 2px solid $quaternary-color;
+        border-radius: 5px;
+        color: $light-color;
+        padding: 5px 30px;
+        display: inline-block;
+        margin-top: 27px;
+    }
+
+    .world-best-doc {
+        .right-text {
+            float: right;
+            width: 50%;
+            padding: 125px 95px 0 110px;
+            .world-heading {
+                font-family: $Black-text;
+                font-size: 36px;
+                line-height: 36px;
+            }
+            p {
+                padding-top: 22px;
+            }
+            .find-doc {
+                font-family: $Light-text;
+                border: 2px solid $secondary-color;
+                border-radius: 5px;
+                padding: 5px 30px;
+            }
+            &.evolving {
+                padding: 129px 95px 0 20px;
+            }
+        }
+    }
+
+    .quality-healthcare {
+        text-align: center;
+        .quality-heading {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 36px;
+            line-height: 40px;
+            font-family: $Black-text;
+        }
+        .mission-wrap {
+            .sub-mission {
+                .inner-p {
+                    min-height: 281px;
+                    .lower-p {
+                        padding: 20px 10px 0 23px;
+                    }
+                    .service_anchor {
+                        width: 230px;
+                        position: absolute;
+                        bottom: -50px;
+                        left: 50%;
+                        margin-left: -100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us-help {
+        .help-contact {
+            font-size: 22px;
+            font-family: $Light-text;
+            padding: 37px 0;
+        }
+    }
+
+
+    .wc-founder-section {
+        .wc-founder-anchor {
+            border: 2px solid #cccccc;
+            border-radius: 5px;
+            color: #ffffff;
+            padding: 5px 10px;
+            display: inline-block;
+            font-size: 13px;
+            margin-top: 27px;
+            &:hover {
+                color: #e67158;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .main-mission-div {
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        .upper-p {
+                            padding: 0 0 0 15px;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .lower-p {
+                            padding: 10px 0px 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .reduced-pd.reduced-pd111 {
+            padding-top: 111px;
+        }
+        .hospital-one-roof {
+            .left-text {
+                width: 60%;
+                position: relative;
+                z-index: 12;
+            }
+        }
+        .world-best-doc .right-text {
+            padding: 125px 10px 0 100px;
+            position: relative;
+            z-index: 12;
+        }
+        .quality-healthcare {
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        min-height: 320px;
+                        .service_anchor {
+                            width: 200px;
+                            margin-left: -85px;
+                        }
+                    }
+                }
+            }
+        }
+        .cus-pad-dr {
+            padding: 118px 120px 79px !important;
+        }
+        .heading-recovered {
+            padding-top: 200px;
+        }
+    }
+    @media only screen and (max-width: 1199px) {
+        .new-blur {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.8);
+                z-index: 11;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .cus-pad-dr {
+            padding: 98px 20px 77px !important;
+        }
+        .main-mission-div {
+            .medanta-mission {
+                padding: 130px 0 0 0;
+            }
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        padding-left: 10px;
+                        min-height: inherit;
+                        .upper-p {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .hospital-one-roof {
+            .left-text {
+                width: 70%;
+                padding: 95px 0 0 40px;
+                position: relative;
+                z-index: 111;
+            }
+        }
+        .wc-healthcare-heading {
+            padding-left: 0px;
+        }
+        .world-best-doc .right-text {
+            padding: 125px 10px 0 100px;
+            width: 60%;
+        }
+        .quality-healthcare {
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        min-height: 350px;
+                        .service_anchor {
+                            width: 150px;
+                            margin-left: -60px;
+                        }
+                    }
+                }
+            }
+        }
+        .main-mission-div {
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        .lower-p {
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .wc-healthcare-anchor {
+            padding: 5px 10px;
+        }
+        .world-best-doc {
+            .right-text {
+            	position: relative;
+                z-index: 11;
+                &.evolving {
+                    padding: 129px 75px 0 30px;
+                    width: 100%;
+                }
+            }
+        }
+        .reduced-pd.reduced-pd111 {
+            padding-top: 67px;
+        }
+        .mg-md-t50 {
+            margin-top: 50px;
+        }
+        /*.new-blur {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.8);
+                z-index: 11;
+                width: 100%;
+                height: 100%;
+            }
+        }*/
+    }
+
+    @media only screen and (max-width: 767px) {
+        .heading-recovered {
+            padding-top: 150px;
+        }
+        .big-title2-healthcare {
+            font-size: 40px;
+            line-height: 37px;
+        }
+        .cus-pad-dr {
+            padding: 8px 20px 31px !important;
+        }
+        .main-mission-div {
+            .mission-wrap {
+                padding-top: 15px;
+                padding-bottom: 0px;
+                .sub-mission {
+                    margin-bottom: 35px;
+                    .inner-p {
+                        padding-left: 0;
+                        min-height: auto;
+                        margin-bottom: 40px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                        border-left: none;
+                        .upper-p {
+                            padding: 0;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .lower-p {
+                            padding: 10px 0px 0 0px;
+                        }
+                    }
+                    &:last-child {
+                        .inner-p {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-height6 {
+            height: auto;
+            padding-bottom: 130px;
+        }
+        .height-5 {
+            height: 425px;
+            background-position: center center !important;
+            background-size: cover;
+        }
+        .hospital-one-roof {
+            .left-text {
+                width: 95%;
+                padding: 30px 0 0 20px;
+                /*position: relative;
+                z-index: 11;*/
+                .roof-heading {
+                    font-size: 26px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .wc-healthcare-heading {
+            font-size: 30px;
+            line-height: 28px;
+            padding-top: 150px;
+        }
+        .world-best-doc {
+            .right-text {
+                padding: 100px 20px 0 20px;
+                width: 100%;
+                /*position: relative;
+                z-index: 11;*/
+                &.evolving {
+                    position: relative;
+                    z-index: 111;
+                }
+            }
+        }
+        .height-6 {
+            height: auto;
+            padding-bottom: 50px;
+        }
+        .quality-healthcare {
+            .quality-heading {
+                font-size: 32px;
+                line-height: 32px;
+            }
+            .mission-wrap {
+                .sub-mission {
+                    .inner-p {
+                        padding-bottom: 80px;
+                        margin-bottom: 30px;
+                        .service_anchor {
+                            width: auto;
+                            margin-left: -85px;
+                            margin-bottom: 20px;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-height7 {
+            height: auto;
+            padding-bottom: 100px;
+        }
+        /*.new-blur {
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.6);
+                z-index: 11;
+                width: 100%;
+                height: 100%;
+            }
+        }*/
+    }
+
+    @media only screen and (max-width: 540px) {
+        .big-title2-healthcare {
+            font-size: 30px;
+            line-height: 34px;
+        }
+        .heading-recovered {
+            padding-top: 60px;
+        }
+        .cus-pad-dr {
+            padding: 8px 10px 31px !important;
+        }
+        .mg-xx-t10 {
+            margin-top: 10px;
+        }
+        .pd-lx-20 {
+            padding-left: 20px !important;
+        }
+        .height-5 {
+            height: auto;
+            padding-bottom: 20px;
+        }
+        .hospital-one-roof {
+            .left-text {
+                .campus_anchor {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+        .wc-healthcare-heading {
+            padding-top: 130px;
+        }
+        .world-best-doc {
+            .right-text {
+                padding: 10px 20px 0 20px;
+                .world-heading {
+                    font-family: Montserrat-Black;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                &.evolving {
+                    padding: 49px 20px 0 30px;
+                }
+                .find-doc {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }

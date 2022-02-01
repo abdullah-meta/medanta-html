@@ -1,0 +1,253 @@
+.aboutDesease {
+    &.covidAboutDesease {
+        padding-bottom: 42px;
+        .text {
+            padding: 0px;
+        }
+    }
+    &.covid-new-media {
+        padding-bottom: 66px;
+        .text {
+            padding: 0px;
+        }
+    }
+}
+.covid-new-media-inner {
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.whats-new-medantaBox {    
+    &.covid-new-medanta {
+        .knowledge-wellness {
+            .knowledge-inner {
+                padding-left: 130px;
+                padding-right: 130px;
+                &:before {
+                    content: none;
+                }
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .aboutDesease {
+        &.covidAboutDesease {
+            padding-bottom: 20px;
+            padding-top: 40px;            
+        }
+        &.covid-new-media {
+            padding-bottom: 40px;
+            padding-top: 40px;            
+        }
+    }
+    .covid-new-media-inner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .whats-new-medantaBox {    
+        &.covid-new-medanta {
+            .knowledge-wellness {
+                .knowledge-inner {
+                    padding: 40px;                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {    
+    .covid-new-media-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .whats-new-medantaBox {    
+        &.covid-new-medanta {
+            .knowledge-wellness {
+                .knowledge-inner {
+                    padding-left: 30px;                    
+                    padding-right: 30px;                    
+                }
+            }
+        }
+    }
+}
+
+
+.tab_leftside {
+    ul.nav-tabs {
+        li {   
+            &.active {                
+                &.subsdropmenu {
+                    &:before {
+                        color: #f6f6f6;
+                    }
+                }
+                &.new-left-tabs {
+                    &:before {
+                        margin-top: 0px;
+                        top: 29px;
+                    }
+                }
+                a.mob-sub-tab {                    
+                    background-color: #d8d8d8;
+                    color: #333;                    
+                }    
+            }      
+            a.mob-sub-tab {
+                background-color: #fff;
+                color: #333;
+                // border-bottom: 1px solid #333;                
+                padding-left: 55px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-top-color: #eaeaea;
+            }   
+            
+            .drop-with-plus {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .nested-dropdowns {
+                ul {
+                    border-bottom: none;                              
+                }
+                li {
+                    border-top: 1px solid #eaeaea;
+                    border-bottom: none;
+                    &:first-child {
+                        border-top: none;
+                    }
+                    &.active {
+                        &:before {
+                            display: none;
+                        }
+                        a {
+                            &.mob-sub-tab2 {
+                                background-color: #d8d8d8;
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+                a.mob-sub-tab2 {
+                    border-top: none;
+                    background-color: #fff;
+                    color: #333;
+                    display: block;
+                    padding: 20px 30px 20px 55px;                       
+                    span {
+                        margin-right: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }           
+            &:hover {
+                a.mob-sub-tab {
+                    background-color: #d8d8d8;
+                    color: #333;
+                }
+                .nested-dropdowns {
+                    li {
+                        border-top: 1px solid #eaeaea;
+                        &:first-child {
+                            border-top: none;
+                        }
+                        a {
+                            background-color: #fff;
+                            color: #333;                                                
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+.nested-dropdowns:after {
+    content: '';
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    position: absolute;
+    right: 19px;
+    top: -9px;
+    display: none;
+    z-index: 2; 
+}
+.nested-dropdowns.dropdown-menu {
+    right: 0px;
+    left: auto;
+    margin-top: 0px;
+    width: 100%;            
+    background-color: #fff;
+    padding: 0;
+    // box-shadow: 0 0 5px rgba($color: #000000, $alpha: .5);
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    position: relative;
+    top: 0px;
+    float: none;
+}
+.nested-dropdowns.dropdown-menu a {
+    background-color: #fff;
+}
+.dsk-dropdown-menu {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    .dsk-plus-btn {
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+@media(max-width: 767px) {
+    .mob-main-tab {
+        .icon-align-left {
+            display: none;
+        }
+    }
+    .tab_leftside {
+        .panel-group {
+            .panel {
+                .panel-heading {
+                    h4 {
+                        a {
+                            &.mob-sub-tab, &.mob-sub-tab2 {
+                                padding-left: 25px;
+                                background-color: rgba($color: #d8d8d8, $alpha: 1);
+                                color: #333;
+                                span {
+                                    font-size: 12px;
+                                    margin-right: 5px;
+                                }
+                            }
+                            &.mob-main-tab {
+                                &.mob-sub-tab2 {
+                                    background-color: #db5134;
+                                    color: #fff;
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,208 @@
+/* International patients ------ Contact us from your home country section */
+
+.contact-info ul.info.listcenter li { display: inline-block; float: none; }
+
+/* Icon added */
+.icon.icon-30.phonecall {
+	background-position: -390px -360px;
+}
+.icon.icon-30.envelop {
+	background-position: -360px -360px;
+}
+
+.homeCountryContact {
+	padding: 60px 0 25px;
+}
+
+.homeCountryContact .block {
+	background: #ffffff;
+	padding: 30px 50px;
+	height: 100%;
+	width: 100%;
+}
+
+.homeCountryContact .block h2{
+	margin-bottom: 15px;
+}
+
+.homeCountryContact .contactList li {
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 45px;
+	position: relative;
+	line-height: 30px;
+}
+
+.homeCountryContact .contactList li:last-child {
+	margin-bottom: 0;
+}
+.homeCountryContact .contactList li a {
+	display: inline-block;
+	color: #666666;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Montserrat-Light";
+	word-break: break-all;
+}
+.homeCountryContact .contactList li.telnumber a {
+	padding-right: 20px;
+	position: relative;
+}
+.homeCountryContact .contactList li.telnumber a:after {
+	content: '/';
+	position: absolute;
+	right: 7px;
+	top: 0;
+}
+.homeCountryContact .contactList li.telnumber a:last-child {
+	padding-right: 0;
+}
+.homeCountryContact .contactList li.telnumber a:last-child:after {
+	content: none;
+}
+.homeCountryContact .contactList li i {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.homeCountryContact .contactList li.email a {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/* block img avtar */
+.homeCountryContact .avatar {
+	padding-left: 115px;
+	position: relative;
+	min-height: 90px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.homeCountryContact .avatar .avatar-img {
+	width: 90px;
+	height: 90px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.homeCountryContact .avatar .avatar-details h2 {
+	margin-bottom: 8px;
+}
+.homeCountryContact .avatar .avatar-details p {
+	color: #666666;
+	font-size: 16px;
+	font-family: "Montserrat-Light";
+}
+
+
+
+.homeCountryContact ul.cardList {
+	margin: 0 -30px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.homeCountryContact ul.cardList > li {
+	display: inline-block;
+	width: 50%;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: left;
+}
+
+.flagdropdown {
+	margin-bottom: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+.flagdropdown .btn {
+	border-bottom: 1px solid #666666;
+	min-width: 230px;
+	text-align: left;
+	color: #666666;
+	font-size: 15px;
+	font-family: "Montserrat-Light";
+	padding: 6px 25px 6px 0;
+    position: relative;
+}
+
+.flagdropdown .flag {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 30px;
+	height: 21px;
+	margin-right: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.flagdropdown .flag.flag-sm {
+	width: 25px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.flagdropdown .btn .my-caret {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+}
+.flagdropdown ul.dropdown-menu {
+	border-radius: 0;
+    border: none;
+    max-height: 174px;
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.flagdropdown ul.dropdown-menu li {
+	position: relative;
+}
+.flagdropdown ul.dropdown-menu li a {
+	display: block;
+    padding: 7px 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.flagdropdown ul.dropdown-menu li a:hover {
+	background: transparent;
+}
+
+.flagdropdown .btn:focus, .flagdropdown .btn.btn-link:focus, .flagdropdown .btn.btn-link:hover, .flagdropdown .btn.btn-link:active {
+	outline: none;
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 991px) {
+	.homeCountryContact ul.cardList > li {
+		width: 100%;
+		display: block;
+		margin-bottom: 30px;
+	}
+	.homeCountryContact ul.cardList > li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.homeCountryContact .block {
+		padding: 30px;
+	}
+	.homeCountryContact .avatar {
+		min-height: 70px;
+		padding-left: 90px;
+	}
+	.homeCountryContact .avatar .avatar-img {
+		width: 70px;
+		height: 70px;
+	}
+}

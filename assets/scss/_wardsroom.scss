@@ -1,0 +1,233 @@
+.rmv_txt {
+    font-size: 0;
+}
+
+.wardroomCntr {
+    .mainBanner-overlap {
+        .detail {
+            .title {
+                padding-bottom: 8px;
+            }
+            .sub-title {
+                color: #fff;
+                font-size: 16px;
+                font-family: $Light-text;
+                width: 46%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .aboutDesease {
+            .expand {
+                .text {
+                    height: auto;
+                    overflow: visible;
+                }
+            }
+        }
+    }
+}
+
+.diagnoseBox {
+    &.rmv_pad {
+        .list-style1 {
+            li {
+                padding-right: 12px;
+            }
+        }
+    }
+}
+
+.aboutDesease {
+    .tab-pane {
+        &.reading_abt {
+            padding: 50px 110px;
+            ;
+            .para {
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                    a {
+                        color: #333;
+                        font-family: "Montserrat-Bold";
+                        text-decoration: underline;
+                    }
+                }
+            }
+            ul {
+                list-style: none;
+                list-style-type: none;
+                overflow: hidden;
+                li {
+                    padding: 0;
+                    img {
+                        margin: 3px 0 0 0;
+                        float: left;
+                    }
+                    span {
+                        margin-left: 10px;
+                        float: left;
+                        width: 90%;
+                    }
+                }
+            }
+            .read_about {
+                margin: 25px 0 0;
+                font-family: $Light-text;
+            }
+        }
+    }
+}
+
+.virtual-position {
+    position: absolute;
+    left: 50%;
+    z-index: 9999;
+    margin-left: -60px;
+    top: auto;
+    bottom: 0;
+    text-indent: 0 !important;
+    padding: 0px 0 7px 0;
+    &.virtual-position_new {
+        left: 40%;
+    }
+}
+
+.vertual-text {
+    color: $light-color;
+    font-family: $Bold-text;
+    display: inline-block;
+}
+
+#thumbnail-slider-prev,
+#thumbnail-slider-next,
+#thumbnail-slider2-prev,
+#thumbnail-slider2-next,
+#thumbnail-slider3-prev,
+#thumbnail-slider3-next,
+#thumbnail-slider4-prev,
+#thumbnail-slider4-next,
+#thumbnail-slider5-prev,
+#thumbnail-slider5-next,
+#thumbnail-slider6-prev,
+#thumbnail-slider6-next,
+#thumbnail-slider7-prev,
+#thumbnail-slider7-next {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    z-index: 10;
+    cursor: pointer;
+    left: 50%;
+    margin-left: -18px;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 1000px;
+    &:before {
+        display: none;
+    }
+}
+
+#thumbnail-slider-prev,
+#thumbnail-slider2-prev,
+#thumbnail-slider3-prev,
+#thumbnail-slider4-prev,
+#thumbnail-slider5-prev,
+#thumbnail-slider6-prev,
+#thumbnail-slider7-prev {
+    background-position: -70px -805px;
+    transform: rotate(270deg);
+    &.disabled {
+        background-position: 0 -805px;
+    }
+}
+
+#thumbnail-slider-next,
+#thumbnail-slider2-next,
+#thumbnail-slider3-next,
+#thumbnail-slider4-next,
+#thumbnail-slider5-next,
+#thumbnail-slider6-next,
+#thumbnail-slider7-next {
+    background-position: -70px -805px;
+    transform: rotate(90deg);
+    &.disabled {
+        background-position: 0 -805px;
+    }
+}
+
+.thumbnail-slider {
+    .thumb:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.ninja-slider .ns-img:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.silder-wrap {
+    margin: 20px auto 0 auto;
+    max-width: 886px;
+    text-indent: -9999px;
+}
+
+@media only screen and (max-width: 767px) {
+    .wardroomCntr {
+        .mainBanner-overlap {
+            .detail {
+                .sub-title {
+                    margin: 0;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .diagnoseBox {
+        &.rmv_pad {
+            .list-style1 {
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .mg-t-n30 {
+        margin-top: 0px !important;
+    }
+    .aboutDesease {
+        .tab-pane {
+            &.reading_abt {
+                padding: 15px;
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        overflow: hidden;
+                        img {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .virtual-position {
+        &.virtual-position_new {
+            left: 50%;
+        }
+    }
+}

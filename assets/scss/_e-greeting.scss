@@ -1,0 +1,106 @@
+.e-greeting-card {
+    background-color: $secondary-color;
+    margin-top: 60px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-color: $nonary-color;
+    }
+}
+.card-media {
+    position: relative;
+    z-index: 1;
+    background-color: $light-color;
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    .content-block {
+        h2 {
+            color: $nonary-color3;
+            line-height: 136.12%;
+        }
+    }
+    .media-block {
+        margin-right: 50px;
+        img {
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.step-create {
+    position: relative;
+    &:before {
+        content: '';
+        left: 14px;
+        top: 0px;
+        position: absolute;
+        height: calc(100% - 45px);
+        border-left: 1px dashed $secondary-color;
+    }
+    .step {
+        padding-bottom: 30px;
+        padding-left: 40px; 
+        position: relative;
+        .iconStyle {
+            position: absolute;
+            text-align: center;
+            font-size: 12px;
+            height: 28px;
+            line-height: 26px;
+            width: 28px;
+            border-radius: 50%;
+            border: 1px solid $secondary-color;
+            left: 0;
+            display: inline-block;
+            top: 0px;
+            background-color: $light-color;
+        }
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+    .step-text {
+        font-family: $Light-text;
+        font-size: 14px;
+        line-height: 130%;
+        color: $dimgray;
+    }
+}
+.note-text {
+    font-family: $Light-text;
+    font-size: 14px;
+    line-height: 130%;
+    color: $dimgray;
+}
+
+@media screen and (max-width: 767px) {
+    .card-media {
+        flex-wrap: wrap;
+        padding: 30px 40px;
+        h2 {
+            font-size: 18px;
+        }
+        .media-block {
+            text-align: center;
+            margin-right: 0;
+            padding-left: 14px;
+            padding-right: 14px;
+            img {
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+        }
+        .media-block,
+        .content-block {
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
+}

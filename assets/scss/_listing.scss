@@ -1,0 +1,52 @@
+.isotope-cover{
+	padding-bottom:20px;
+	.masonry-container {
+		margin: 0 -15px;
+	}
+	.item{
+		border:1px solid $nonary-color;
+		margin:15px;
+		width:30.7%;
+		.img-cover{
+			img{
+				width: 100%;
+			}
+		}
+		.news-info {
+			padding: 25px 30px 20px;
+			margin-bottom: 0;
+		}
+	}
+}
+@media (max-width:1199px){
+	.isotope-cover{
+		.item{
+			width:30%;
+		}
+	}
+}
+@media (max-width:991px){
+	.isotope-cover{
+		.item{
+			width:46.3%;
+			margin:10px;  
+		}
+	}
+}
+
+@media (max-width:767px){
+	.isotope-cover {
+		.masonry-container {
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width:639px){
+	.isotope-cover{
+		.item{
+			width:100%;  
+			margin:20px 0 0 0; 
+		}
+	}
+}

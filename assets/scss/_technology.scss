@@ -1,0 +1,1018 @@
+.technology-info {
+    padding: 40px 0px;
+    position: relative;
+    z-index: 300;
+    h3 {
+        font: 20px $Bold-text;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+}
+
+.knifeTable {
+    .table {
+        margin-bottom: 0;
+        thead {
+            tr {
+                th {
+                    border-bottom: 0;
+                    vertical-align: middle;
+                    padding: 30px 20px;
+                    font: 12px $Regular-text;
+                    color: $primary-color;
+                    white-space: nowrap;
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    border-top: 1px solid $decimal-color4;
+                    vertical-align: middle;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    color: $primary-text-color;
+                    font: 14px $Regular-text;
+                    line-height: 22px;
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.treatment-list {
+    &.cyberknife-list {
+        padding: 20px 0px;
+        text-align: left;
+        h5 {
+            font: 20px $Bold-text;
+        }
+        h3 {
+            text-align: left;
+        }
+        .list-style3 {
+            li {
+                a {
+                    color: $primary-text-color;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.treatedbanner {
+    .content {
+        &.treatmentTabBox {
+            p {
+                color: $primary-text-color;
+            }
+        }
+    }
+}
+
+.treatmentTabBox {
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.overlap2 {
+    background: #eaeaea;
+    position: relative;
+    z-index: 300;
+    margin-top: -205px;
+    margin-bottom: -100px;
+}
+
+.how-it-done {
+    border-bottom: 1px solid #c7c7c7;
+    .how-it-doneTab {
+        padding: 60px 165px 24px;
+        h4 {
+            font: 18px $Bold-text;
+            padding-bottom: 19px;
+        }
+        p {
+            font: 14px $Light-text;
+            line-height: 22px;
+            padding-bottom: 20px;
+        }
+        .sliderBlock {
+            .carousel-control {
+                &.left {
+                    margin-left: -85px;
+                }
+                &.right {
+                    margin-right: -85px;
+                }
+            }
+        }
+    }
+}
+
+.benefits-risks {
+    padding: 60px 165px 40px;
+    h2 {
+        font: 26px $Bold-text;
+        color: $primary-text-color;
+    }
+}
+
+.blocks {
+    text-align: center;
+    li {
+        display: inline-block;
+        vertical-align: top;
+    }
+    &.three-blocks {
+        li {
+            width: 32.5%;
+        }
+    }
+    &.list-style1 {
+        li {
+            text-align: left;
+            padding-left: 15px;
+            width: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    &.four-blocks {
+        li {
+            width: 24.7%;
+        }
+    }
+}
+
+.quick-recovery {
+    padding: 60px 125px;
+    color: $primary-text-color;
+    h3 {
+        font: 26px $Bold-text;
+    }
+    .media {
+        max-width: 556px;
+        margin: 0 auto;
+    }
+    h4 {
+        font: 20px $Bold-text;
+    }
+    p {
+        font: 14px $Light-text;
+        line-height: 22px;
+    }
+    .sliderBlock {
+        .carousel-control {
+            margin-top: -65px;
+            &.left {
+                margin-left: 111px;
+            }
+            &.right {
+                margin-right: 111px;
+            }
+        }
+    }
+}
+
+.advancedBox {
+    border-top: 1px solid #ddd;
+    padding: 40px 170px 20px;
+}
+
+.our-leaders {
+    .wrap {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    h4 {
+        text-align: center;
+        font: 18px $Bold-text;
+    }
+    .mw-slider {
+        padding: 0px 0px 0px 170px;
+        margin: 0;
+        background-color: transparent;
+        border: 0;
+        min-height: 142px;
+        .media {
+            width: 142px;
+            height: 142px;
+            left: 0px;
+            /*top: 0px;*/
+            img {
+                width: 142px;
+                height: 142px;
+            }
+        }
+        .leaderInfo {
+            font: 14px $Regular-text;
+            padding-top: 30px;
+            .name {
+                font: 18px $Secondary-black;
+                color: $primary-text-color;
+            }
+            .desination {
+                color: $primary-color;
+                border-bottom: 1px solid $primary-text-color;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .institute {
+                color: $primary-text-color;
+            }
+        }
+    }
+    .content {
+        padding-top: 30px;
+        position: relative;
+        p {
+            font: 16px $Light-text;
+            line-height: 22px;
+            font-style: italic;
+        }
+        &:before {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            content: '';
+            width: 30px;
+            height: 30px;
+            background: url("../images/sprite.png") no-repeat;
+            background-size: 1000px;
+            background-position: -120px -360px;
+        }
+    }
+    &.sliderBlock {
+        .carousel-control {
+            &.left {
+                margin-left: -70px;
+            }
+            &.right {
+                margin-right: -70px;
+            }
+        }
+    }
+}
+
+.holisticBox {
+    float: left;
+    width: 100%;
+    z-index: 300;
+    .contentBox {
+        p {
+            color: $light-color;
+            font: 14px $Light-text;
+            padding-bottom: 20px;
+            line-height: 22px;
+        }
+    }
+    .title1 {
+        color: $light-color;
+    }
+}
+
+.successBox {
+    &.successBox1 {
+        p {
+            color: $primary-text-color;
+        }
+        .numslide {
+            color: $primary-text-color;
+        }
+    }
+}
+
+.whatsNew {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .bannertxt {
+        padding: 0 100px;
+        p {
+            color: $light-color;
+            font: 14px $Light-text;
+            line-height: 22px;
+        }
+        .title2 {
+            color: $light-color;
+        }
+    }
+    h5 {
+        font: 22px $Light-text;
+        color: $light-color;
+    }
+}
+
+.whatsNew, .who-to-contact-div, .successBox {
+    .contact-info {
+        h5 {
+            a {
+                color: $light-color;
+            }
+        }
+    }
+}
+
+.tabinfo {
+    .title6 {
+        position: relative;
+        padding-right: 110px;
+        .date-time {
+            position: absolute;
+            right: 0;
+            font: 16px $Regular-text;
+        }
+    }
+}
+
+.treatmentTabBox {
+    .emergency {
+        padding: 0 100px;
+        p {
+            color: $light-color;
+            font: 14px $Light-text;
+            line-height: 22px;
+        }
+        .title2 {
+            color: $light-color;
+        }
+    }
+}
+
+.specialized-clinics {
+    li {
+        position: relative;
+        &.active {
+            a {
+                color: $primary-text-color;
+                position: relative;
+                display: block;
+                min-height: 100%;
+                &:before {
+                    position: absolute;
+                    left: 50px;
+                    top: 100%;
+                    margin-top: 20px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffffff;
+                    border-top: 1px solid #dddddd;
+                    border-left: 1px solid #dddddd;
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
+.parent_close {
+    ul {
+        li {
+            position: relative;
+            &.active {
+                &:before {
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    margin-top: 20px;
+                    margin-left: -10px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background: #ffffff;
+                    border-top: 1px solid #dddddd;
+                    border-left: 1px solid #dddddd;
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    z-index: 10;
+                    display: block !important;
+                }
+                a {
+                    color: $primary-text-color;
+                    text-decoration: none;
+                    &:focus {
+                        text-decoration: none !important;
+                    }
+                }
+            }
+            a {
+                color: #666;
+                position: relative;
+                display: block;
+                text-decoration: underline;
+                &:focus {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
+
+.clinic-helpdesk {
+    li {
+        &.active {
+            a {
+                &:before {
+                    left: 50%;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}
+
+.clinicdetailBox {
+    .tab-content {
+        position: relative;
+        .close {
+            position: absolute;
+            right: 45px;
+            top: 50px;
+            z-index: 50;
+            opacity: 1;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .tab-pane {
+        padding: 50px 65px 50px 50px;
+        border: 1px solid #dddddd;
+        position: relative;
+        box-shadow: 0 6px 20px -10px #999;
+        .cross_postion1 {
+            position: absolute;
+            top: 0 !important;
+            right: 10px !important;
+            cursor: pointer;
+        }
+        .title5 {
+            color: $primary-color;
+            padding-bottom: 15px;
+        }
+        .doctorName {
+            list-style: none;
+            margin-bottom: 0;
+            li {
+                display: inline-block;
+                margin-left: 28px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+.slider-tab {
+    position: absolute;
+    top: -149px;
+    left: -165px;
+    width: 1140px;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    .carousel-indicators {
+        position: static;
+        width: 100%;
+        margin: 0;
+        li {
+            width: auto;
+            height: auto;
+            text-indent: 0;
+            border-radius: 0;
+            border: 0;
+            margin: 0;
+            a {
+                margin: 0 30px;
+                padding: 23px 0;
+                display: block;
+            }
+            &.active {
+                margin: 0;
+                background-color: transparent;
+                a {
+                    color: #db5134;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 0px;
+                        bottom: -1px;
+                        height: 1px;
+                        background-color: #db5134;
+                        z-index: 100;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -8px;
+                        width: 0;
+                        height: 0px;
+                        bottom: -1px;
+                        height: 0px;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 8px solid #db5134;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tab-carousal {
+    .cus-indi {
+        position: absolute;
+        top: -70px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        bottom: auto;
+        left: 0;
+        border-bottom: 1px solid #6e6e6e;
+        padding-bottom: 2px;
+        li {
+            width: auto;
+            border: none;
+            padding: 0 29px;
+            background-color: transparent;
+            text-indent: 0;
+            margin: 0;
+            height: auto;
+            a {
+                color: #999999;
+                border: 0;
+                padding: 15px 3px 15px;
+                margin-right: 0px;
+                position: relative;
+                font-family: $Regular-text;
+                display: block;
+                height: 100%;
+            }
+            &.active {
+                a {
+                    font-family: $Bold-text;
+                    color: #db5134;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 0px;
+                        bottom: -3px;
+                        height: 1px;
+                        background-color: #db5134;
+                        z-index: 100;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -8px;
+                        width: 0;
+                        height: 0px;
+                        bottom: -3px;
+                        height: 0px;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 8px solid #db5134;
+                        z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+    .sliderBlock {
+        .left-ar {
+            margin-left: 100px;
+        }
+        .right-ar {
+            margin-right: 100px;
+        }
+    }
+}
+
+.how-done-head {
+    font-size: 26px;
+    line-height: 24px;
+    color: $light-color;
+    margin-top: 11px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .benefits-risks {
+        padding: 40px 30px;
+    }
+    .quick-recovery {
+        padding: 40px 30px;
+    }
+    .how-it-done {
+        .how-it-doneTab {
+            padding: 40px 100px;
+        }
+    }
+    .clinicdetailBox {
+        .tab-content {
+            /*padding: 30px;*/
+            .close {
+                right: 15px;
+                top: 10px;
+            }
+        }
+    }
+    .overlap2 {
+        margin-top: -80px;
+        margin-bottom: -50px;
+    }
+    .treatmentTabBox {
+        .casestudy-tab {
+            padding: 0px;
+        }
+    }
+    .tab-carousal {
+        .sliderBlock {
+            .left-ar {
+                margin-left: 50px;
+            }
+            .right-ar {
+                margin-right: 50px;
+            }
+        }
+    }
+    .slider-tab {
+        top: -129px;
+        left: -100px;
+        width: 940px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .our-leaders {
+        .content {
+            margin-top: 30px;
+        }
+    }
+    .headerbottomBox {
+        .doctorSearch {
+            .membershiptab {
+                .nav-tabs {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .slider-tab {
+        width: 720px;
+    }
+    .tab-carousal {
+        .sliderBlock {
+            .left-ar {
+                margin-left: 30px;
+            }
+            .right-ar {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blocks {
+        &.three-blocks {
+            li {
+                width: 100%;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .max-width {
+            max-width: inherit !important;
+        }
+    }
+    /*.table-responsive {
+        border: 0;
+    }*/
+    .how-it-done {
+        .how-it-doneTab {
+            padding: 30px 35px;
+            .sliderBlock {
+                .carousel-control {
+                    &.left {
+                        margin-left: -35px;
+                    }
+                    &.right {
+                        margin-right: -35px;
+                    }
+                }
+            }
+        }
+    }
+    .slider-tab {
+        width: 100%;
+        left: 0;
+    }
+    .advancedBox {
+        padding: 20px 15px;
+    }
+    .our-leaders {
+        .wrap {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .mw-slider {
+            padding: 0px 0px 0px 80px;
+            min-height: inherit;
+            .media {
+                width: 60px;
+                height: 60px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .leaderInfo {
+                padding-top: 0px;
+                .name {
+                    font: 16px $Secondary-black;
+                }
+                .desination {
+                    border-bottom: 1px solid $quinary-color;
+                }
+            }
+        }
+        .content {
+            padding-top: 30px;
+            position: relative;
+            margin-top: 0px;
+        }
+        &.sliderBlock {
+            .carousel-control {
+                &.left {
+                    margin-left: -35px;
+                }
+                &.right {
+                    margin-right: -35px;
+                }
+            }
+        }
+    }
+    .sliderBlock .mw-slider {
+        padding: 15px 0px 15px 85px;
+        min-height: inherit;
+    }
+    .specialized-clinics {
+        li.active {
+            a:before {
+                content: none;
+            }
+        }
+    }
+    .clinicdetailBox {
+        .tab-content {
+            position: relative;
+            /*padding: 40px 15px 30px;*/
+            .tab-pane {
+                /*padding: 30px 35px 0px 30px;*/
+                padding: 30px 35px 30px 30px;
+            }
+            /*&:before {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                margin-top: -10px;
+                margin-left: -10px;
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: $light-color;
+                border-top: 1px solid #dddddd;
+                border-left: 1px solid #dddddd;
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                z-index: 10;
+            }*/
+            .doctorName {
+                li {
+                    margin: 0 0 10px;
+                    text-align: center;
+                    /*&:first-child {
+                        margin-left: 10px;
+                    }*/
+                }
+            }
+        }
+    }
+    .treatmentTabBox {
+        .emergency {
+            padding: 0px;
+        }
+    }
+    .whatsNew {
+        .bannertxt {
+            padding: 0px;
+        }
+        h5 {
+            .strong {
+                display: block;
+            }
+        }
+        &.whatsNewimg {
+            background-image: none !important;
+            background-color: #db5134;
+        }
+    }
+    .holisticBox {
+        &.sectionBlock {
+            .overlap {
+                margin: -700px 0 0;
+            }
+        }
+        .mwbannerBox {
+            height: 700px;
+        }
+        .title1 {
+            font-size: 26px;
+        }
+    }
+    .knifeTable {
+        position: relative;
+        .table-responsive {
+            border: 0;
+        }
+        .table {
+            margin-bottom: 0;
+            thead {
+                tr {
+                    th {
+                        padding: 15px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        white-space: normal;
+                        padding: 15px;
+                        &:first-child {
+                            max-width: 220px;
+                        }
+                        &:last-child {
+                            max-width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .treatmentDetail {
+        > div {
+            > div {
+                border-left: 0;
+            }
+        }
+    }
+    .anotherCondition {
+        .findDoctor {
+            .search-input {
+                padding-left: 15px;
+            }
+        }
+    }
+    .tab-carousal {
+        .cus-indi-heart {
+            display: table;
+            width: 100%;
+            li {
+                padding: 0 10px;
+                font-size: 12px;
+                display: table-cell;
+            }
+        }
+        .sliderBlock {
+            .left-ar {
+                margin-left: 0;
+            }
+            .right-ar {
+                margin-right: 0;
+            }
+        }
+    }
+    .quick-recovery {
+        .sliderBlock {
+            .carousel-control.left {
+                margin-left: -30px;
+            }
+            .carousel-control.right {
+                margin-right: -30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .tab-carousal {
+        .cus-indi-heart {
+            top: -85px;
+            padding-bottom: 4px;
+            li {
+                padding: 0 5px;
+                display: table-cell;
+                &.active {
+                    a {
+                        font-family: $Light-text;
+                        &:before {
+                            bottom: -5px;
+                        }
+                        &:after {
+                            bottom: -5px;
+                        }
+                    }
+                }
+                a {
+                    font-family: $Light-text;
+                    font-size: 11px !important;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .holisticBox {
+        &.sectionBlock {
+            .overlap {
+                margin: -850px 0 0;
+            }
+        }
+        .mwbannerBox {
+            height: 850px;
+        }
+    }
+    .tab-carousal {
+        .cus-indi {
+            display: table;
+            width: 100%;
+            li {
+                padding: 0 5px;
+                display: table-cell;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    /*.tab-carousal {
+        .cus-indi-heart {
+            top: -90px;
+        }
+    }*/
+    .pd-xx-b30 {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .tab-carousal {
+        .cus-indi-heart {
+            /* padding-bottom: 0;*/
+            li {
+                padding: 0;
+            }
+        }
+    }
+}

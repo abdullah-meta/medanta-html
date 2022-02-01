@@ -1,0 +1,184 @@
+.space-banner-top {
+    position: relative;
+    /*top: -67px;*/
+    margin-top: -67px;
+    &.space-more {
+        /*top: -85px;*/
+        margin-top: -85px;
+    }
+}
+
+.slider_upcoming {
+    position: relative;
+    span.feature {
+        z-index: 99;
+        padding: 0 11px;
+        font-family: $Secondary-bold;
+        font-size: 14px;
+        line-height: 34px;
+        color: #ffffff;
+        width: 105px;
+        height: 45px;
+        display: block;
+        position: absolute;
+        left: -10px;
+        top: 15px;
+        background: url('../images/feature-bg.png') no-repeat left top;
+    }
+}
+
+.newsListingBox {
+    .full-banner {
+        .images {
+            width: 100%;
+            height: 407px;
+            background-size: cover;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+            &::before {		
+                content: '';		
+                position: absolute;		
+                left: 0;		
+                top: 0;		
+                background-color: rgba(0, 0, 0, 0.6);		
+                width: 100%;		
+                height: 100%;		
+                background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.26) 51%, rgba(0, 0, 0, 0.5) 100%);	
+                background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.26) 51%, rgba(0, 0, 0, 0.5) 100%);	
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.26) 51%, rgba(0, 0, 0, 0.5) 100%);		
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=1 ); 
+            }
+            h3 {
+                font-family: $Bold-text;
+                font-size: 36px;
+                line-height: 47px;
+                color: #ffffff;
+            }
+            .text-caption {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0px;
+                padding: 43px 100px;
+            }
+            span.datetime {
+                display: block;
+                font-size: 16px;
+                line-height: 20px;
+                margin: 10px 0;
+                color: #ffffff;
+            }
+        }
+    }
+    .news-info {
+        padding: 40px 100px;
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.20);
+        .doctor-information-workshop {
+            padding: 0px;
+            border: none;
+        }
+        p {
+            font-family: $Light-text;
+            font-size: 14px;
+            line-height: 24px;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+    }
+    .half-banner {
+        .images {
+            img {
+                width: 100%;
+            }
+        }
+        .news-info {
+            padding: 25px 30px 20px;
+            a.headtext {
+                display: block;
+                font-family: $Bold-text;
+                font-size: 18px;
+                line-height: 24px;
+                color: #333333;
+                margin-bottom: 20px;
+                min-height: 48px;
+                &:hover {
+                    color: #db5134;
+                }
+            }
+            p {
+                margin-bottom: 20px;
+            }
+            ul.share-icon {
+                li {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .newsListingBox {
+        .half-banner {
+            .news-info {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .newsListingBox {
+        .news-info {
+            padding: 40px;
+        }
+        .full-banner {
+            .images {
+                .text-caption {
+                    padding: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .newsListingBox {
+        .news-info {
+            padding: 20px;
+        }
+        .full-banner {
+            .images {
+                height: 307px;
+                .text-caption {
+                    padding: 20px;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .half-banner {
+            .news-info {
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .newsListingBox {
+        .full-banner {
+            .images {
+                height: 207px;
+            }
+        }
+    }
+}

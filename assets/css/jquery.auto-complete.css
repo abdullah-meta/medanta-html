@@ -1,0 +1,7 @@
+.autocomplete-suggestions { text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; width: auto !important; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1); position: absolute; display: none; z-index: 9999; max-height: none; overflow: hidden; overflow-y: auto; box-sizing: border-box; }
+.autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; overflow: hidden; font-family: "Montserrat-Light"; }
+.autocomplete-suggestion strong { float: left; font-size: 14px; color: #333; }
+.autocomplete-suggestion strong , .autocomplete-suggestion b { font-family: "Montserrat-Light"; }
+.autocomplete-suggestion b { color: #999; }
+.autocomplete-suggestion span { margin-left: 50px; font-size: 13px; color: #999; float: right; }
+.autocomplete-suggestion.selected { background: #f0f0f0; }

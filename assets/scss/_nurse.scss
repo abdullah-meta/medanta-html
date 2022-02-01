@@ -1,0 +1,196 @@
+.reduceRightPd {
+    padding-right: 95px;
+}
+.whiteBgfix {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top:0;
+        height: 50%;
+        width: 100%;
+        background-color: $light-color;
+    }
+    &.bottom{
+        &:before {
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+.awardRecog.workplace.bottom {
+    &:after{
+        bottom: calc(50% - 80px);
+        top: auto;
+    }
+}
+.drivesUs {
+    &.whiteBgfix {
+        &:before {
+            height: calc(100% - 69px);
+        }
+    }    
+}
+.drivesUs-Inner {
+    .casestudy-tab {
+        .slidesAutoWidth {
+            max-width: none;
+            li {
+                a {
+                    padding: 15px 5px;
+                }
+            } 
+            
+        }
+    }
+}
+.drivesUs-Inner {
+    .tab-content {
+        .itemTab {
+            .itemDetails {
+                &.nurseDepart {
+                    max-width: 500px;
+                    .red-line  {
+                        top: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+.quoteSign{
+    background: {
+        size: 75px;
+        position: center center;
+        repeat: no-repeat;
+    }
+    height: 80px;
+    width: 75px;
+}
+.cardBoxSection{
+    background-color: $light-color;
+    &.linedesign{
+        &:after {
+            top: 0%;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+.cardBlock {
+    position: relative;
+    z-index: 1;
+    .txt {
+        padding: {
+            left: 70px;
+            right: 70px;
+            top: 40px;
+        }
+        font-family: $Light-text;
+        .cardList {
+            margin-left: 15px;
+            margin-top: 15px;
+            li{
+                color: $quinary-color;
+                font-size: 12px;
+                margin: 5px 0 10px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+.max-width-30 {
+    max-width: 30px;
+}
+.textureBg {
+    background: {
+        image: url('../images/career/award-bg.jpg');
+    }
+}
+.pd-overflow-custom {
+    padding-top: 50px;
+    padding-bottom: 160px;
+}
+.nagativeCustomMg {
+    margin-top: -110px;
+}
+.iconStyle {
+    font-size: 36px;
+    color: $secondary-color;
+    font-weight: 300;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+    .cardBlock {
+        .txt {
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card--box {
+        .nagativeCustomMg {
+            margin-top: -30px;
+        }
+        .textureBg {
+            margin-bottom: 140px;
+            margin-left: 15px;
+            margin-right: 15px;
+            &:last-of-type {
+                margin-bottom: 50px;
+            }
+        }
+        .mediaBlock {
+            margin-top: -100px;
+            padding: 0 30px;
+            img {
+                margin: auto;
+                width: 100%;
+            }
+        }
+        .cardBlock {
+            .txt {
+                padding: 20px 30px;
+                span {
+                    &.iconStyle {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        h5 {
+            &.past-heading {
+                font-size: 15px;
+                padding: 0;
+                line-height: 20px;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    .work--placenurse {
+        .pd-overflow-custom {
+            padding-bottom: 120px;
+        }
+    }
+    .award--recong{
+        &.whiteBgfix {
+            &::before {
+                z-index: -1;
+            }
+        }
+        &.awardRecog {
+            padding-top: 0;
+            &.workplace {
+                &:after {
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

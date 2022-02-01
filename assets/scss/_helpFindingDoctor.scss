@@ -1,0 +1,168 @@
+.helpfindingDoctorCtnr{
+	background: rgba(234,234,234,1);
+	width: 100%;
+	padding: 0px 0px 28px 0px;
+	.question{
+		font-size: 16px;
+	}
+	.modeOfScenario{
+		ul.scenario-block{
+			margin-left: 0;
+			li{
+				width: 30%;
+			    position: relative;
+			    padding: 0 0 0 10px;
+				a{ 
+					display: block;
+					background: rgba(255, 255, 255, 0.3);
+					border-top: 3px solid transparent;
+					padding: 15px 15px 10px 15px;
+					position: relative;
+					.green-check {
+						display: none;
+						position: absolute;
+						right: 20px; 
+						top: 0px;
+					}
+					&:hover{
+						background: $light-color;
+						box-shadow: 1px 1px 5px #888888;
+						border-top: 3px solid #069b11;
+						.green-check {
+							display: block;
+						}
+					}
+					&.active-checked {
+						position: relative;
+						border-top: 3px solid #069b11;
+						background: $light-color;
+						.green-check {							
+							display: block;
+						}
+					}
+				}
+				.scenario{
+					span{
+						display: block;
+						margin-bottom: 15px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						min-height: 48px;
+						line-height: 19px;
+						font-size: 14px;
+					}
+
+					i.offline{
+						background-position: -48px -336px;
+					}
+					i.phone-call{
+						background-position: -144px -336px;
+					}
+					i.video-call{
+						background-position: -240px -336px;
+					}
+					i.In-person{
+						background-position: -336px -336px;
+					}
+				}
+				p{
+					overflow: hidden;
+					text-overflow: ellipsis;
+					min-height: 77px;
+					color: #999;
+					line-height: 19px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.bottom-section{
+		border-top: 1px solid $light-color;
+		padding: 12px 0 0 0;
+	}
+}
+
+.searchResultCtnr{
+	position: relative;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    margin-top: -20px;
+    border-width: 0 6px 0;
+    border-style: solid;
+    border-color: #e4e4e4;
+    &:before{
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+		position: absolute;
+		left: 24px;
+		top: -9px;
+    }
+    .search-result{
+    	margin-bottom: 5px;
+    	max-height: 171px;
+    	li{
+    		padding: 0 20px !important;
+    		float: none !important;
+    		margin-left: 0 !important;
+
+    		&:last-child{
+    			a{
+    				border-bottom: none;
+    			}
+    		}
+    		a{
+    			padding: 10px 0;
+    			display: block;
+    			border-bottom: 1px solid #eaeaea;
+    			color: #db5134;
+    		}
+    	}
+    }
+    .bottom-section{
+    	.call-us{
+    		text-transform: uppercase;
+    		padding: 10px 0 15px;
+    	}
+    	.seperator {
+    		margin: 0;
+    		background-color: #eaeaea;
+    		border-color: #eaeaea;
+    	}
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.helpfindingDoctorCtnr {
+		.modeOfScenario {
+			ul.scenario-block {
+				li {
+				    width: 46%;
+				    margin: 15px 0px;
+				    padding-left: 0;
+				}
+			}
+		}
+	}
+	.searchResultCtnr{
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.helpfindingDoctorCtnr {
+		.modeOfScenario {
+			ul.scenario-block {
+				li {
+				    width: 100%;
+				    margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}

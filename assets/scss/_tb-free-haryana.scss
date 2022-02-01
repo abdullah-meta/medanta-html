@@ -1,0 +1,524 @@
+.para-tb {
+    font-family: $Light-text;
+}
+
+.support-anchor {
+    color: $light-color;
+    border: 1px solid $light-color;
+    border-radius: 5px;
+    padding: 10px 21px 10px 51px;
+    display: inline-block;
+    position: relative;
+    margin-top: 26px;
+    font-family: $Light-text;
+    i {
+        position: absolute;
+        display: inline-block;
+        padding-right: 10px;
+        top: 50%;
+        left: 20px;
+        margin-top: -10px;
+    }
+    &:hover {
+        i {
+            background-position: -460px -20px !important;
+        }
+    }
+}
+
+.image-percent-div {
+    margin-top: 46px;
+    .img-marg {
+        margin: 0 auto;
+    }
+    .explain-img {
+        max-width: 190px;
+        margin: 30px auto 0 auto;
+        color: $primary-color;
+        font-family: $Light-text;
+    }
+}
+
+.image-block-div {
+    clear: both;
+    padding-top: 41px;
+    .image-block-ul {
+        padding: 0 30px;
+        .image-block-li {
+            .single-img {
+                height: 316px;
+                width: 316px;
+                position: relative;
+                margin: 0 auto;
+                img {
+                    height: 316px;
+                    width: 316px;
+                }
+                .block-para {
+                    font-size: 18px;
+                    font-family: $Bold-text;
+                    line-height: 24px;
+                    max-width: 260px;
+                    left: 0;
+                    right: 0;
+                    position: absolute;
+                    margin: 0 auto;
+                    bottom: 30px;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+.partner-div {
+    padding: 0 60px;
+    .partner {
+        img {
+            margin: 30px auto 0 auto;
+        }
+        .partner-para {
+            font-family: $Bold-text;
+            color: $primary-color;
+            margin: 20px auto 0 auto;
+            border-left: 1px solid $quaternary-color;
+            padding-bottom: 20px;
+            span {
+                max-width: 200px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.border-mid-arrow {
+    position: relative;
+    border-top: 1px solid #bbbbbb;
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -7px;
+        margin-top: -5px;
+        content: '';
+        width: 10px;
+        height: 9px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #bbbbbb;
+        border-left: 1px solid #bbbbbb;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        z-index: 10;
+    }
+}
+
+.our-team {
+    /*padding: 50px 0;*/
+    .sub-our-team {
+        padding: 45px 50px 50px 50px;
+        .our-team-heading {
+            h2 {
+                font-size: 26px;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+        }
+        .dep-wrap {
+            display: block;
+            .department {
+                width: 100%;
+                float: left;
+                a {
+                    display: block;
+                    margin: 14px 0 12px 0;
+                    font-family: $Bold-text;
+                    span {
+                        max-width: 140px;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 5px 0;
+                    }
+                }
+            }
+            .department1 {
+                width: 100%;
+                float: left;
+                a {
+                    display: block;
+                    margin: 14px 0 12px 0;
+                    /*border-left: 1px solid $quaternary-color;*/
+                    font-family: $Bold-text;
+                    span {
+                        max-width: 200px;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.achievedBox {
+    .treatedbanner {
+        .treatmentTabBox {
+            p {
+                color: $light-color;
+                font-family: $Light-text;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.ambulance-tb-haryana {
+    .ambulaceTab {
+        padding: 0 290px 24px;
+        .item {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.graph {
+    box-shadow: 0 1px 1px 0 #d9d9d9;
+    img {
+        width: 100%;
+    }
+}
+
+.upcoming-phase {
+    .upcoming-phase-list {
+        margin-top: 15px;
+        ul {
+            padding-left: 45px;
+            li {
+                font-family: $Light-text;
+            }
+        }
+    }
+}
+
+.download-div {
+    margin-top: 30px;
+    border-left: 1px solid $quaternary-color;
+    .download-para {
+        display: inline-block;
+        position: relative;
+        padding-right: 60px;
+        .download-link-brochure {
+            font-size: 18px;
+            line-height: 18px;
+            color: $primary-text-color;
+            text-align: left;
+            .download-span {
+                font-family: $Light-text;
+                display: block;
+            }
+            .brochure {
+                font-family: $Bold-text;
+                display: block;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        right: 0;
+        margin-top: -22px;
+        top: 50%;
+    }
+}
+
+.social-media-circles {
+    .sc-media-heading {
+        font-size: 18px;
+        line-height: 18px;
+        font-family: $Light-text;
+        margin-bottom: 16px;
+    }
+}
+
+.show-less {
+    .show-btn {
+        i {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+    }
+}
+.phaseBlock {
+    position: relative;
+    min-height: 110px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    padding-left: 100px;
+    .grayBorder {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        background-color: $quaternary-color;
+        height: 6px;
+        margin-top: -3px;
+        left: 0;
+    }
+    .stage {
+        float: left;
+        min-height: 110px;
+        position: relative;
+        border-left: 1px dashed $quaternary-color; 
+        &.stageLaunch {
+            width: 209px;
+        }
+        &.stage1 {
+            width: 205px;
+        }
+        &.stage2 {
+            width: 329px;
+        }
+        &.stageFinal {
+            width: 97px;
+        }
+        .phaseLabel {
+            position: absolute;
+            top: 0;
+            color: $primary-color;
+            font: 14px $Bold-text;
+            padding-left: 12px;
+            &:before{
+                content:'';
+                height: 9px;
+                width: 9px;
+                background-color: $primary-color;
+                position: absolute;
+                right: 100%;
+                border-radius: 50%;
+                top: 50%;
+                margin-top: -4px;
+                margin-right: -4px;                
+            }
+        }
+        .stageIcon {
+            height: 34px;
+            width: 34px;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            border:6px solid $quaternary-color;
+            border-radius: 50%;
+            margin-top: -17px;
+            text-align: center;
+            line-height: 22px;
+            background-color: #ebebeb;
+            &.start {
+                background-color: #669933;
+            }
+            &.stageProgress {
+                background-color: $secondary-color;
+                color: $light-color;
+            }
+        }
+        .date {
+            position: absolute;
+            bottom: 0;
+            color: $primary-color;
+            font: 14px $Light-text;
+            padding-left: 12px;
+        }
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .image-block-div {
+        .image-block-ul {
+            .image-block-li {
+                .single-img {
+                    height: 250px;
+                    width: 250px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .block-para {
+                        font-size: 14px;
+                        line-height: 20px;
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    .treatedbanner {
+        &.tb-mid-banner {
+            height: 547px;
+        }
+    }
+    .phaseBlock {
+        padding-left: 70px;
+        .stage {
+            &.stageLaunch {
+                width: 25%;
+            }
+            &.stage1 {
+                width: 25%;
+            }
+            &.stage2 {
+                width: 25%;
+            }
+            &.stageFinal {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .image-block-div {
+        .image-block-ul {
+            .image-block-li {
+                .single-img {
+                    height: 200px;
+                    width: 200px;
+                    .block-para {
+                        font-size: 12px;
+                        line-height: 18px;
+                        max-width: 160px;
+                    }
+                }
+            }
+        }
+    }
+    .our-team {
+        padding: 0 30px;
+        .sub-our-team {
+            padding: 45px 20px 50px 20px;
+        }
+    }
+    .ambulance-tb-haryana {
+        .ambulaceTab {
+            padding: 0 150px 24px;
+        }
+    }
+    .download-div {
+        .download-para {
+            padding-right: 40px;
+            margin-left: -10px;
+        }
+    }
+    .partner-div {
+        padding: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .our-team {
+        padding: 0 20px;
+        .sub-our-team {
+            padding: 45px 0px 50px 0px;
+            .dep-wrap {
+                .department1 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    a {
+                        border-left: none;
+                    }
+                }
+                .department {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #cccccc;
+                }
+            }
+        }
+    }
+    .download-div {
+        margin-top: 30px;
+        border-left: none;
+        border-bottom: 1px solid #cccccc;
+        text-align: left;
+        .download-para {
+            padding-bottom: 35px;
+            margin-left: 0;
+        }
+        img{
+            margin-top: -35px;
+        }
+    }
+    .ambulance-tb-haryana {
+        .ambulaceTab {
+            padding: 0 70px 24px;
+        }
+    }
+    .image-percent-div {
+        .explain-img {
+            margin: 5px auto 30px auto;
+        }
+    }
+    .partner-div {
+        .image-block-ul {
+            .image-block-li {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .phaseBlock {
+        padding-left: 50px;
+        .stage {
+            &.stageLaunch {
+                width: 100%;
+            }
+            &.stage1 {
+                width: 100%;
+            }
+            &.stage2 {
+                width: 100%;
+            }
+            &.stageFinal {
+                width: 100%;
+                min-height: 0;
+            }
+            .stageIcon {
+                top: auto;
+                bottom: 100%;
+                margin-bottom: 5px;
+                margin-right: -16px;
+            }
+            .phaseLabel {
+                position: relative;
+                top: auto;
+            }
+            .date {
+                position: static;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .overlap-mobile {
+        margin-top: -50px;
+    }
+    .our-team {
+        padding: 0 10px;
+        .pd-lr30 {
+            padding: 0 10px;
+        }
+    }
+    .upcoming-phase {
+        .upcoming-phase-list {
+            ul {
+                padding-left: 30px;
+            }
+        }
+    }
+    .ambulance-tb-haryana {
+        .ambulaceTab {
+            padding: 0 30px 24px;
+        }
+    }
+}

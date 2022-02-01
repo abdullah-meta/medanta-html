@@ -1,0 +1,129 @@
+/*
+ * modal css
+*/
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    width:inherit; 
+    height:inherit;
+    margin: 0 auto;
+}
+
+.outer--cntr {
+    .pattern-custom {
+        &:after,
+        &:before {
+            width: 10px;
+        }
+    }
+}
+
+.outerCntr {
+    position: relative;
+    &.linedesign {
+        &:after{
+            width: 100%;
+            top: 152px;
+        }
+    }
+    &.whiteBgfix {
+        &:before{
+            height: calc(100% - 104px);
+            top: 104px;
+        }
+    }
+}
+.limitless-opportunities {
+    position: relative;
+    z-index: 10;
+}
+.opportunity {
+    padding: {
+        left: 120px;
+        right: 120px;
+    }
+}
+.owlStyleNoArrow {
+    .owl-buttons {
+        display: none;
+    }
+} 
+.apportunityBlock {
+    .iconInfo {
+        // max-width: 52px;
+        margin: auto;
+        height: 55px;
+    }
+    [class*='flex-col'] {
+        padding: {
+            left: 10px; 
+            right: 10px;
+        }
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    p{
+        font: {
+            family: $Regular-text;
+            size: 18px;
+        }
+        line-height: 26px;
+        margin-top: 10px;
+    }
+    .gray-line {
+        &:last-child{
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .opportunity {
+        padding-left: 15px;
+        padding-right: 15px; 
+    }
+}
+@media screen and (max-width: 991px) {
+    .outer--cntr {
+        .pattern-custom {
+            &:after,
+            &:before {
+                width: 5px;
+            }
+        }
+    }
+    .apportunityBlock {
+        .gray-line {
+            &:nth-child(2n){
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .apportunityBlock {
+        // .iconInfo {
+        //     max-width: 40px;
+        // }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+    .opportunity {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,71 @@
+/* border-radius */
+@mixin border-radius($radius) {
+  	-webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* transation */
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/* transform */
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+/* opacity */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); /* IE8 */
+}
+
+@mixin backgroundGradient($color1,$color2) {
+  background: $color2;
+  background: -moz-linear-gradient(top, transparent 0%, $color2 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(0%, transparent), color-stop(100%, $color2));
+  background: -webkit-linear-gradient(top, transparent 0%, $color2 100%);
+  background: -o-linear-gradient(top, transparent 0%, $color2 100%);
+  background: -ms-linear-gradient(top, transparent 0%, $color2 100%);
+  background: linear-gradient(to bottom, transparent 0%, $color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2, GradientType=0 );
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@mixin user-select($value){
+-webkit-touch-callout: $value;
+  -webkit-user-select: $value;
+     -moz-user-select: $value;
+      -ms-user-select: $value;
+          user-select: $value;
+}
+
+/* box-shadow */
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}

@@ -1,0 +1,288 @@
+.steve_maraboli {
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-color;
+    font-family: $Light-text;
+    margin-top: 8px;
+}
+
+.steve_maraboli-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: $light-color;
+    font-family: $Light-text;
+    margin-top: 11px;
+}
+
+.banner-height-cause {
+    height: 300px;
+}
+
+.help-contact1 {
+    p {
+        font-size: 22px;
+        font-family: $Light-text;
+        line-height: 24px;
+    }
+    .p1 {
+        margin-top: 32px;
+    }
+    .p2 {
+        margin-bottom: 37px;
+    }
+}
+
+.select-cause {
+    padding: 43px 100px 47px 100px;
+    text-align: center;
+    .defined-width {
+        width: 45%;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 auto 8px auto;
+    }
+    .new-head-cause {
+        margin-top: 21px;
+    }
+    .dropdown {
+        .btn-drop {
+            position: relative;
+            border-radius: 0;
+            border: 1px solid #cccccc;
+            background-color: transparent;
+            color: #d7d7d7;
+            text-align: left;
+            padding: 9px 10px;
+            width: 100%;
+            .caret-cus {
+                float: right;
+                color: #dd593e;
+                font-size: 14px;
+                border-top: 9px solid;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                margin-top: -4px;
+            }
+        }
+    }
+    .dropdown-menu {
+        border-radius: 0;
+        width: 100%;
+    }
+    .select-btn {
+        width: 60%;
+        padding: 10px;
+        color: #d7d7d7;
+        background: transparent url("../images/caret-down.png") no-repeat 95% 50%;
+        ;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: $Light-text;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        option[disabled]:first-child {
+            display: none;
+        }
+        option {
+            color: green;
+            margin: 5px 0;
+        }
+    }
+}
+
+.thanks-para-div {
+    position: relative;
+    .info-icon {
+        position: absolute;
+        display: block;
+    }
+    .thanks-para {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: $Secondary-light;
+        font-style: italic;
+        color: #8c8c8c;
+        padding-left: 17px;
+        letter-spacing: -0.02em;
+        span {
+            display: block;
+        }
+    }
+}
+
+.placeholder {
+    color: grey;
+}
+
+.rupee-btn {
+    a {
+        border: 2px solid $secondary-text-color;
+        padding: 5px 12px 6px 7px;
+        border-radius: 5px;
+        margin-right: 8px;
+        display: inline-block;
+        i {
+            margin-right: 2px;
+        }
+        &.active {
+            background-color: $primary-text-color;
+            color: $light-color;
+            border: 2px solid $primary-text-color;
+        }
+    }
+    input {
+        border: 1px solid $quaternary-color;
+        border-radius: 0;
+        width: 110px;
+        padding: 12px 5px;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            font-family: $Light-text;
+            font-size: 12px;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: $Light-text;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            font-family: $Light-text;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            font-family: $Light-text;
+        }
+    }
+}
+
+.contact-info-div {
+    input[type="text"] {
+        border: 1px solid $quaternary-color;
+        border-radius: 0;
+        width: 100%;
+        padding: 7px 10px;
+        margin-bottom: 14px;
+        font-family: $Secondary-light;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primary-text-color;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            font-family: $Light-text;
+            font-size: 12px;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: $Light-text;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            font-family: $Light-text;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            font-family: $Light-text;
+        }
+        &.half-width1 {
+            width: 48.5%;
+            margin-right: 8px;
+        }
+        &.half-width2 {
+            width: 48.5%;
+        }
+    }
+    button {
+        margin-top: 27px;
+    }
+}
+
+.pd-b67 {
+    padding-bottom: 67px !important
+}
+
+@media only screen and (max-width: 1199px) {
+    .select-cause {
+        .defined-width {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .select-cause {
+        .defined-width {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .select-cause {
+        padding: 43px 10px 47px 10px;
+        .defined-width {
+            width: 100%;
+        }
+    }
+    .rupee-btn {
+        a {
+            margin-right: 5px;
+        }
+    }
+    .contact-info-div {
+        input[type="text"] {
+            &.half-width1 {
+                margin-right: 7px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .select-cause {
+        .dropdown {
+            .btn-drop {
+                position: relative;
+                border-radius: 0;
+                border: 1px solid #cccccc;
+                background-color: transparent;
+                color: #d7d7d7;
+                text-align: left;
+                padding: 9px 10px;
+                width: 100%;
+                .choose-span {
+                    overflow: hidden;
+                    width: 100%;
+                    display: inline-block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    .rupee-btn {
+        input {
+            margin-top: 15px;
+        }
+    }
+    .contact-info-div {
+        input[type="text"] {
+            &.half-width1 {
+                margin-right: 0px;
+                width: 100%;
+            }
+            &.half-width2 {
+                width: 100%;
+            }
+        }
+    }
+}

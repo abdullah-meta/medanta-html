@@ -1,0 +1,156 @@
+    .big-bold {
+        font-family: $Bold-text;
+        font-size: 36px;
+        color: $light-color;
+        line-height: 42px;
+    }
+    
+    .banner-height {
+        height: 295px;
+    }
+    
+    .banner-height2 {
+        height: 445px;
+        position: relative;
+    }
+    
+    .newsListingBox {
+        .full-banner {
+            .images2 {
+                height: 549px;
+                h5 {
+                    color: $light-color;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-family: $Regular-text;
+                    /*padding-right: 370px;*/
+                    letter-spacing: 1px;
+                }
+                span.involved {
+                    padding: 0 11px;
+                    font-family: $Secondary-bold;
+                    font-size: 14px;
+                    line-height: 34px;
+                    color: #ffffff;
+                    width: 230px;
+                    height: 45px;
+                    display: block;
+                    position: absolute;
+                    left: -10px;
+                    bottom: 28%;
+                    background: url('../images/involved-bg.png') no-repeat left top;
+                    letter-spacing: 0.7px;
+                }
+                .text-caption2 {
+                    padding: 50px 100px 37px 100px;
+                    h3 {
+                        a {
+                            color: $light-color;
+                        }
+                    }
+                }
+            }
+            .news-info {
+                .outreach-heading {
+                    font-size: 16px;
+                    line-height: 46px;
+                    font-family: $Regular-text;
+                }
+            }
+            .for-margin {
+                margin-bottom: 10px;
+            }
+        }
+        .half-banner {
+            .news-info {
+                .name-service {
+                    color: #757575;
+                    line-height: 20px;
+                    font-family: $Regular-text;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    
+    .lower-headingcsr {
+        font-size: 26px;
+        line-height: 24px;
+        color: $light-color;
+        font-family: $Bold-text;
+    }
+    
+    .bannerbg1Box {
+        .cus-banner-heading {
+            width: 100%;
+            padding: 215px 0 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        .newsListingBox {
+            .full-banner {
+                .images2 {
+                    height: auto;
+                    h3 {
+                        font-size: 30px;
+                        line-height: 41px;
+                    }
+                    h5 {
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                    span.involved {
+                        top: 5%;
+                        bottom: auto;
+                    }
+                    .text-caption2 {
+                        padding: 100px;
+
+                    }
+                }
+                .images {
+                    .text-caption {
+                        position: static;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .big-bold {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        .newsListingBox {
+            .full-banner {
+                .images2 {
+                    .text-caption2 {
+                        padding: 50px 20px 60px 20px;
+                    }
+                    span.involved {
+                        bottom: 35%;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .big-bold {
+            font-size: 28px;
+            line-height: 32px;
+        }
+        .newsListingBox {
+            .full-banner {
+                .images2 {
+                    span.involved {
+                        bottom: 65%;
+                    }
+                }
+            }
+        }
+    }

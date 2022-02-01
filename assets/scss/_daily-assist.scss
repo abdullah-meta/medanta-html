@@ -1,0 +1,284 @@
+.innercontentCntr.daily_assistCntr {
+    p {
+        font-family: $Light-text;
+        color: $primary-text-color; 
+    }
+    .banner_h2 {
+        font-size: 24px;
+        color: $light-color;
+        font-family: $Bold-text;
+        margin-top: -13px;
+        margin-bottom: 34px;
+    }
+    .accommodatoin_travel {
+        padding: 50px 80px 20px;
+        h2 {
+            font-size: 24px;
+        }
+        h4 {
+            font-family: $Bold-text;
+            margin-bottom: 25px;
+            margin-top: 40px;
+        }
+        p {
+            padding: 0 60px 20px;
+        }
+        .button_wrapper {
+            border-bottom: 1px solid #d3d3d3;
+            .assist-programs {
+                li {
+                    font-family: $Bold-text;
+                }
+            }
+            .stay_medanta {
+                text-align: right;
+                a {
+                    margin-right: 10px;
+                }
+            }
+            .guest-house_medanta {
+                a {
+                    margin-left: 10px;
+                    float: left !important;
+                }
+            }
+        }
+        .listed_services {
+            padding-top: 0;
+            .diagnoseBox {
+                background-color: transparent;
+            }
+        }
+        .internet_service {
+            .diagnoseBox {
+                border-bottom: 1px solid #d3d3d3;
+                padding-bottom: 65px;
+                .specialized-clinics {
+                    li {
+                        margin-bottom: 0;
+                    }
+                    li.active {
+                        a {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .variety_food {
+        a {
+            display: block;
+        }
+        .play-video-div {
+            border-bottom: 1px solid #d3d3d3;
+            img {
+                margin: 0 auto;
+                padding-bottom: 50px;
+            }
+            .play-icon {
+                i {
+                    margin-top: -20px;
+                }
+            }
+        }
+    }
+    .admin_assistance {
+        padding: 0 80px 50px 80px;
+        .list-div {
+            padding: 0 40px;
+            ul {
+                li {
+                    color: $primary-text-color;
+                    font-family: $Light-text;
+                }
+            }
+        }
+        h4 {
+            font-family: $Bold-text;
+        }
+    }
+}
+
+.new-style-li {
+    li {
+        display: inline-block;
+        padding: 0 35px !important;
+        margin-bottom: 31px;
+    }
+}
+
+.concierge {
+    font-size: 18px !important;
+    line-height: 24px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.pd-lr-70 {
+    padding: 0 70px !important;
+}
+
+.pd-lr-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.daily-assistTitle {
+    &.title2 {
+        color: #ffffff;
+        font-size: 36px;
+        font-family: $Black-text;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .question_CTA {
+        padding: 50px 50px;
+    }
+    .innercontentCntr.daily_assistCntr {
+        .accommodatoin_travel {
+            padding: 50px 50px 20px;
+        }
+        .admin_assistance {
+            padding: 0 50px 50px 50px;
+        }
+        .diagnoseBox_dailyassist1 {
+            .list-style1 {
+                li {
+                    margin-bottom: -7px !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .innercontentCntr.daily_assistCntr {
+        .accommodatoin_travel {
+            padding: 50px 30px 20px;
+            h4 {
+                margin-top: 25px;
+            }
+            p {
+                padding: 0 20px;
+            }
+        }
+        .admin_assistance {
+            padding: 0 30px 50px 30px;
+            .list-div {
+                padding: 0 10px;
+            }
+        }
+    }
+    .question_CTA {
+        padding: 50px 30px;
+        .uppper_intro {
+            p {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .innercontentCntr.daily_assistCntr {
+        .diagnoseBox_dailyassist1 {
+            .list-style1 {
+                li {
+                    margin-bottom: 30px !important;
+                }
+            }
+        }
+        h2 {
+            font-size: 20px !important;
+        }
+        .question_CTA {
+            padding: 50px 20px;
+            .below_button_div {
+                .CTA-div {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .accommodatoin_travel {
+            padding: 50px 20px 20px;
+            .button_wrapper {
+                .stay_medanta {
+                    text-align: center !important;
+                    margin-bottom: 10px;
+                    a {
+                        margin-right: 0 !important;
+                    }
+                }
+                .guest-house_medanta {
+                    text-align: center !important;
+                    a {
+                        margin-left: 0 !important;
+                        float: none !important;
+                    }
+                }
+            }
+            .internet_service {
+                .diagnoseBox {
+                    .specialized-clinics {
+                        li {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+            .table-responsive{
+                border: 0;
+                .table{
+                    tr{
+                        td{
+                            white-space: normal;
+                        }
+                    }
+                }
+            }
+        }
+        .admin_assistance {
+            padding: 0 10px 50px 10px;
+        }
+    }
+    .button_wrapper {
+        .assist-programs {
+            li {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .innercontentCntr.daily_assistCntr {
+        .admin_assistance {
+            .list-div {
+                padding: 0;
+            }
+        }
+    }
+    .innercontentCntr.daily_assistCntr {
+        .question_CTA {
+            padding: 50px 15px;
+            .uppper_intro p {
+                padding: 0 10px;
+            }
+        }
+        .accommodatoin_travel {
+            padding: 50px 15px 20px;
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
+}

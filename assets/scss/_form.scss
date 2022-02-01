@@ -1,0 +1,914 @@
+.collapisible-form {
+    background-color: $whitesmoke-500;
+    margin: 30px 0 0 0;
+    .collapsible-content {
+        padding: 12px 60px 0 30px;
+    }
+    .collapse-link {
+        position: relative;
+        a {
+            position: relative;
+            padding: 15px 60px 20px 30px;
+            display: block;
+            font-weight: 600;
+            &:after {
+                content: "\e938";
+                position: absolute;
+                right: 20px;
+                font-size: 10px;
+                font-family: icomoon;
+                top: calc(50% - 7px);
+            }
+            &.collapsed {
+                background-color: $nonary-color9;
+                font-weight: 100;
+                &:after {
+                    content: "\e906";
+                }
+            }
+            .glyphicon-trash {
+                color: $dark-color;
+                position: absolute;
+                right: 53px;
+                top: calc(50% - 10px);
+            }
+            &.trash,
+            &.addnew {
+                position: absolute;
+                cursor: pointer;
+                padding: 0;
+                &:after {
+                    content: '';
+                }
+            }
+            &.trash {
+                right: 0px;
+                top: 20px;
+                width: 14px;
+                height: 14px;
+            }
+            &.addnew {
+                right: 80px;
+                top: 17px;
+                font-size: 10px;
+                color: $dark-color;
+                font-weight: 100;
+            }
+        }
+    }
+    .formaction-btn {
+        margin-left: -30px;
+        padding-left: 0x;
+        margin-right: -60px;
+        padding-right: 60px;
+        background-color: #f5f5f5;
+        padding-top: 40px;
+    }
+}
+
+
+hr.borderNonary{
+    border-color: $nonary-color4;
+}
+.detailsField {
+    .flagNation {
+        display: flex;
+        .optionType {
+            position: relative;
+            padding-left: 20px;
+            width: 100%;
+        }
+        .flag {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin-top: 1px;
+        }
+        .buttonLabelSmallDropdown {
+            width: 32px;    
+        }
+    }
+    .flagCode {
+        .input-group-addon {
+            padding: 0;
+            border: 0;
+            background: 0;
+        }
+        .optionType {
+            padding-left: 20px;
+            .dropdown-toggle {
+                .pull-right {
+                    right: 7px;
+                }
+            }
+        }
+        .flag {
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+        .btn {
+            border: 0;
+        }
+        .form-control {
+            padding: 0;
+            height: 26px;
+            padding-left: 8px;
+            border: 0;
+            box-shadow: none;
+            font-size: 14px;
+            font-family: $Secondary-regular;
+            color: $primary-text-color;
+            &::-webkit-input-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &:-moz-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &::-moz-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &:-ms-input-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+        }
+    }
+}
+.refID {
+    color: $light-color;
+    font-family: $Light-text;
+    padding: 9px 0;
+    font-size: 18px;
+}
+.placeholder {
+    color: rgba($primary-text-color, 0.5) !important;
+}
+.appHeader {
+    padding: 15px;
+    .jobInfo {
+        border-right: 1px solid $decimal-color5;
+        padding-right: 15px;
+        min-height: 75px;
+        .jobLabel {
+            font-size: 11px;
+            color: $quinary-color;
+            font-family: $Secondary-regular;
+            text-transform: uppercase;
+        }
+        .jobLabelInfo {
+            font-family: $Secondary-bold;
+            line-height: 20px;
+            font-size: 14px;
+        }
+    }
+}
+.formStep {
+    .step {
+        overflow: hidden;
+        list-style: none;
+        position: relative;
+        &:before {
+            border-bottom: 1px dashed $quaternary-color;
+            height: 2px;
+            content: '';
+            width: 100%;
+            left: 0;
+            top: 50%;
+            margin-top: -1px;
+            position: absolute;
+            z-index: 1;
+        }
+        li {
+            height: 35px;
+            width: 35px;
+            line-height: 33px;
+            font-size: 18px;
+            margin-right: 40px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px dashed $quaternary-color;
+            color: $quaternary-color;
+            float: left;
+            background-color: $nonary-color9;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            &.current {
+                background-color: $primary-color;
+                border: 1px dashed transparent;
+                color: $light-color !important;    
+            }
+            &.success {
+                background-color: $light-color;
+                border: 1px solid green;
+                color: green;   
+            }
+        }
+    }
+}
+.toggleSwitch {
+    width: 100px;
+    .slider {
+        background-color: $quaternary-color;
+    }
+    .switch{
+        input:checked {
+            + .slider {
+                background-color: $secondary-color; 
+            }
+        }
+    }  
+}
+.applicationInfo {
+    .heading-18 {
+        font-size: 18px;
+        font-family: $Bold-text;
+        margin-bottom: 15px;
+        color: $primary-text-color;
+    }
+}
+
+#jobApplicationStep1 {
+    label {
+        &.madt_error {
+            position: absolute;
+            font-size: 12px;
+            color: $secondary-color;
+            font-weight: 300;
+            top: 100%;
+            margin-top: 5px;
+            left: -19px;
+        }
+    }    
+} 
+.detailsField {
+    padding: 4px 20px;
+    position: relative;
+    .formField {
+        position: relative;
+    }
+   .optionType {
+        padding-top: 4px;;
+        &.noMargin {
+            width: 100%;
+            margin-right: 0px;
+        }
+        .dropdown-toggle {
+            line-height: 14px;
+            width: 100%;
+            padding-left: 0;
+            text-align: left;
+            display: block;
+            // border-right: 1px solid $decimal-color3;
+            color: $primary-text-color;
+            outline: none;
+            font-family: $Secondary-regular;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: auto;
+            padding-right: 22px;
+            &:hover,&:focus{
+                text-decoration: none;
+            }
+            &:active:focus{
+                outline: none;
+                text-decoration: none;
+            }
+            &.b-right {
+                position: relative;
+                &:after {
+                    content: '';
+                    background: $decimal-color3;
+                    height: auto;
+                    width: 1px;
+                    position: absolute;
+                    top: 2px;
+                    right: 0;
+                    bottom: 3px;
+                }
+            }
+            .form-control {
+                padding: 0;
+                height: 25px;
+                border: 0;
+                box-shadow: none;
+                text-align: left;
+                font-family: $Secondary-regular;
+            }
+            .buttonLabel {
+                width: 100%;
+                display: inline-block;
+                font-family: $Secondary-regular;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 100%;
+                line-height: 20px;
+            }
+            .pull-right {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+        .dropdown-menu {
+            margin-top: 5px;
+            border-radius: 0;
+            padding: 5px 10px;
+            min-width: 100px;
+            max-height: 200px;
+            overflow: auto;
+            li{
+                line-height: 25px;
+                border-bottom: 1px solid $decimal-color3;
+                cursor: pointer;
+                padding: 6px 0;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-family: $Secondary-regular;
+                &.current {
+                    font-family: $Secondary-regular !important;
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+                a {
+                    color: $primary-text-color;
+                    padding-left: 0;
+                    line-height: 30px;
+                    font: {
+                        size: 14px;
+                        family: $Regular-text;
+                    }
+                }
+            }
+            &.dreakline {
+               li {
+                    white-space: normal;
+                    line-height: 16px;
+               }
+            }
+        }
+   }
+   .formLabel {
+       font-size: 12px;
+       font-family: $Secondary-regular;
+       color: $quinary-color;
+       text-transform: uppercase;
+       span {
+           color: $quaternary-color;
+           text-transform: none;
+       }
+   }
+   .textField {
+       float: left;
+       width: calc(100% - 60px);
+       .form-control {
+           height: 26px;
+           font-family: $Secondary-regular;
+           padding: 0;
+           padding-left: 12px;
+            &::-webkit-input-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &:-moz-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &::-moz-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+            &:-ms-input-placeholder {
+                color: rgba($primary-text-color, 0.5);
+            }
+       }
+   }
+   .gender {
+        margin: 5px 0 0;
+        .container-radio {
+            color: $primary-text-color;
+        }
+    }
+   .field-icon {
+        position: absolute;
+        bottom: 5px;
+        right: 0px;
+    } 
+   .iconStyleForm {
+        font-size: 20px;
+        color: $secondary-color;
+        
+        &.fa-angle-down {
+            font-weight: bold;
+        }
+    }
+    .nameTitle {
+        float: left;
+        width: 60px;
+        .dropdown-toggle {
+            .pull-right {
+                right: auto;
+            }
+        }
+    }
+    .custom--date[type="date"] {
+        height: 26px;
+        font-family: $Secondary-regular;
+        font-size: 14px;
+        &::-webkit-input-placeholder {
+            color: rgba($primary-text-color, 0.5);
+        }
+        &:-moz-placeholder {
+            color: rgba($primary-text-color, 0.5);
+        }
+        &::-moz-placeholder {
+            color: rgba($primary-text-color, 0.5);
+        }
+        &:-ms-input-placeholder {
+            color: rgba($primary-text-color, 0.5);
+        }
+    }
+}
+
+.buttonLabelSmallDropdown {
+    display: inline-block;
+    width: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.container-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: $Secondary-regular;
+    color: $primary-color;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container-radio input:checked ~ .checkmark {
+    background-color: $secondary-color;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-radio .checkmark:after {
+      top: 3px;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $light-color;
+  }
+.applySuccessfully {
+    padding: 40px;
+    margin-bottom: 40px;
+    .applyInner { max-width: 575px; width: 100%; margin: auto; }
+    .iconSuccess {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 36px;
+        padding-bottom: 20px;
+        color: $light-color;
+        font-family: $Black-text;
+    }
+    p {
+        padding: 0 32px;
+        font-size: 14px;
+        color: $light-color;  
+        font-family: $Light-text;
+        line-height: 22px;
+    }
+    .doneSuccess { width: 124px; margin-top: 30px; }
+}
+  .chose-JobApp {
+    border-top: 1px solid $nonary-color;
+    padding-top: 5px;
+    color: $quaternary-color;
+    .icon-check {
+        vertical-align: middle;
+    }
+  }
+.form-group-upload {
+    margin-top: 10px;
+    .file-uploaded {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        background: 0 0;
+        padding: 6px 8px;
+        border-radius: 4px;
+        color: #db5134;
+        border: 2px solid #db5134;
+        text-align: center;
+        text-transform: uppercase;
+        width: 125px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 15px;
+        margin-bottom: 6px;
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        input.upload {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .uploadinput {
+        background: 0 0;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        color: #db5134;
+        width: 115px;
+    }
+    .uploadInfo {
+        width: 100%;
+        max-width: 250px;
+        background-color: $whitesmoke-100;
+        padding: 5px 12px;
+        border: 1px solid #e7e6e6;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .filename {
+        width: 160px;
+        > span {
+            margin-bottom: 10px;
+            display: block;
+            font-family: $Secondary-regular;
+            font-size: 11px;
+            color: $quinary-color;
+        }
+        .progressInfo {
+            position: relative;
+            padding-left: 55px;
+            min-height: 13px;
+            .file-size {
+                position: absolute;
+                left: 0;
+                top: -5px;
+                font-size: 11px;
+                font-family: $Secondary-bold;
+                color: $primary-text-color;
+            }
+        }
+        .progress {
+            height: 4px;
+            margin: 0px;
+        }
+        .progress-bar {
+            height: 100%;
+            font-size: 12px;
+            line-height: 12px;
+        }
+    }
+    .fa-size  {
+        font-size: 16px;
+    }
+    .progressAction {
+        margin: 0 -10px;
+        display: flex;
+        align-items: center;
+        li {
+            border-right: 1px solid $darkgray-100;
+            padding: 0 10px;
+            .icon-checked {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+.applicationInfo {
+    .disabled {
+        pointer-events: none;
+    }
+    hr {
+        &.borderNonary {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+    }
+    .btn-next, .btn-submit {
+        font-size: 12px;
+        font-family: $Secondary-bold;
+        min-width: 114px;
+        text-transform: uppercase;
+    }
+    .btn-another {
+        background: transparent;
+        border-color: $secondary-color;
+        color: $secondary-color;
+        font-size: 12px;
+        font-family: $Secondary-bold;
+        min-width: 114px;
+        text-transform: uppercase;
+    }
+    .qualification-filedRepeat {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dcdcdc;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .action-btn-qualification {
+        margin-top: 15px;
+    }
+}
+.experienceSection {
+    margin-top: 30px;
+    .experience-field {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .heading {
+        font-size: 14px;
+        font-family: $Regular-text;
+        margin-bottom: 15px;
+        span {
+            color: $primary-color;
+            font-family: $Light-text;
+        }
+    }
+}
+
+.resumeDeclaration {
+    .boxSection {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #dcdcdc;
+    }
+    .resumeUpload {
+        margin-bottom: 30px;
+    }
+    .formGroup-Section {
+        margin-top: 15px;
+    }
+    .headSection {
+        padding-right: 200px;
+        position: relative;
+        .heading {
+            min-height: 18px;
+            font-family: $Regular-text;
+            line-height: 18px;
+        }
+        .toggleSwitch {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .switch {
+            margin-bottom: 0;
+        }
+    }
+    .action-addMore {
+        margin-top: 15px;
+    }
+}
+
+/* Responsive Media */
+@media screen and (max-width: 991px) {
+    .collapisible-form {
+        .detailsField {
+            .textField {
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bigerfont {
+        font-size: 22px;
+        line-height: 22px;
+        padding-top: 60px;
+    }
+    .jobRef {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .npBox {
+        padding: 10px;
+    }
+    .refID{
+        font-size: 15px;
+    }
+    .appHeader {
+        .jobInfo {
+            border-right: 0;
+            border-bottom: 1px solid #e5e5e5;
+            min-height: auto;
+            padding-right: 0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            &.nospacing {
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .jobLabel {
+                font-size: 12px;
+            }
+        }
+        
+    }
+    .applicationInfo {
+        background-color: $nonary-color9;
+        .heading-18 {
+            font-size: 16px;
+        }
+        .btn-next, .btn-submit {
+            font-size: 16px;
+            font-family: $UltraLight-text;
+            min-width: 100%;
+            text-transform: none;
+            padding: 10px;
+        }
+    }
+    .form-group-upload {
+        .filename {
+            width: 115px;
+            margin-right: 5px;
+            > span {
+                font-size: 10px;
+            }
+        }
+    }
+    .applySuccessfully {
+        padding-left: 15px;
+        padding-right: 15px;
+        h2 {
+            font-size: 21px;
+            line-height: 28px;
+            padding-bottom: 10px;
+        }
+        p {
+            padding: 0;
+            font-size: 16px;
+            font-family: $UltraLight-text;
+        }
+        .doneSuccess { width: 100%; margin-top: 20px; padding: 10px; }
+    }
+    .detailsField {
+        padding: 14px 14px 10px;
+        .icon {
+            &.icon-10 {
+                &.arrow {
+                    background-position: -20px -110px;
+                }
+            }
+        }
+        .formLabel {
+            font-size: 12px;
+            span {
+                display: block;
+                margin-top: 6px;
+            }
+        }
+        .flagCode  {
+            .optionType {
+                .dropdown-toggle {
+                    padding-right: 8px;
+                    .pull-right {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .form-group-upload {
+        .uploadInfo {
+            max-width: 100%;
+        }
+        .filename {
+            width: 100%;
+            margin-right: 10px;
+        }
+        .file-uploaded {
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid;
+        }
+    }
+    .resumeDeclaration {
+        .headSection {
+            padding-right: 80px;
+            .toggleSwitch {
+                width: 41px;
+            }
+        }
+        .boxSection {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .action-addMore {
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    .collapisible-form {
+        margin: 10px 0 0 0;
+        .collapsible-content {
+            padding: 12px 10px 0 10px;
+        }
+        .collapse-link {
+            a {
+                padding: 15px 10px 20px 20px;
+                font-size: 13px;
+            }
+        }
+        .formaction-btn {
+            margin-left: -20px;
+            padding-left: 10px;
+            margin-right: -20px;
+            button {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+

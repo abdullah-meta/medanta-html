@@ -1,0 +1,640 @@
+.create-shareEcard {
+    padding-bottom: 100px;
+    .faqbanner {
+        height: 169px;
+    }
+    .mainBanner-overlap {
+        &.ecard-banner {
+            padding-top: 139px;
+            margin-top: -273px;
+            min-height: auto;
+            .detail {
+                &.mainbanner-detail {
+                    min-height: auto;
+                }
+            }
+            .title1 {
+                font-size: 36px;
+                color: $light-color;
+                font-family: $ExtraBold-text;
+            }
+            .title-detail {
+                font-size: 14px;
+                color: $light-color;
+                font-family: $Light-text;
+                line-height: 33px;
+                margin-top: 1px;
+            }
+        }
+    }  
+}
+
+.ecard-containar {
+    position: relative;
+    top: -33px;
+    margin-top: 0;
+    margin-bottom: -33px;
+}
+
+.ecard-tab {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    margin-bottom: 0;
+    .ecard-tab-item {
+        width: calc( 100%/3);
+        padding: 15px;
+        position: relative;
+        background-color: transparent;
+        .ecard-tab-box {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 97px;
+            .ecard-tab-num {
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 2px solid $secondary-color;
+                left: 60px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 18px;
+                font-family: $Regular-text;
+                color: $light-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .tab-number {
+                    display: block;
+                }
+                .tab-done {
+                    display: none;
+                }
+            }
+            .ecard-tab-content {
+                line-height: 22px;
+                font-size: 14px;
+                color: $light-color;
+                opacity: 0.8;
+                font-family: $Light-text;
+                text-transform: capitalize;
+            }
+        }
+        &.active {
+            background-color: #272727;
+            .ecard-tab-num {
+                background-color: $secondary-color;
+            }
+            .ecard-tab-content {
+                color: $light-color;
+                opacity: 1;
+            }
+        }
+        &.completed {
+            .ecard-tab-num {
+                background-color: $secondary-color !important;
+                .tab-number {
+                    display: none;
+                }
+                .tab-done {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.ecard-section {
+    padding: 33px;
+}
+
+.ecard-title {
+    font-size: 16px;
+    color: #4F4F4F;
+    font-family: $Regular-text;
+    line-height: 22px;
+    margin-bottom: 26px;
+}
+
+.ecard-info {
+    font-size: 16px;
+    color: #616161;
+    font-family: $UltraLight-text;
+    line-height: 22px;
+    margin-bottom: 18px;
+    i {
+        color: $secondary-text-color;
+        margin-right: 8px;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.ecard-mainBox {
+    display: flex;
+    margin: 0 -10px;
+    list-style: none;
+    flex-wrap: wrap;
+    .ecard-item {
+        width: 33.33%;
+        padding: 0 10px;
+    }
+}
+
+.ecard-box {
+    position: relative;
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    .ecard-radiobtn {
+        position: absolute;
+    }
+    .ecard-img {
+        width: 100%;
+    }
+    &.active {
+        border: 2px solid $secondary-color; 
+        .ecard-img { opacity: 0.5; }
+    }
+}
+
+.ecard-radiobtn{
+    &.custom-radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+        input[type=radio] {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            margin: 0;
+            outline: none;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        label {
+            position: absolute;
+            right: 18px;
+            width: 35px;
+            height: 35px;
+            background: $secondary-color;
+            border-radius: 50%;
+            top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            i {
+                color: $light-color;
+            }
+        }
+
+        input[type=radio]:checked + label {
+            opacity: 1;
+        }
+    }
+}
+
+.ecard-button-box {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    .ecard-btn {
+        min-width: 131px;
+        height: 34px;
+    }
+}
+
+.ecard-img-box {
+    border: 1px dashed rgba(142,142,142, 0.7);
+    padding: 10px;
+    border-radius: 6px;
+    .ecard-inside-msg {
+        background: $light-color;
+        padding: 30px 20px;
+        position: relative;
+        .ecard-text {
+            height: calc(100% - 46px);
+            font-family: $Light-text;
+            font-size: 12px;
+            line-height: 18px;
+            color: #4F4F4F;
+            padding: 60px 40px;
+            &.new-height {
+                height: calc(100% - 103px);
+            }
+            textarea {
+                border: none;
+                resize: none;
+                pointer-events: none;
+            }
+        }
+        .ecard-logo {
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .ecard-contact {
+            margin-bottom: 20px;
+            .contact {
+                .well-wisher {
+                    font-size: 10px;
+                    line-height: 136%;
+                    color: #4F4F4F;
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 -5px;
+                    li {
+                        list-style: none;
+                        padding: 0 5px;
+                        span {
+                            font-size: 10px;
+                            line-height: 136%;
+                            color: #4F4F4F;
+                            i {
+                                color: #4F4F4F;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ecard-textfield {
+    position: relative;
+    padding-bottom: 50px;
+    background: #fff;
+    .ecard-character {
+        font-size: 12px;
+        color: #616161;
+        font-family: $Light-text;
+        line-height: 18px;
+        position: absolute;
+        right: 30px;
+        bottom: 17px;
+        i {
+            color: $secondary-text-color;
+            margin-right: 5px;
+        }
+    }
+    .form-control {
+        height: 523px;
+        resize: none;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        padding: 30px;
+        font-family: $Light-text;
+        font-size: 12px;
+    }
+}
+
+.ecard-wizard-btn {
+    margin-top: 20px;
+    padding: 0;
+    &.ecardbtn-detailSpacing {
+        margin-top: 40px;
+    }
+    .btn { min-width: 130px; }
+    .btn-outerdanger {
+        background: transparent;
+        color: $secondary-text-color;
+        border: 1px solid $secondary-text-color;
+    }
+    ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        list-style: none;
+        > li {
+            padding: 0 10px;
+        }
+    }
+
+    .share-social {
+        padding: 0 10px;
+        ul {
+            padding: 12px 30px;
+            border: 1px dashed rgba(142,142,142, 0.7);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            > li {
+                font-size: 16px;
+                i {
+                    color: #4F4F4F;
+                }
+                &:first-child { font-size: 14px; color: #616161; }
+            }
+        }
+    }
+}
+
+.personalized-message {
+    max-width: 941px;
+    margin: auto;
+    .personalized-heading {
+        margin-bottom: 30px;
+    }
+    .ecard-info-print {
+        margin-bottom: 0;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .personalized-inner {
+        height: 100%;
+        .ecard-img-box {
+            height: calc(100% - 40px);
+            &.border-color-transparent { border-color: transparent;  }
+        }
+    }
+    .personalized-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        &.personalized-row-outside {
+            margin: 0 -5px;
+        }
+    }
+    .personalized-col50 {
+        width: 50%;
+        padding: 0 5px;
+    }
+     
+    .personalized-left {
+        width: 410px;
+    }
+    .personalized-right {
+        width: calc(100% - 410px);
+        padding-left: 60px;
+    }
+}
+
+.captcha {
+    margin-top: 30px;
+}
+
+.ecard-bottombtn {
+    display: none;
+    .ecard-btn {
+        min-width: 131px;
+        height: 34px;
+    }
+}
+
+.ecard-thankyou {
+    padding: 10px 10px 40px;
+    .personalized-thankyou {
+        background: #FFF5D0;
+        padding: 20px;
+        margin-bottom: 56px;
+        display: flex;
+        justify-content: center;
+        .inner-thankyou {
+            display: inline-block;
+            position: relative;
+            padding-left: 55px;
+            min-height: 44px;
+            i {
+                font-size: 44px;
+                color: $forestgreen;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            span {
+                font-size: 16px;
+                line-height: 19px;
+                color: $forestgreen;
+                font-family: $Secondary-bold;
+                margin-bottom: 4px;
+                display: block;
+            }
+            p {
+                font-size: 14px;
+                font-family: $Secondary-regular;
+            }
+        }
+    }
+}
+
+.ecard-form {
+    .detailsField {
+        .formLabel {
+            font-size: 11px;
+            font-family: $Secondary-light;
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: 200;
+            .light-gray {
+                color: #999999;
+            } 
+        }
+    }
+    .checkListBox {
+        display: flex;
+        margin-top: 30px;
+        p {
+            font-size: 12px;
+            font-family: $Secondary-light;
+            line-height: 16px;
+            color: $primary-text-color;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .ecard-thankyou {
+        .personalized-message { padding: 0 10px; }
+    }
+}
+
+@media (max-width: 991px) {
+    .ecard-section {
+        padding: 15px;
+    }
+    .ecard-textfield {
+        padding-bottom: 0;
+        background: transparent;
+    }
+    .ecard-title {
+        margin-top: 20px;
+    }
+    .ecard-tab {
+        .ecard-tab-item {
+            .ecard-tab-box {
+                padding-left: 39px;
+                .ecard-tab-content {
+                    font-size: 12px;
+                }
+                .ecard-tab-num {
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .captcha {
+        margin-top: 15px;
+    }
+    .form-wizardBox {
+        padding-bottom: 70px;
+        position: relative;
+        .ecard-wizard-btn {
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .flex-md-reverse { flex-direction: column-reverse !important; }
+    .personalized-message {
+        .personalized-col50 {
+            width: 100%;
+            &:first-child { margin-bottom: 30px; }
+        }
+        .personalized-left, .personalized-right {
+            width: 100%;
+        }
+        .personalized-right {
+            padding-left: 0;
+            margin-bottom: 30px;
+            .ecard-title {
+                text-align: center;
+                font-family: $UltraLight-text;
+            }
+        }
+    }
+    .ecard-textfield {
+        .form-control {
+            height: auto;
+            padding: 15px;
+            min-height: 250px;        
+        }
+        .ecard-character {
+            position: static;
+            margin-top: 7px;
+            display: block;
+            text-align: right;
+        }
+    }
+    .ecard-thankyou {
+        .personalized-thankyou { margin-bottom: 30px;}
+    }
+    .ecard-form {
+        .checkListBox {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .create-shareEcard {
+        padding-bottom: 20px;
+        .mainBanner-overlap{
+            &.ecard-banner {
+                padding-top: 129px;
+                .title1 {
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-family: "Montserrat-ExtraBold";
+                }
+                .title-detail {
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .ecard-tab {
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+        &::before {
+            content: ' ';
+            position: absolute;
+            border: 1px dashed $secondary-color;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 62%;
+        }
+        .ecard-tab-item {
+            padding: 22px;
+            &.active {
+                background-color: transparent;
+            }
+            .ecard-tab-box {
+                .ecard-tab-content {
+                    display: none;
+                }
+                .ecard-tab-num {
+                    background-color: #333333;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    .ecard-mainBox {
+        margin: 0;
+        .ecard-item {
+            width: 50%;
+            padding: 0;
+        }
+    }
+
+    .ecard-wizard-btn {
+        .share-social{
+            ul {
+                align-items: center;
+                justify-content: center; 
+                > li{
+                    &:first-child {
+                        width: 100%;
+                        font-family: $UltraLight-text;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ecard-radiobtn {
+        &.custom-radio label {
+            right: 12px;
+            width: 25px;
+            height: 25px;
+            top: 12px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .create-shareEcard {
+        .mainBanner-overlap {
+            &.ecard-banner {
+                padding-top: 120px;
+            }
+        }
+    }
+}

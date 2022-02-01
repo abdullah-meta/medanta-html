@@ -1,0 +1,1215 @@
+.innercontentCntr.helpDesk5Cntr {
+    h2 {
+        color: $primary-text-color;
+    }
+    h2.bigfont {
+        color: $light-color;
+    }
+    p {
+        font-family: $Light-text;
+        color: $primary-text-color;
+    }
+    .detailCntr {
+        background-size: cover;
+        background-position: center center;
+        height: 875px;
+    }
+    .bannerbg1Box {
+        .bannerSearch {
+            .findDoctor {
+                input::-webkit-input-placeholder {
+                    color: $secondary-text-color;
+                    opacity: 0.5;
+                }
+                input::-moz-placeholder {
+                    /* Firefox 18- */
+                    color: $secondary-text-color;
+                    opacity: 0.5;
+                }
+                input::-moz-placeholder {
+                    /* Firefox 19+ */
+                    color: $secondary-text-color;
+                    opacity: 0.5;
+                }
+                input::-ms-input-placeholder {
+                    color: $secondary-text-color;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .mainBanner-overlap {
+        margin-top: -395px;
+        padding-top: 50px;
+        &.metdoctr {
+            padding-top: 0;
+            margin-top: -63px;
+            .doctorsech {
+                margin: 40px 0 0;
+            }
+            .filtering {
+                padding: 20px 80px 30px;
+                position: relative;
+                background: #fff;
+                .or {
+                    margin: -15px 0 0 -8px;
+                    border: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #999;
+                    @media screen {
+                        @media (max-width: 991px) {
+                            top: 60%;
+                        }
+                    }
+                }
+                .testSearch {
+                    margin: 20px auto;
+                    border-bottom: 1px solid #6e6e6e;
+                    label {
+                        line-height: 32px;
+                        float: left;
+                        margin: 0 8px 0 0;
+                    }
+                    .select {
+                        padding-left: 0;
+                        font-family: $Light-text;
+                        position: relative;
+                        color: #999;
+                        clear: none;
+                        width: 85%;
+                        height: auto;
+                        line-height: 32px;
+                        border: 0;
+                        .list {
+                            width: 100%;
+                            max-height: 200px;
+                            overflow-y: scroll;
+                        }
+                    }
+                    input {
+                        border: 0;
+                        width: 82%;
+                    }
+                }
+                .col-sm-6 {
+                    width: 48%;
+                }
+            }
+        }
+        .bannerBox {
+            min-height: 330px;
+            .detail {
+                padding-top: 0;
+                .title {
+                    font-size: 60px;
+                }
+            }
+        }
+        .aboutDesease {
+            box-shadow: 0px 0 1px 0 rgba(0, 0, 0, 0.2);
+            .tab-pane {
+                .expand {
+                    .cyber-knife-pic {
+                        img {
+                            margin: 0 auto;
+                            margin-bottom: 35px;
+                        }
+                    }
+                }
+            }
+            .question_map {
+                background-color: $decimal-color2;
+                h2 {
+                    font-size: 26px;
+                }
+            }
+        }
+        .casestudy-tab {
+            padding: 0 0 20px 0;
+            box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.2);
+            background-color: $decimal-color2;
+            .fivecol {
+                border-bottom: 1px solid #6e6e6e;
+            }
+        }
+        .mapBox_helpDesk {
+            border: none;
+            margin-top: -80px;
+            position: relative;
+            z-index: -1;
+        }
+        .conveyance_div {
+            .inner_conveyance {
+                background-color: $light-color;
+                padding: 65px 0 85px 130px;
+                margin-top: -80px;
+                h5 {
+                    font-family: "Montserrat-Bold";
+                    color: $primary-color;
+                    position: relative;
+                }
+                p {
+                    padding-right: 100px;
+                }
+            }
+        }
+        .healthy_food {
+            .inner_healthy_food {
+                background-color: $decimal-color2;
+                padding: 55px 20px 50px 20px;
+                width: 100%;
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .bottom_div_cntr {
+            .Progress_step {
+                padding: 50px 100px;
+                background-color: $light-color;
+                border-bottom: 1px solid #e5e5e5;
+                h2 {
+                    font-size: 24px;
+                }
+                .numbered_div {
+                    border-left: 1px solid #bdbdbd;
+                    position: relative;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        right: -6px;
+                        border-right: 1px solid #dcdcdc;
+                        border-top: 1px solid #dcdcdc;
+                        background-color: #fff;
+                        width: 10px;
+                        height: 10px;
+                        top: 28px;
+                        margin-top: -5px;
+                        z-index: 100;
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    .sub_number {
+                        color: $secondary-text-color;
+                        .border-span {
+                            font-size: 60px;
+                            font-family: $Regular-text;
+                            border: 1px solid #a7a7a7;
+                            border-radius: 50%;
+                            padding: 0 11px;
+                            margin-left: 20px;
+                            .number-span {
+                                position: relative;
+                                top: -15px;
+                                padding: 0 5px;
+                                background-color: $light-color;
+                                min-width: 55px;
+                                display: inline-block;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    p {
+                        padding: 0 21px;
+                    }
+                    &.no-border {
+                        border-left: 0;
+                    }
+                    &.no-arrow {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .appointment_div {
+                background-color: $light-color;
+                padding: 50px 100px;
+                border-bottom: 1px solid #e5e5e5;
+                .header_style_2 {
+                    h2 {
+                        font-size: 26px;
+                    }
+                    p {
+                        font-family: $Regular-text;
+                        padding: 0 70px 35px 18px;
+                    }
+                }
+                .Header_3 {
+                    p {
+                        padding-right: 120px;
+                    }
+                }
+            }
+            .disease_div {
+                padding: 50px 0;
+                background-color: $light-color;
+                border-bottom: 1px solid #e5e5e5;
+                .diseaseTab {
+                    .wrap {
+                        .rightpannel {
+                            padding: 43px 40px 80px;
+                        }
+                    }
+                }
+            }
+            .doctor_table {
+                background-color: $light-color;
+                padding: 50px 0 0 0;
+                .table_styling {
+                    background-color: $nonary-color8;
+                    padding: 36px 50px 36px 30px;
+                    h2 {
+                        font-size: 20px;
+                        font-family: $Secondary-black;
+                    }
+                }
+                &.doctorsech {
+                    padding-top: 0;
+                    background: #eaeaea;
+                    table {
+                        margin: 0;
+                    }
+                    th {
+                        padding-left: 30px;
+                        text-transform: uppercase;
+                        /*&:first-child{
+                            padding-left: 100px;
+                        }
+                         &:last-child{
+                            padding-left: 65px;
+                        }*/
+                    }
+                    tbody {
+                        tr {
+                            &:nth-child(2n+1) {
+                                background-color: #eee;
+                            }
+                            ;
+                        }
+                    }
+                    td {
+                        border: 1px solid #ddd;
+                        font-family: $Light-text;
+                        color: #666;
+                        &.doc_name {
+                            color: #333;
+                            font-family: $Bold-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.space_for_care {
+    padding: 50px 100px;
+    border-bottom: 1px solid #c7c7c7;
+    .upper_intro {
+        h2 {
+            font-size: 24px;
+            font-family: $Bold-text;
+            color: $primary-text-color;
+        }
+        p {
+            padding: 0 60px 20px 60px;
+        }
+        .read_more_acnhor {
+            display: block;
+            font-family: $Light-text;
+        }
+        .clickable_span_wrapper {
+            padding-left: 140px;
+            padding-bottom: 70px;
+            .collapse_span {
+                cursor: pointer;
+                color: $primary-color;
+                font-family: $Bold-text;
+                text-decoration: underline;
+                text-align: left !important;
+                display: block;
+                &:before {
+                    height: 12px;
+                    width: 12px;
+                    content: '';
+                    position: absolute;
+                    left: -5px;
+                    top: 5px;
+                    background: url(../images/sprite.png) no-repeat;
+                    background-size: 800px;
+                    background-position: -60px 0;
+                }
+            }
+        }
+    }
+    .collaspe_locaton_cntr {
+        position: relative;
+        .location_carousel {
+            position: relative;
+            .numslide {
+                margin-right: 0;
+                margin-top: 20px;
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+            .slide-detail {
+                img {
+                    width: 100%;
+                }
+            }
+            .carousel-control {
+                top: 50%;
+                margin-top: -100px;
+            }
+        }
+    }
+    .location-parent-div {
+        .loaction_ul {
+            /*padding-bottom: 5px;*/
+            li {
+                float: left;
+                list-style: none;
+                /*padding: 0 90px;*/
+                width: 33%;
+                &.active {
+                    a {
+                        position: relative;
+                        /*&:before {
+                            content: '';
+                            position: absolute;
+                            right: -5px;
+                            border-left: 1px solid #dcdcdc;
+                            border-top: 1px solid #dcdcdc;
+                            background-color: #fff;
+                            width: 15px;
+                            height: 15px;
+                            bottom: -42px;
+                            left: 50%;
+                            margin-left: -10px;
+                            margin-top: -5px;
+                            z-index: 100;
+                            -moz-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }*/
+                    }
+                }
+                a {
+                    color: $primary-color;
+                    font-family: $Bold-text;
+                    cursor: pointer;
+                    display: block;
+                    max-width: 120px;
+                    text-align: left;
+                    margin: 0 auto;
+                    position: relative;
+                    text-decoration: underline;
+                    line-height: 20px;
+                    &:after {
+                        height: 12px;
+                        width: 12px;
+                        content: '';
+                        position: absolute;
+                        left: -20px;
+                        top: 5px;
+                        background: url(../images/sprite.png) no-repeat;
+                        background-size: 800px;
+                        background-position: -60px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom_table {
+    .inner_custom_table {
+        border-bottom: 1px solid #ddd;
+        > thead {
+            > tr {
+                > th {
+                    border: 1px solid #ddd;
+                    color: $primary-color;
+                    padding: 20px 20px 20px 30px;
+                    /*&:first-child{
+                        padding-left: 100px;
+                    }
+                    &:last-child{
+                        padding-left: 65px;
+                    }*/
+                }
+            }
+        }
+        > tbody {
+            > tr {
+                .doc_name {
+                    font-family: $Bold-text;
+                    font-size: 18px;
+                    color: $primary-text-color;
+                    /*min-width: 220px;*/
+                }
+                > td {
+                    border: none;
+                    border-left: 1px solid #ddd;
+                    padding: 20px 20px 20px 30px;
+                    vertical-align: middle;
+                    /*&:first-child{
+                        padding-left: 100px;
+                    }
+                    &:last-child{
+                        padding-left: 65px;
+                    }*/
+                    span {
+                        color: $primary-text-color;
+                        font-size: 12px;
+                        font-family: $Regular-text;
+                        display: block;
+                    }
+                }
+                .text_cls {
+                    color: $primary-color;
+                    font-family: $Light-text;
+                }
+            }
+        }
+    }
+    .econnect {
+        display: block;
+        font-size: 12px;
+        font-family: $Bold-text;
+    }
+}
+
+.have_query {
+    padding: 30px 0;
+    color: $primary-text-color;
+    .contact-no-div {
+        border-right: 1px solid #9a9a9a;
+    }
+    .upper_text_query {
+        font-family: $Light-text;
+        font-size: 22px;
+    }
+    .lower_text_query {
+        font-family: $Bold-text;
+        color: $primary-text-color !important;
+        font-size: 22px;
+    }
+}
+
+.cross_postion {
+    position: absolute;
+    right: 20px !important;
+    top: 15px !important;
+    cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.question_CTA {
+    background-color: $light-color;
+    padding: 50px 100px;
+    border-bottom: 1px solid #e5e5e5;
+    .uppper_intro {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            padding: 0 60px;
+        }
+    }
+    .below_button_div {
+        p {
+            font-family: $Bold-text !important;
+            color: $primary-color !important;
+        }
+        .bold_anchor {
+            font-family: $Bold-text;
+        }
+    }
+}
+
+.header_style_4 {
+    background-color: $light-color;
+    padding: 50px 100px;
+    border-bottom: 1px solid #e5e5e5;
+    .upper_intro {
+        p {
+            padding: 0 60px;
+        }
+    }
+}
+
+.listed_services {
+    text-align: center;
+    padding-top: 35px;
+    .service_name {
+        .service-name-anchor {
+            color: $primary-color;
+            text-decoration: underline;
+            font-family: $Bold-text;
+            display: block;
+            padding-top: 10px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                position: relative;
+                &:before {
+                    height: 12px;
+                    width: 12px;
+                    content: '';
+                    position: absolute;
+                    left: -18px;
+                    top: 50%;
+                    margin-top: -5px;
+                    background: url(../images/sprite.png) no-repeat;
+                    background-size: 800px;
+                    background-position: -60px 0;
+                }
+            }
+        }
+    }
+    .custom_collapse_delivery {
+        color: $primary-text-color;
+        background-color: $light-color;
+        border-radius: 0;
+        position: relative;
+        border: 1px solid #dddddd;
+        box-shadow: none;
+        .dropdown_para {
+            font-family: $Regular-text;
+            padding: 55px 75px 55px 50px;
+        }
+    }
+    /*#delivery_collapse {
+        position: relative;
+        &:before {
+            left: 355px;
+        }
+    }
+    #recharge_collapse {
+        position: relative;
+        &:before {
+            left: 100px;
+        }
+    }
+    #pick-up_collapse {
+        position: relative;
+        &:before {
+            right: 355px;
+        }
+    }
+    #gifts_collapse {
+        position: relative;
+        &:before {
+            right: 110px;
+        }
+    }*/
+    .diagnoseBox {
+        padding: 0;
+        i {
+            display: block;
+            margin: 10px auto;
+            &.virtual-tour {		
+                display: inline-block; 
+            }
+        }
+        .nav-tabs {
+            border-bottom: none;
+        }
+        .list-style1 {
+            li {
+                &:before {
+                    display: none;
+                }
+                a {
+                    cursor: auto;
+                    text-decoration: underline;
+                    &:focus {
+                        text-decoration: none;
+                    }
+                    .cls_arrow {
+                        position: relative;
+                        &:before {
+                            height: 12px;
+                            width: 12px;
+                            content: '';
+                            position: absolute;
+                            left: -20px;
+                            top: 4px;
+                            background: url(../images/sprite.png) no-repeat;
+                            background-size: 800px;
+                            background-position: -60px 0;
+                        }
+                        /*&:hover {
+                            text-decoration: underline;
+                        }*/
+                    }
+                }
+            }
+        }
+    }
+}
+.clinicdetailBox {
+    .cls_arrow {
+        position: relative;
+        &:before {
+            height: 12px;
+            width: 12px;
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 4px;
+            background: url(../images/sprite.png) no-repeat;
+            background-size: 800px;
+            background-position: -60px 0;
+        }
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .innercontentCntr.helpDesk5Cntr {
+        .mainBanner-overlap {
+            .aboutDesease {
+                .tab-pane {
+                    .expand {
+                        .cyber-knife-pic {
+                            img {
+                                padding: 0 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.metdoctr {
+                .filtering {
+                    .testSearch {
+                        .select {
+                            width: 82%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .innercontentCntr.helpDesk5Cntr {
+        .mainBanner-overlap {
+            .bottom_div_cntr {
+                .Progress_step {
+                    .numbered_div {
+                        p {
+                            padding: 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*.space_for_care {
+                    .location-parent-div {
+                        .loaction_ul {
+                            li {
+                                padding: 0 63px;
+                            }
+                        }
+                    }
+                }*/
+    .question_CTA {
+        .uppper_intro {
+            p {
+                padding: 0;
+            }
+        }
+    }
+    .innercontentCntr {
+        &.daily_assistCntr {
+            .accommodatoin_travel {
+                p {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .question_CTA {
+        .uppper_intro {
+            p {
+                padding: 0 !important;
+            }
+        }
+    }
+    .innercontentCntr {
+        &.daily_assistCntr {
+            .admin_assistance {
+                padding: 0 10px !important;
+            }
+            .accommodatoin_travel {
+                /*padding-top: 0 !important;
+                padding-bottom: 20px !important;*/
+                /*.button_wrapper {
+                    padding-bottom: 20px;
+                }*/
+                .internet_service {
+                    .diagnoseBox {
+                        /*padding-bottom: 0 !important;*/
+                    }
+                }
+            }
+        }
+    }
+    .innercontentCntr {
+        &.daily_assistCntr {
+            .question_CTA {
+                /*padding-top: 15px !important;
+                padding-bottom: 15px !important;*/
+                .below_button_div {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .innercontentCntr.helpDesk5Cntr {
+        .mainBanner-overlap {
+            .conveyance_div {
+                .inner_conveyance {
+                    padding: 65px 50px 85px 50px;
+                    p {
+                        padding-right: 0;
+                    }
+                }
+            }
+            .bottom_div_cntr {
+                .Progress_step {
+                    padding: 50px 50px;
+                    .numbered_div {
+                        p {
+                            padding: 0;
+                        }
+                    }
+                }
+                .doctor_table {
+                    margin-top: 10px;
+                    .custom_table {
+                        padding: 0;
+                    }
+                    .table_styling {
+                        padding: 15px;
+                        h2 {
+                            font-size: 18px;
+                        }
+                    }
+                    &.doctorsech {
+                        th {
+                            padding: 10px;
+                            &:first-child {
+                                padding-left: 10px;
+                            }
+                        }
+                        td {
+                            padding: 10px;
+                        }
+                    }
+                }
+                .appointment_div {
+                    padding: 50px 50px;
+                    .Header_3 {
+                        p {
+                            padding-right: 60px;
+                        }
+                    }
+                }
+                .question_CTA {
+                    padding: 50px 30px;
+                }
+                .header_style_4 {
+                    padding: 50px 50px;
+                }
+                .pd-l90 {
+                    padding-left: 25px !important;
+                }
+                .pd-l65 {
+                    padding-left: 25px !important;
+                }
+            }
+            &.metdoctr {
+                .filtering {
+                    padding: 0 15px;
+                    .testSearch {
+                        .select {
+                            width: 100%;
+                        }
+                        .testSubmit {
+                            margin-top: 10px;
+                        }
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .space_for_care {
+        padding: 50px 40px;
+        .upper_intro {
+            .clickable_span_wrapper {
+                padding-left: 40px;
+            }
+        }
+        .location_carousel:before {
+            left: 90px;
+        }
+        /*.location-parent-div {
+                        .loaction_ul {
+                            li {
+                                padding: 0 46px;
+                            }
+                        }
+                    }*/
+    }
+    .custom_table {
+        .inner_custom_table {
+            > thead {
+                > tr {
+                    > th {
+                        &:first-child {
+                            padding-left: 30px;
+                        }
+                        &:last-child {
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+            > tbody {
+                > tr {
+                    .doc_name {
+                        font-size: 16px;
+                    }
+                    > td {
+                        &:first-child {
+                            padding-left: 30px;
+                        }
+                        &:last-child {
+                            padding-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .innercontentCntr.helpDesk5Cntr {
+        .bannerbg1Box {
+            padding-bottom: 30px;
+            height: 550px;
+            &.meetbaner {
+                .banner-heading {
+                    padding-top: 20px;
+                }
+            }
+        }
+        .mainBanner-overlap {
+            margin-top: -215px;
+            padding-top: 10px;
+            .mapBox_helpDesk {
+                height: 500px;
+            }
+            .aboutDesease {
+                h2 {
+                    font-size: 20px;
+                }
+                .question_map {
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .conveyance_div {
+                .inner_conveyance {
+                    padding-bottom: 0 !important;
+                    .transport_div {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .healthy_food {
+                .inner_healthy_food {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .bottom_div_cntr {
+                .header_style_4 {
+                    padding-bottom: 0 !important;
+                }
+                .question_CTA {
+                    padding-bottom: 0 !important;
+                }
+                .disease_div {
+                    padding-bottom: 0 !important;
+                }
+                .Progress_step {
+                    text-align: center;
+                    padding-bottom: 0 !important;
+                    h2 {
+                        font-size: 22px;
+                    }
+                    .numbered_div {
+                        margin-bottom: 40px;
+                        border-left: 0;
+                        border-top: 1px solid #bdbdbd;
+                        &:before {
+                            display: none;
+                        }
+                        .sub_number {
+                            .border-span {
+                                display: inline-block;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+                .appointment_div {
+                    .header_style_2 {
+                        h2 {
+                            font-size: 22px;
+                        }
+                        p {
+                            padding: 0 20px 35px 8px;
+                        }
+                    }
+                    .Header_3 {
+                        p {
+                            padding: 0;
+                        }
+                    }
+                }
+                .disease_div {
+                    border-bottom: none;
+                    .expand {
+                        .text {
+                            height: auto;
+                        }
+                    }
+                }
+                .question_CTA {
+                    .uppper_intro {
+                        h2 {
+                            font-size: 22px;
+                        }
+                        p {
+                            padding: 0;
+                        }
+                    }
+                    .below_button_div {
+                        .CTA-div {
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+                .header_style_4 {
+                    .upper_intro {
+                        p {
+                            padding: 0 0px;
+                        }
+                    }
+                }
+                .have_query {
+                    .contact-no-div {
+                        margin-bottom: 10px;
+                        padding-bottom: 10px;
+                        border-right: 0;
+                        border-bottom: 1px solid #9a9a9a;
+                    }
+                }
+            }
+        }
+    }
+    .cross_postion {
+        right: 10px !important;
+        top: 2px !important;
+    }
+    .space_for_care {
+        .upper_intro {
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                padding: 0 0px 20px 0px;
+            }
+            .clickable_span_wrapper {
+                padding-bottom: 0;
+                .collapse_span {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .location-parent-div {
+            .collaspe_locaton_cntr {
+                position: relative;
+                .location_carousel {
+                    padding: 15px;
+                    position: relative;
+                    /*&:before {
+                                    content: '';
+                                    position: absolute;
+                                    right: -5px;
+                                    border-left: 1px solid #dcdcdc;
+                                    border-top: 1px solid #dcdcdc;
+                                    background-color: #fff;
+                                    width: 15px;
+                                    height: 15px;
+                                    top: -3px;
+                                    left: 50%;
+                                    margin-left: -10px;
+                                    margin-top: -5px;
+                                    z-index: 100;
+                                    -moz-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    -o-transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                }*/
+                }
+            }
+            .loaction_ul {
+                li {
+                    padding: 10px;
+                    width: 100%;
+                    &.active {
+                        a {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                    a {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .icon.icon-45.rail {
+        top: 0px;
+    }
+    .icon.icon-45.airport {
+        top: 0px;
+    }
+    .icon.icon-45.taxi {
+        top: 0px;
+    }
+    /*    .cross_postion {
+        right: 5px !important;
+        top: 5px !important;
+    }*/
+}
+
+
+/*
+@media only screen and (max-width: 550px) {
+    .innercontentCntr.helpDesk5Cntr {
+        .mainBanner-overlap {
+            .bottom_div_cntr {
+                .space_for_care {
+                    .location-parent-div {
+                        .collaspe_locaton_cntr {
+                            .location_carousel {
+                                .carousel-control {
+                                    top: 22%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+
+@media only screen and (max-width: 480px) {
+    .innercontentCntr.helpDesk5Cntr {
+        .bannerbg1Box {
+            height: 354px;
+            margin-top: 40px;
+            .banner-heading {
+                padding: 0 0 0 20px;
+                h2.bigfont {
+                    font-size: 24px !important;
+                    padding: 40px 0 26px 0;
+                }
+            }
+            .bannerSearch {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .mainBanner-overlap {
+            margin-top: -150px;
+            padding-top: 0;
+            .mapBox_helpDesk {
+                height: 400px;
+            }
+            .conveyance_div {
+                .inner_conveyance {
+                    padding: 65px 20px 85px 20px;
+                }
+            }
+            .bottom_div_cntr {
+                .Progress_step {
+                    padding: 50px 20px;
+                }
+                .appointment_div {
+                    padding: 50px 20px;
+                }
+                .question_CTA {
+                    padding: 50px 20px;
+                }
+                .header_style_4 {
+                    padding: 50px 20px;
+                }
+            }
+        }
+    }
+    .space_for_care {
+        padding: 50px 20px;
+    }
+}
+
+
+/*@media only screen and (max-width: 400px) {
+    .innercontentCntr.helpDesk5Cntr {
+        .mainBanner-overlap {
+            .bottom_div_cntr {
+                .space_for_care {
+                    .location-parent-div {
+                        .collaspe_locaton_cntr {
+                            .location_carousel {
+                                .carousel-control {
+                                    top: 22%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/

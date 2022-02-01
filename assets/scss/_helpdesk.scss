@@ -1,0 +1,249 @@
+.helpdesk {
+    .bannerbg1Box {
+        background: url(../images/Help_desk_banner5B_1.jpg);
+        width: 100%;
+        height: 805px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 20px;
+        .banner-heading {
+            h2.bigfont {
+                /*padding: 40px 0 65px 0;*/
+                padding: 110px 0 65px 0;
+                font-size: 60px;
+                font-family: $Black-text;
+                text-shadow: 1px 1px 13px rgba(4, 37, 63, 0.4);
+            }
+        }
+        .bannerSearch {
+            position: relative;
+            p {
+                padding: 0 0 16px 0;
+                color: $light-color;
+                font-size: 14px;
+                font-family: $Light-text;
+            }
+            span {
+                color: #db5134;
+                margin-left: 19px;
+            }
+            .search-list {
+                position: absolute;
+                display: block;
+                width: 100%;
+                top: 100%;
+                padding: 0 50px 0 0;
+                z-index: 99;
+                ul {
+                    background: #eaeaea;
+                    li {
+                        display: block;
+                        a {
+                            display: block;
+                            padding: 12px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .space-banner-top {
+        position: relative;
+        /*top: -319px !important;*/
+        /*margin-top: -220px;*/
+        top: -220px;
+        margin-bottom: -219px;
+    }
+    .helpdesk-banner {
+        background: #fff;
+        .heading-text {
+            padding: 60px 100px;
+            font-size: 24px;
+            font-family: $Bold-text;
+        }
+        .help-bg-color {
+            background: $decimal-color2;
+            margin: 0;
+        }
+        .help-loc {
+            padding: 0 90px 49px 0;
+            font-size: 16px;
+            font-family: $Light-text;
+            .head-text {
+                color: #db5134;
+                font-family: $Bold-text !important;
+                a{
+                    color: #db5134;
+                }
+            }
+            img {
+                margin-bottom: 12px;
+            }
+            p {
+                margin-bottom: 16px;
+                a{
+                    color: $primary-text-color;
+                }
+            }
+        }
+        .help-loc-md {
+            padding: 0 90px 49px 0;
+            font-size: 16px;
+            font-family: $Light-text;
+            .head-text {
+                color: #db5134;
+                font-family: $Bold-text !important;
+                a{
+                    color: #db5134;
+                }
+            }
+            img {
+                margin-bottom: 12px;
+                padding-top: 30px;
+            }
+            p {
+                margin-bottom: 16px;
+                a{
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+    .help-contact {
+        font-size: 22px;
+        font-family: $Light-text;
+        padding: 50px 0;
+        strong {
+            font-family: $Bold-text;
+        }
+    }
+    .back-to-top {
+        cursor: pointer;
+        position: absolute;
+        bottom: 55px;
+        right: 20px;
+        display: block;
+    }
+}
+
+.cus-pad-helpdesk {
+    padding: 0 0 0 130px;
+}
+
+@media (max-width: 1199px) {
+    .cus-pad-helpdesk {
+        padding: 0 0 0 60px;
+    }
+    .helpdesk {
+        .helpdesk-banner {
+            .help-loc {
+                padding: 0 30px 49px 0;
+            }
+            .help-loc-md {
+                padding: 0 30px 49px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .helpdesk {
+        .back-to-top {
+            cursor: pointer;
+            position: absolute;
+            bottom: 35px;
+            right: 20px;
+            display: block;
+        }
+    }
+    .cus-pad-helpdesk {
+        padding: 0 0 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .help-contact,
+    .back-to-top {
+        display: none !important;
+    }
+    .helpdesk {
+        .bannerbg1Box {
+            padding-bottom: 30px;
+            height: 465px;
+            .banner-heading {
+                padding-top: 30px;
+                h2.bigfont {
+                    font-size: 50px;
+                }
+            }
+        }
+        .space-banner-top {
+            border-bottom: 1px solid #ccc;
+            padding: 0 0 20px 0;
+            &.newsListingBox {
+                margin-bottom: 0;
+                /*top: -70px !important;*/
+                /*top: -170px !important;*/
+                top: 0px !important;
+            }
+                
+        }
+    }
+    .cus-pad-helpdesk {
+        padding: 0 0 0 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .no-padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .helpdesk-breadcrumb {
+        display: none;
+    }
+    .helpdesk {
+        .space-banner-top {
+            position: relative;
+            top: -102px !important;
+            margin-bottom: -102px;
+        }
+        .bannerbg1Box {
+            height: 354px;
+            margin-top: -40px;
+            .banner-heading {
+                padding: 0px;
+                h2.bigfont {
+                    font-size: 36px !important;
+                    /*padding: 25px 0;*/
+                    /*padding: 85px 0 25px;*/
+                    padding: 115px 0 25px;
+                }
+            }
+            .bannerSearch {
+                p {
+                    padding: 0px;
+                }
+            }
+        }
+        .helpdesk-banner {
+            .heading-text {
+                padding: 29px 20px;
+            }
+            .help-loc {
+                padding: 0 15px 10px 18px;
+            }
+            .help-loc-md {
+                padding: 0 15px 10px 18px;
+            }
+        }
+        .help-contact,
+        .back-to-top {
+            display: none;
+        }
+    }
+    .cus-pad-helpdesk {
+        padding: 0 0 0 10px;
+    }
+}

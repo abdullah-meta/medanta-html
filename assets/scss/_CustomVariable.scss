@@ -1,0 +1,193 @@
+/* Colors */
+$transparent-color: transparent;
+$light-color: #ffffff;
+$dark-color: #000000; 
+$primary-color: #666666;
+$secondary-color: #db5134;
+$secondary-color-hover: #e67158;
+$tertiary-color: #d1d0cd;
+$quaternary-color: #cccccc;
+$quinary-color: #999999;
+$senary-color: #424242;
+$septenary-color: #606164;
+$octonary-color: #d1b944; 
+$nonary-color: #eaeaea;
+$nonary-color2: #a6a6a6;
+$nonary-color33: #929292;
+$nonary-color-grey: #606060;
+$nonary-color-light: #e3e3e3;
+$nonary-color-light01: #d3d3d3;
+$nonary-color-light02: #babab9;
+$decimal-color: #bc8b81;
+
+$primary-text-color: #333333; 
+$secondary-text-color: #db5134;
+$secondary-text-color2: #FF3910;
+$menuActive: #fd9079;
+
+$nonary-color1: #e4e4e4;
+$nonary-color0: #A8A8A8;
+$nonary-color01: #757575;
+$nonary-color2: #d9d9d9;
+$nonary-color3: #656565;
+$nonary-color4: #dcdcdc;
+$nonary-color5: #959595;
+$nonary-color55: #646464;
+$nonary-color6: #242424;
+$nonary-color7: #622012;
+$nonary-color8: #dfdfdf;
+$nonary-color9: #f5f5f5;
+$nonary-color10: #777777;
+$decimal-color11: #f9795e;
+$decimal-color12: #c9543b;
+
+$decimal-color1: #d6d6d6;
+$decimal-color2: #f6f6f6;
+$decimal-color3: #e0e0e0;
+$decimal-color4: #cbcbcb;
+$decimal-color5: #e5e5e5;
+
+/* Phase-2 Color variables */
+$darkslategray: #2e2e2e;
+$darkslategray-100: #434343;
+$darkslategray-200: #403b66;
+$darkslategray-300: #696299;
+$dimgray: #626262;
+$darkgrey: #b4b4b4;
+$darkgrey2: #7E7E7E;
+$darkgray-000: #a3a3a3;
+$darkgray-100: #c1c1c1;
+$darkgray-200: #292929;
+$whitesmoke: #f8f8f8;
+$whitesmoke2: #f0efef;
+$whitesmoke-100: #f2f2f2;
+$whitesmoke-200: #f0f0f0;
+$whitesmoke-300: #eeeeee;
+$whitesmoke-400: #e6e6e6;
+$whitesmoke-500: #ebebeb;
+$whitesmoke-600: #4b4b4b;
+$darkslateblue: #365ea0;
+$dodgerblue: #2ca9e1;
+$lightseagreen: #25b7d3;
+$skyblue: #92bade;
+$steelblue: #2873b6;
+$gainsboro: #cbdeef;
+$gainsboro-100: #dddddd;
+$turquoise: #45d2fb;
+$crimson: #ff3333;
+$silver: #c9c8c5;
+$brown: #a83a24;
+$lightgray: #cfcfcf;
+$lightgray-100: #cdcdcd;
+$seagreen: #27a757;
+$firebrick: #a4270d;
+$lavender: #fbfbfb;
+$darkcyan: #007bb6;
+$forestgreen: #189d0e;
+$lightpink: #f3b6a9;
+$tomato: #eb5d3f;
+$silver2: #bebebe;
+
+/* Fonts */
+$UltraLight-text: 'Montserrat-UltraLight';
+$Light-text: 'Montserrat-Light';
+$Regular-text: 'MontserratRG';
+$Black-text: 'Montserrat-Black';
+$Semibold-text: 'Montserrat-SemiBold';
+$Bold-text: 'Montserrat-Bold';
+$ExtraBold-text: 'Montserrat-ExtraBold';
+$Hairline-text: 'Montserrat-Hairline';
+$Medium-text: 'MontserratMedium';
+
+$Secondary-regular: 'Lato-Regular';
+$Secondary-bold: 'Lato-Bold';
+$Secondary-italic: 'Lato-Italic';
+$Secondary-light: 'Lato-Light';
+$Secondary-black: 'Lato-Black';
+$Secondary-medium: 'Lato-Medium';
+$Secondary-semibold: 'Lato-Semibold';
+$Secondary-hairline: 'latohairline';
+$Secondary-hairline-italic: 'latohairline_italic';
+$Secondary-black-italic: 'latoblack_italic';
+$Secondary-light-italic: 'latolight_italic';
+$Secondary-bold-italic: 'latobold_italic';
+
+
+$work-sans: 'Work Sans';
+$dinpro-cond-medium: 'DINProCondensedMedium';
+$Roboto: 'Roboto';
+
+
+
+
+@mixin pageGradiant($bg1, $bg2) {
+	background: $bg1;
+	background: -moz-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, $bg1), color-stop(100%, $bg2));
+	background: -webkit-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -o-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -ms-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: linear-gradient(to bottom, $bg1 0%, $bg2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$bg1, endColorstr=$bg2, GradientType=0 );	
+}
+@mixin backgroundGradient($bg1, $bg2) {
+	background: $bg1;
+	background: -moz-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, $bg1), color-stop(100%, $bg2));
+	background: -webkit-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -o-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: -ms-linear-gradient(top, $bg1 0%, $bg2 100%);
+	background: linear-gradient(to bottom, $bg1 0%, $bg2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$bg1, endColorstr=$bg2, GradientType=0 );	
+}
+@mixin headerGradiant($bg1, $bg2) {
+	background: $bg1;
+	background: -moz-linear-gradient(left, $bg1 0%, $bg2 100%);
+	background: -webkit-linear-gradient(left, $bg1 0%,$bg2 100%);
+	background: linear-gradient(to right, $bg1 0%,$bg2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg1', endColorstr='$bg2',GradientType=1 );
+}
+@mixin boxshadow($boxshadow){
+	box-shadow: $boxshadow;
+	-webkit-box-shadow: $boxshadow;
+	-moz-box-shadow: $boxshadow;
+	-o-box-shadow: $boxshadow;
+	-ms-box-shadow: $boxshadow;
+}
+@mixin translateX($translateX){
+	transform: translateX($translateX);
+	-webkittransform: translateX($translateX);
+	-moz-transform: translateX($translateX);
+	-ms-transform: translateX($translateX);
+}
+@mixin translateY($translateY){
+	transform: translateY($translateY);
+	-webkittransform: translateY($translateY);
+	-moz-transform: translateY($translateY);
+	-ms-transform: translateY($translateY);
+}
+@mixin translateXY($translateX, $translateY){
+	transform: translate($translateX, $translateY);
+	-webkittransform: translate($translateX, $translateY);
+	-moz-transform: translate($translateX, $translateY);
+	-ms-transform: translate($translateX, $translateY);
+}
+@mixin rotate($rotate){
+	transform: rotate($rotate);
+	-webkittransform: rotate($rotate);
+	-moz-transform: rotate($rotate);
+	-ms-transform: rotate($rotate);
+}
+@mixin flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin opacity($value){
+	$IEvalue: $value*100;
+	opacity: $value;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity="+$IEvalue+")";
+	filter: alpha(opacity=$IEvalue);
+}

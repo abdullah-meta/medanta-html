@@ -1,0 +1,480 @@
+.treelife-banner{
+    padding-top: 77px;
+    &.bannerRed {
+        position: relative;
+    }
+    &.bannerbgfull {
+        height: 485px;
+    }
+    .detail {
+        .title {
+            font: 60px;
+            padding-bottom: 0;
+            font-family: $Bold-text;
+        }
+        .banner_para {
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 16px;
+            font-family: $Regular-text;
+        }
+        .icon-holder {
+            .banner-play-icon {
+                display: inline-block;
+                margin-top: 36px;
+                .icon-play-icon {
+                    font-size: 68px;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+.philosophy-top {
+    margin-top: -129px;
+    margin-bottom: 0;
+    .border-img-l-r {
+        &::before {
+            content: '';
+            left: -15px;
+            top: 129px;
+            width: 15px;
+            height: 125px;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+        &::after {
+            content: '';
+            right: -15px;
+            top: 129px;
+            width: 15px;
+            height: 125px;
+            position: absolute;
+            background-image: url(../images/patern.jpg);
+            background-repeat: repeat;
+        }
+    }
+}
+
+.philosophy-banner {
+    background-color: #434343;
+    padding: 42px 50px 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .philosophybnr-content {
+        padding-right: 530px;
+        .philosophybnr-head {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 34px;
+            text-transform: capitalize;
+            color: $light-color;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin-bottom: 15px;
+        }
+        .philosophybnr-image {
+            display: none;
+        }
+        .philosophybnr-para {
+            font-size: 14px;
+            line-height: 20px;
+            color: #b9b9b9;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: $Light-text;        
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.why-tree-life {
+    margin-top: 42px;
+    margin-bottom: 40px;
+    .heading-section {
+        .title1 {
+            line-height: 60px;
+            color: $darkslategray-100;
+            margin-bottom: 27px;
+        }
+    }
+    .tree-life-slider {
+        &::after {
+            content: '';
+            background-image: url(../images/slider-transparency.png);
+            height: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            width: 32px;
+            z-index: 999;
+            top: 0;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        &.slick-slider {
+            .slick-track {
+                display: flex;
+                .slick-slide {
+                    float: none; 
+                    height: auto;
+                }
+            }
+        }
+        .slick-arrow {
+            background-color: transparent;
+            text-indent: -9999px;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 46px;
+            z-index: 5;
+            &::before {
+                content: '';
+                height: 35px;
+                width: 35px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background-image: url(../images/sprite.png);
+                background-size: 1000px;
+                text-indent: 99999px;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                cursor: pointer;
+            }
+            &.slick-prev {
+                left: -50px;
+                &::before {
+                    background-position: -105px -805px;
+                }
+            }
+            &.slick-next {
+                right: -50px;
+                &::before {
+                    background-position: -70px -805px;
+                }
+            }
+        }
+        .slick-dots {
+            display: flex;
+            list-style: none;
+            margin: 0 auto;
+            > li {
+                padding: 0 15px;
+                button {
+                    position: relative;
+                    font-size: 0;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        top: 6px;
+                        border-radius: 50%;
+                        background-color: #c8c8c8;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &::before {
+                            background-color: #dc5c41;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lifesilder-card {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        background-color: $light-color;
+        height: 100%;
+        margin: 0 5px;
+        max-width: 450px;
+        .iconBlock {
+            width: 65px;
+            .lifeslider-icon {
+                font-size: 62px;
+                color: $secondary-color;
+            }
+        }
+        .lifeslider-contnet {
+            padding-left: 35px;
+            width: calc(100% - 65px); 
+            .lifeslider-head {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: $darkslategray-100;
+                margin-bottom: 10px;
+            }
+            .lifeslider-para {
+                font-weight: 300;
+                font-size: 14px;
+                color: $primary-color;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.why-lifetree-summary {
+    background-color: $light-color;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        background: $nonary-color;
+        top: 0;
+    }
+}
+
+.lt-summary-box {
+    display: flex;
+    height: 100%;
+    margin-bottom: 36px;
+    .lt-smry-cntbox {
+        background-color: $whitesmoke;
+        padding: 68px 50px;
+        width: 65%;
+        background-image: url(../images/texure.jpg);
+        background-repeat: repeat;
+        
+        .lt-smry-content {
+            h4 {
+                font-weight: bold;
+                font-family: $Regular-text;
+                font-size: 26px;
+                line-height: 35px;
+                margin-bottom: 15px;
+                color: $nonary-color3;
+            }
+            p {
+                font-weight: 300;
+                font-family: $Light-text;
+                font-size: 14px;
+                line-height: 22px;
+                color: $nonary-color3;
+            }
+        }
+    }
+    .lt-smry-image {
+        width: 35%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.lifetree-logo {
+    margin-top: 42px;
+    padding-bottom: 150px;
+    .lifetree-logobox {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.moretext {
+    display: none;
+}
+@media (max-width: 992px) {
+    .philosophy-banner {
+        background-image: none !important;
+        .philosophybnr-content {
+            padding-right: 0;
+            text-align: center;
+            .philosophybnr-image {
+                display: block;
+                width: 100%;
+                margin: 20px auto;
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .why-tree-life {
+        .tree-life-slider {
+            .slick-arrow {
+                &.slick-prev {
+                    left: -20px;
+                }
+                &.slick-next {
+                    right: -20px;
+                    z-index: 9999;
+                }
+            }
+            .slick-dots {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .why-tree-life {
+        .lifesilder-card {
+            padding: 15px;
+            flex-direction: column;
+            text-align: center;
+            max-width: 100%;
+            .lifeslider-contnet {
+                padding-left: 0;
+                .lifeslider-para {
+                    padding-right: 0px;  
+                }
+            }
+        }
+        .tree-life-slider {
+            .slick-arrow {
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                &::before {
+                    height: 22px;
+                    width: 22px;
+                    top: 0;
+                }
+                &.slick-prev {
+                    left: 50px;
+                    bottom: 0;
+                    top: auto;
+                    &::before {
+                        background-position: -105px -811px;
+                    }
+                }
+                &.slick-next {
+                    right: 50px;
+                    top: auto;
+                    bottom: 0;
+                    &::before {
+                        background-position: -75px -811px;
+                    }
+                }
+            }
+        }
+    }
+    .lt-summary-box {
+        flex-direction: column;
+        .lt-smry-cntbox {
+            width: 100%;
+            padding: 20px;
+            .lt-smry-content {
+                text-align: center;
+                h4 {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .lt-smry-image {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+    .flex-sm-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 675px) {
+    .lifetree-logo {
+        margin-top: 42px;
+        padding-bottom: 70px;
+        .lifetree-logobox {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            padding-bottom: 0px;
+            margin-bottom: 30px;
+            > li {
+                width: 50%;
+                margin-bottom: 10px;
+                &:nth-child(2n) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .why-tree-life {
+        .tree-life-slider{
+            &::after {
+                width: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .treelife-banner {
+        &.bannerbgfull {
+            height: 415px;
+        }
+        .detail {
+            .title {
+                font: 32px "Montserrat-Bold"; 
+            }
+            .banner_para {
+                font-size: 14px;
+                margin-top: 12px;
+            }
+            .icon-holder {
+                .banner-play-icon {
+                    margin-top: 10px;
+                    .icon-play-icon {
+                        font-size: 58px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .philosophy-top {
+        .border-img-l-r {
+            &::before, &::after {
+                content: none;
+            }
+        }
+    }
+    .philosophy-banner {
+        padding: 15px;
+        .philosophybnr-content {
+            .philosophybnr-head {
+                font-size: 22px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .why-tree-life {
+        .heading-section {
+            .title1 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        .tree-life-slider {
+            margin-top: 30px;
+        }
+    }
+}

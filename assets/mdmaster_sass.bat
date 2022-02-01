@@ -1,0 +1,1 @@
+sass --watch "D:\office-project\medanta\medanta\medantaWebsite\assets\scss\MW_master.scss":"D:\office-project\medanta\medanta\medantaWebsite\assets\css\MW_master.css"

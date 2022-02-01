@@ -1,0 +1,117 @@
+.voted-best-list {
+    max-width: 535px;
+    margin: auto;
+    li {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+// --->> ABDULLLAH
+.suceess-video-section {
+    padding: 60px 140px;
+    color: #333333;
+}
+
+.section-title{
+    margin-bottom: 30px;
+    h2{
+        color: #333;
+        font: 42px $Black-text;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    h3{
+        font: 26px "Montserrat-Bold";
+    }
+}
+.card-spacing-y{
+   
+}
+.card-type-video {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    .card-video {
+        iframe{
+            height: 200px;
+        }
+    }
+    .card-details {
+        padding: 15px 20px 20px;
+        h4 {
+            color: #333;
+            font-size: 14px;
+            font-family: $Semibold-text;
+            padding: 0;
+            // margin-bottom: 10px;
+            display: inline-block;
+            text-align: left;
+            line-height: 1.4;
+        }
+    }
+}
+.landing-video-boxes{
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    margin-bottom: -20px;
+    [class^="col-"]{
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .suceess-video-section {
+        padding: 50px 60px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    
+}
+@media only screen and (max-width: 767px) {
+    
+    .landing-video-boxes{
+        display: block;
+    }
+    .suceess-video-section {
+        padding: 50px 40px;
+    }
+    .section-title{
+        margin-bottom: 10px;
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 22px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .landing-video-boxes{
+        display: unset;
+    }
+    .suceess-video-section {
+        padding: 50px 20px 20px;
+    }
+    .section-title{
+        h2{
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 479px) {
+    .section-title{
+        
+        h2{
+            font-size: 25px;
+        }
+    }
+}

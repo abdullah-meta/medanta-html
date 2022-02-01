@@ -1,0 +1,503 @@
+.cls_arrow-hl {
+    max-width: 200px;
+    display: inline-block;
+}
+
+.big-bold2 {
+    line-height: 24px;
+    font-size: 36px;
+    font-family: $Bold-text;
+    color: $light-color;
+}
+
+.hl-banner-para {
+    font-size: 16px;
+    line-height: 20px;
+    color: $light-color;
+    font-family: $Light-text;
+    margin-top: 16px;
+}
+
+
+.speak-ha-para {
+    font-size: 18px;
+    line-height: 24px;
+    color: $light-color;
+    font-family: $Regular-text;
+    margin-top: 41px;
+    span {
+        display: block;
+        font-family: $Bold-text;
+        margin-top: 4px;
+        letter-spacing: 0.05em;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.first-hl {
+    padding: 0 121px 29px 121px !important;
+    .need-checkup {
+        .expand {
+            p {
+                font-family: $Light-text;
+            }
+        }
+    }
+}
+
+.tailored-div {
+    padding: 60px 136px 49px 136px;
+    text-align: center;
+    .tailored-heading {
+        font-family: $Bold-text;
+        font-size: 26px;
+        line-height: 24px;
+        max-width: 430px;
+        margin: 21px auto;
+    }
+    .tailored-sub-heading {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 38px;
+    }
+    .select-cause {
+        padding: 0;
+        .defined-width {
+            width: 30%;
+            margin-top: 30px;
+        }
+        .dropdown-menu {
+            margin: 0;
+            border: none;
+            li {
+                a {
+                    padding: 10px 28px;
+                }
+            }
+        }
+        .dropdown {
+            .btn-drop {
+                color: #000;
+                padding: 9px 20px;
+            }
+        }
+    }
+}
+
+.all-checkup-wrap {
+    position: relative;
+    .health-check_up {
+        padding: 50px 68px 39px;
+        box-shadow: 0 1px 1px 0 #d9d9d9;
+        position: relative;
+        .health-wrap {
+            float: left;
+            padding-right: 200px;
+            position: relative;
+            .helth-image {
+                width: 125px;
+                height: 125px;
+                border-radius: 50%;
+                background-color: #ebebeb;
+                background-position: center center;
+                background-repeat: no-repeat;
+                float: left;
+                margin-right: 30px;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            .heath-detail {
+                float: right;
+                width: calc(100% - 155px);
+                border-right: 1px solid #e5e5e5;
+                h3 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-top: -6px;
+                    span {
+                        font-family: $Light-text;
+                    }
+                }
+                .h-detail-para {
+                    font-family: $Light-text;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: 13px;
+                    padding-right: 30px;
+                }
+                .h-detail-list {
+                    font-family: $Light-text;
+                    /*margin-left: 170px;*/
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                    width: 100%;
+                    padding-left: 15px;
+                    li {
+                        margin-bottom: 4px;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+        .price-compare {
+            position: absolute;
+            right: 12px;
+            /*top: 28px;*/
+            top: 50%;
+            margin-top: -24px;
+            min-width: 150px;
+            .rupee-figure {
+                font-size: 30px;
+                line-height: 48px;
+                font-family: $Light-text;
+            }
+            .compare-btn {
+                font-size: 14px;
+                margin-top: 13px;
+                &.selected {
+                    background-color: #424242;
+                    border-color: #424242;
+                    .image-sp {
+                        background-position: -225px 0;
+                    }
+                }
+                .image-sp {
+                    background-image: url('../images/sprite.png');
+                    background-size: 1000px;
+                    background-position: -210px 0;
+                    height: 15px;
+                    width: 15px;
+                    display: inline-block;
+                    vertical-align: text-bottom;
+                }
+                /*span {
+                font-size: 28px;
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 16px;
+                margin: -10px 0 0;
+            }*/
+            }
+        }
+    }
+}
+
+.new-links-chekup {
+    padding: 15px 0;
+    font-size: 18px;
+    p {
+        display: inline-block;
+        font-size: 18px;
+    }
+    /*a {
+        padding: 6px 12px;
+        border-radius: 5px;
+        background-color: $secondary-color;
+        color: $light-color;
+        font-size: 14px;
+        font-family: $Light-text;
+    }*/
+}
+
+
+.diff-health-pgrm {
+    padding: 50px 132px 47px 132px;
+    margin-top: 27px;
+    .icon-holder {
+        .image-holder {
+            height: 81px;
+            width: 81px;
+            border: 1px solid #9b9b9b;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0 auto;
+        }
+    }
+    .diff-health-heading {
+        font-family: "Montserrat-Bold";
+        font-size: 26px;
+        line-height: 24px;
+        max-width: 430px;
+        margin: 21px auto;
+        text-align: center;
+    }
+    .diff-health-para {
+        font-family: $Light-text;
+        margin-bottom: 23px;
+    }
+    .diff-health-para-last {
+        padding-bottom: 6px;
+        font-family: $Light-text;
+    }
+}
+
+.border-mid-arrow-gray {
+    position: relative;
+    border-top: 1px solid #bbbbbb;
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -7px;
+        margin-top: -5px;
+        content: '';
+        width: 10px;
+        height: 9px;
+        background-color: #f6f6f6;
+        border-bottom: 1px solid #bbbbbb;
+        border-left: 1px solid #bbbbbb;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        z-index: 10;
+    }
+}
+
+.guide_lines {
+    padding: 50px 100px 50px 100px;
+    .guidelines-heading {
+        font-family: "Montserrat-Bold";
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 430px;
+        margin: 7px auto 9px auto;
+        text-align: center;
+    }
+    .guidelines-para {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+    .instruction-div {
+        .insturc {
+            margin-top: 41px;
+            ul {
+                padding-left: 15px;
+                margin-top: 19px;
+                padding-right: 22px;
+                li {
+                    font-size: 13px;
+                    line-height: 22px;
+                    color: $primary-color;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+    }
+}
+
+.count-checkup {
+    height: 80px;
+    width: 198px;
+    background-color: $secondary-color;
+    position: fixed;
+    left: 50%;
+    margin-left: 485px;
+    top: 200px;
+    border: 1px solid $quinary-color;
+    border-left: 0;
+    color: $light-color;
+    z-index: 11;
+    &:before {
+        height: 56px;
+        width: 57px;
+        background-color: $secondary-color;
+        border-right: 1px solid $quinary-color;
+        border-bottom: 1px solid $quinary-color;
+        position: absolute;
+        content: "";
+        right: 85.7%;
+        bottom: 11px;
+        transform: rotate(135deg);
+    }
+    .count-text-wrap {
+        a {
+            color: $light-color;
+            position: absolute;
+            margin-top: 22px;
+            margin-left: 10px;
+            .count-checkup-para {
+                font-size: 16px;
+                line-height: 20px;
+                font-family: $Light-text;
+            }
+            .count-checkup-sp {
+                font-size: 16px;
+                line-height: 20px;
+                font-family: $Bold-text;
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1365px) {
+    .count-checkup {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .first-hl {
+        padding: 0 51px 29px 51px !important;
+    }
+    .all-checkup-wrap {
+        .health-check_up {
+            padding: 50px 28px;
+        }
+    }
+    .diff-health-pgrm {
+        padding: 50px 62px 47px 62px;
+    }
+    .guide_lines {
+        padding: 50px 50px;
+    }
+    .tailored-div {
+        .select-cause {
+            .defined-width {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .first-hl {
+        padding: 0 11px 29px 21px !important;
+    }
+    .tailored-div {
+        padding: 60px 26px 60px 26px;
+    }
+    .all-checkup-wrap {
+        .health-check_up {
+            .health-wrap {
+                padding-right: 0;
+                .heath-detail {
+                    width: 100%;
+                    border-right: none;
+                }
+                .helth-image {
+                    display: block;
+                    margin-right: 80px;
+                    margin-bottom: 30px;
+                }
+            }
+            .price-compare {
+                /*top: 10px;*/
+                top: 17%;
+            }
+        }
+    }
+    .guide_lines {
+        padding: 50px 20px;
+        .instruction-div {
+            .insturc {
+                ul {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .diff-health-pgrm {
+        padding: 50px 32px 47px 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hl.big-bold2 {
+        line-height: 40px;
+        &.pd-t117 {
+            padding-top: 47px;
+        }
+    }
+    .tailored-div {
+        padding: 60px 16px 60px 16px;
+        .select-cause {
+            .defined-width {
+                width: 100%;
+            }
+        }
+    }
+    .all-checkup-wrap {
+        .health-check_up {
+            .health-wrap {
+                .heath-detail {
+                    .h-detail-para {
+                        padding-right: 0;
+                    }
+                }
+            }
+            .price-compare {
+                right: -10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hl.big-bold2 {
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .first-hl {
+        padding: 0 11px 29px 11px !important;
+    }
+    .tailored-div {
+        padding: 20px 11px 60px 11px;
+    }
+    .all-checkup-wrap {
+        .health-check_up {
+            padding: 50px 11px;
+            .health-wrap {
+                .helth-image {
+                    display: block;
+                    margin: 0 auto 30px auto;
+                    float: none;
+                }
+            }
+            .price-compare {
+                position: static;
+                text-align: center;
+            }
+        }
+    }
+    .diff-health-pgrm {
+        padding: 50px 11px 47px 11px;
+    }
+    .count-checkup {
+        height: 50px;
+        width: 160px;
+        &:before {
+            height: 34px;
+            width: 35px;
+            right: 100%;
+            bottom: 7px;
+            margin-right: -17px;
+        }
+        .count-text-wrap {
+            a {
+                margin-top: 10px;
+                .count-checkup-para {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                .count-checkup-sp {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}

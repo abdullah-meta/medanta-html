@@ -1,0 +1,495 @@
+.discoverCntrl {
+	.imgSection {
+		background: $whitesmoke2;
+		margin: 22px 25px 0;
+		padding: 41px 0 21px;
+		margin-bottom: 40px;
+		.box-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.download-link {
+		padding: 0 44px;
+		margin-top: 29px;
+		i {
+			margin-right: 3px;
+		}
+	}
+	.img-text {
+		margin-top: 29px;
+		font-family: $Light-text;
+		line-height: 22px;
+		font-size: 16px;
+	}
+	.bookapt-btn {
+		margin-top: 16px;
+		.btn {
+			line-height: 18px;
+			&.min-width {
+				min-width: 190px;
+			}
+		}
+	}
+}
+
+.displayTableCntrl {
+	margin-bottom: 40px;
+	.displayTable-img {
+		margin-bottom: 51px;
+	}
+	.displayTable-details {
+		padding-bottom: 40px;
+		margin: 0 37px 0 65px;
+		border-bottom: 1px solid $quaternary-color;
+		h1 {
+			font-size: 36px;
+			font-family: $Black-text;
+		}
+		.hashTagText {
+			margin-top: 19px;
+			ul {
+				margin-bottom: 6px;
+			}
+		}
+		p {
+			font-family: $Light-text;
+			font-size: 14px;
+		}
+		&.displayTable-no-mg-border {
+			border-bottom: none;
+			padding-bottom: 0px;
+		}
+	}
+	.displayTable-form {
+		margin-top: 27px;
+		h2 {
+			margin-bottom: 21px;
+		}
+		.radioCntrl {
+			&.radioicon {
+				padding: 12px 10px 10px;
+				.gender {
+				    top: 4px;
+				    left: -7px;
+				    &:before {
+				    	top: -5px;
+				    }
+				}
+			}
+		}
+		.formList {
+			margin: 0 0 20px;
+			li {
+				margin-right: 10px;
+				margin-bottom: 10px;
+				min-width: 195px;
+				max-width: 195px;
+				display: inline-block;
+				.inputaddon {
+					&:before {
+						content: '';
+						width: 1px;
+						height: 14px;
+						position: absolute;
+						right: 0;
+						top: 50%;
+    					margin-top: -7px;
+						background: $darkgrey;
+					}
+				}
+			}
+		}
+		.formBtnList {
+			margin: 0 0 0 -10px;
+			li {
+				display: inline-block;
+				margin-left: 10px;				
+			}
+		}
+	}
+}
+
+.displayCaloriesList {
+	margin: 0 20px;
+	padding: 32px 47px;
+	position: relative;
+	background: $whitesmoke;
+	display: none;
+	&.active {
+		margin-top: -15px;
+		display: block;
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 8px solid $transparent-color;
+			border-right: 8px solid $transparent-color;
+			border-bottom: 9px solid $whitesmoke;
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -10px;
+		}
+	}
+	h2 {
+		font-size: 24px;
+		font-family: $Black-text;
+	}
+	p {
+		font-family: $Regular-text;
+		font-size: 16px;
+		margin-top: 11px;
+		margin-bottom: 26px;
+	}
+}
+
+.caloriesChart {
+	.caloriesChartList {
+		margin: 0;
+		li {
+			display: block;
+			ul, ol {
+				li {
+					float: left;
+					display: inline-block;
+				}
+			}
+			&.list-head {
+				padding: 11px 0;
+				background: $primary-text-color;
+				margin-bottom: 2px;
+				ul {
+					> li {
+						font-size: 11px;
+						font-family: $Secondary-regular;
+						color: $light-color;
+						text-transform: uppercase;
+						label {
+							padding: 0 14px;
+							margin-bottom: 0;
+							font-weight: normal;
+						}
+						ol {
+							li {
+								padding: 0 10px;
+								font-size: 11px;
+								line-height: 14px;
+								font-family: $Secondary-regular;
+								color: $light-color;
+								text-transform: uppercase;
+							}
+						}
+						&:first-child {
+							width: 34%;
+						}
+						&:last-child {
+							width: 66%;
+						}
+					}
+				}
+			}
+			&.caloriesList {
+				background: $light-color;
+				border-left: 3px solid $skyblue;
+				@include box-shadow(-1px, 1px, 1px, rgba(0, 0, 0, 0.2));
+				width: 100%;
+				margin-bottom: 5px;
+				ul {
+					> li {
+						padding: 20px 0 15px;
+						position: relative;
+						.patternImg {
+							position: absolute;
+							height: 100%;
+							top: 0;
+							&:before {
+								content: '';
+								position: absolute;
+								background-image: url("../images/lifeWillness/pattern.svg"); 
+								background-repeat: repeat;
+								height: 100%;
+								width: 100%;
+								top: 0;
+								opacity: 0.1;
+							}
+							&:after {
+								content: '';
+								width: 100%;
+								height: 2px;
+								background: $turquoise;
+								bottom: 0;
+								position: absolute;
+								opacity: 0.6;
+							}
+							.patternbg {
+								background: $gainsboro;
+								width: 100%;
+								height: 100%;
+								top: 0;
+								opacity: 0.1;
+								position: absolute;
+							}
+						}
+						label {
+							padding: 0 20px;
+							margin-bottom: 0;
+							font-weight: normal;
+							font-family: $Secondary-regular;
+							max-width: 180px;
+							p {
+								font-size: 14px;
+								margin-bottom: 2px;
+								line-height: 12px;
+								margin-top: 0;
+							}
+							span {
+								font-size: 12px;
+								line-height: 15px;
+								color: $quinary-color;
+								display: block;
+								font-family: $Secondary-light;
+							}
+						}
+						ol {
+							li {
+								padding: 0 10px;
+								font-family: $Secondary-regular;
+								font-size: 14px;
+								.amount, .protein {
+									color: $quinary-color;
+								}
+								.calories {
+									color: $steelblue;
+								}
+							}
+						}
+						&:first-child {
+							width: 34%;
+						}
+						&:last-child {
+							width: 66%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.caloriesDetails {
+		background: $light-color;
+		padding: 20px 20px 30px;
+		border-left: 3px solid $secondary-color-hover;
+		p {
+			font-family: $Light-text;
+			font-size: 14px;
+			line-height: 18px;
+			margin-top: 0;
+			margin-bottom: 3px;
+		}
+		h2 {
+			font-size: 16px;
+			font-family: $Bold-text;
+			margin-top: 35px;
+			margin-bottom: 19px;
+		}
+		ul {
+			margin: 0;
+			li {
+				display: block;
+				margin-bottom: 15px;
+				font-size: 14px;
+				font-family: $Light-text;
+			}
+		}
+		.download-link {
+			padding: 0;
+		}
+	}
+}
+
+/* Responsive max Media screen  */
+
+@media only screen and (max-width: 1199px) {
+	.item-unorderList {
+		li {
+			a {
+				i {
+					font-size: 22px;
+					position: absolute;
+					top: 50%;
+					margin-top: -11px;
+					left: 4px;
+				}
+			}
+		}
+	}
+
+	.caloriesChart {
+		.caloriesChartList {
+			li {
+				&.caloriesList {
+					ul {
+						li {
+							label {
+								p {
+									font-size: 13px;
+									line-height: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px){
+	.displayTableCntrl {
+		.displayTable-details {
+			margin: 0 25px;
+		}
+	}
+	.displayCaloriesList {
+		padding: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.discoverCntrl {
+		.imgSection {
+			margin: 0 0 50px;
+			padding: 0;
+			background: $transparent-color;
+			.box-img {
+				background: $whitesmoke2;
+				padding: 33px 0;
+			}
+		}
+		.download-link {
+			padding: 0 30px;
+			margin-top: 60px;
+		}
+	}
+	.displayTableCntrl {
+		.displayTable-img {
+			margin-bottom: 30px;
+		}
+		.displayTable-details {
+			.hashTagText {
+			    margin: 12px 0;
+			    ul {
+			    	li {
+			    		font-size: 15px;
+			    	}
+			    }
+			}
+		}
+		.displayTable-form {
+			.formList {
+				margin: 0 -10px;
+				li {
+					width: 50%;
+					max-width: 100%;
+					min-width: auto;
+					padding: 0 10px;
+					margin: 0 0 20px;
+					float: left;
+					box-sizing: border-box;	
+					&.full-listwidth {
+						width: 100%;
+					}
+				}
+			} 
+			.formBtnList {
+				margin: 0px;
+				li {
+					width: 100%;
+					margin-left: 0;
+					.btn {
+						padding-top: 10px;
+						padding-bottom: 10px;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.displayCaloriesList {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.caloriesChart {
+		.caloriesChartList {			
+			li {
+				&.caloriesList {
+					border-left: none;
+					@include box-shadow(0px, 1px, 1px, rgba(0, 0, 0, 0.2));
+					ul {
+						> li {
+							label {
+								max-width: 100%;
+								p, span {
+									font-size: 15px;
+									display: inline-block;
+								}
+							}
+							&:first-child {
+								width: 100%;
+								text-align: center;
+							}
+							&:last-child {
+								width: 100%;
+							}
+						}
+					}
+				}
+				&.list-head {
+					ul {
+						> li {
+							&:first-child {
+								display: none;
+							}
+							&:last-child {
+								width: 100%;
+							}
+							ol {
+								li {
+									border-left: 1px solid $light-color;
+									&:nth-child(2) {
+										border-left: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 374px) {
+	.displayTableCntrl {
+		.displayTable-details {
+			h1 {
+				font-size: 26px;
+				line-height: 32px;
+			}
+		}
+		.displayTable-form {
+			.formList {
+				margin: 0 -5px;
+				li {
+					padding: 0 5px;
+					margin: 0 0 10px;
+				}
+			} 
+		}
+	}
+}
+/* Responsive Min Media screen */

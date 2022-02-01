@@ -1,0 +1,97 @@
+.npBox {
+	padding: 10px 0;
+	overflow: hidden;
+	background-color: $nonary-color;
+	ul {
+		margin-left: -15px;
+		margin-bottom: 0;
+		li {
+			font-family: $Secondary-regular;
+			font-size: 14px;
+			line-height: 20px;
+			float: left;
+			position: relative;
+			margin-left: 15px;
+			padding-right: 6px;
+			color: $primary-color;
+			&:before {
+				content: '\f105';
+				font-family: 'FontAwesome';
+				font-size: 14px;
+				color: $primary-color;
+				position: absolute;
+				left: -13px;
+			}
+			&:first-child {
+				margin-left: 0px;
+				padding-right: 6px;
+				&:before {
+					content: none;		
+				}				
+			}
+			a {
+				font-family: $Secondary-bold;
+				color: #db5134;
+			}
+			ol.subList {
+				list-style: none;
+				> li {
+					&:before { content: none; }
+					&:after {
+						content: '';
+						background-color: $primary-color;
+						width: 1px;
+						height: 12px;
+						color: $primary-color;
+						position: absolute;
+						left: -11px;
+						top: 50%;
+						margin-top: -6px;
+					}
+					&:first-child {
+						&:after { content: none; }
+					}
+				}
+			}
+		}
+	}
+}
+
+.bannerbg1Box {
+	width: 100%;
+	height: 225px;	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	&.bannerbgfull {
+		height: 600px;				
+	}
+	.banner-heading {
+		width: 100%;		
+		padding: 70px 0 20px;
+	}
+	&.location-banner {
+		height: 753px;		
+	}
+	&.aboutBanner {
+		background-color: #0A0C32;
+		background-size: 100%;
+	}
+}
+
+
+
+@media only screen and (max-width: 991px)  {
+	.bannerbg1Box.bannerbgfull {
+	    height: 300px;
+	    background-position: center top !important;
+	}
+}
+
+@media only screen and (max-width: 767px)  {
+	.bannerbg1Box {
+		&.aboutBanner {
+			background-size: cover;
+		}
+	}
+}

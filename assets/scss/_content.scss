@@ -1,0 +1,563 @@
+.topCntr {
+    background-color: $nonary-color;
+}
+
+.border-img-l-r {
+    width: 100%;
+    position: relative;
+    &:before {
+        content: '';
+        left: -15px;
+        top: 0px;
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-image: url("../images/patern.jpg");
+        background-repeat: repeat;
+    }
+    &:after {
+        content: '';
+        right: -15px;
+        top: 0px;
+        width: 15px;
+        height: 100%;
+        position: absolute;
+        background-image: url("../images/patern.jpg");
+        background-repeat: repeat;
+    }
+    &.topbottom-space {
+        &:before {
+            top: 70px;
+            bottom: 60px;
+            height: auto;
+            display: block;
+        }
+        &:after {
+            top: 70px;
+            bottom: 60px;
+            height: auto;
+            display: block;
+        }
+    }
+    &.topbottom-space-banner {
+        &:before {
+            top: 85px;
+            bottom: 60px;
+            height: auto;
+            display: block;
+        }
+        &:after {
+            top: 85px;
+            bottom: 60px;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+
+/** { box-sizing: border-box; }
+
+body { font-family: sans-serif; }*/
+
+
+/* ---- grid ---- */
+
+
+/*.grid {
+  background: #EEE;
+  max-width: 1200px;
+}*/
+
+
+/* clearfix */
+
+
+/*.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+
+
+/* ---- grid-item ---- */
+
+
+/*.grid-item,
+.grid-sizer {
+  width: 22%;
+}*/
+
+
+/*.grid-item {
+  float: left;
+  height: 100px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}*/
+
+.miraclesHappenBox {
+    position: relative;
+    background-color: #242424;
+    background-repeat: no-repeat;
+    margin-top: -195px;
+    margin-bottom: -145px;
+    float: left;
+    padding: 75px 0px 0px;
+    width: 100%;
+    h2 {
+        text-align: center;
+        color: $light-color;
+        font-size: 44px;
+        @media screen {
+            @media (max-width: 767px) {
+                padding-top: 0px;
+                font-size: 22px;
+            }
+        }
+    }
+    h3 {
+        color: $light-color;
+        font-size: 24px;
+        padding-bottom: 12px;
+    }
+    p {
+        /*color: $nonary-color5;*/
+        color: $nonary-color8;
+        line-height: 22px;
+    }
+    .tab-content {
+        min-height: 440px;
+        padding: 102px 15px 0;
+        @media screen {
+            @media (max-width: 991px) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        .case-study {
+            .icon-holder {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -47px;
+                margin-top: -47px;
+                z-index: 21;
+            }
+        }
+    }
+    .seeOther {
+        background-color: $nonary-color6;
+        /*padding: 15px 0 40px;*/
+        padding: 32px 0 40px;
+        position: relative;
+        z-index: 20;
+    }
+    .media {
+        position: relative;
+        z-index: 20;
+        min-height: 150px;
+    }
+    .text {
+        padding-right: 40px;
+    }
+}
+
+.knowmoreBox {
+    background-color: $nonary-color6;
+    padding: 70px 70px 0;
+    overflow: hidden;
+    text-align: center;
+    /*margin-top: 205px;*/
+    margin-top: 190px;
+    h3 {
+        color: #cfcfcf;
+        font-size: 24px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    P {
+        color: $nonary-color5;
+        line-height: 22px;
+    }
+    .bottom-link {
+        margin-top: 18px;
+        li {
+            display: inline-block;
+            list-style: none;
+            a {
+                color: $secondary-color;
+                line-height: 14px;
+                border-left: 1px solid $nonary-color5;
+                display: block;
+                padding: 0 15px;
+            }
+            &:first-child {
+                a {
+                    border-left: 0;
+                }
+            }
+        }
+    }
+    .btn-primary {
+        padding: 6px 30px;
+    }
+}
+
+.getcareCntr {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 950px;
+    padding-top: 240px;
+    padding-bottom: 35%;
+    background-color: #fff;
+    &.getcare_adjust {
+        background-size: inherit;
+        min-height: 0;
+        padding-bottom: 470px;
+    }
+    .caredBox {
+        text-align: center;
+        h2 {
+            font-size: 42px;
+            padding-bottom: 15px;
+            font-family: $Black-text;
+        }
+        p {
+            line-height: 22px;
+            font-family: $Light-text;
+        }
+    }
+    .imgBox {
+        display: none;
+    }
+}
+
+.healthcareCntr {
+    background-color: $nonary-color;
+}
+
+.healthBox {
+    h2 {
+        color: $primary-text-color;
+        font: 36px $Black-text;
+        padding-bottom: 15px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+    .media {
+        position: relative;
+        &:before {
+            content: '';
+            border-right: 15px solid #eaeaea;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            position: absolute;
+            right: 0;
+            top: 70px;
+        }
+        &.left {
+            &:before {
+                left: 0;
+                right: auto;
+                border-right: 0;
+                border-left: 15px solid #eaeaea;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        /*padding: 60px 75px;*/
+        padding: 50px 75px;
+        font-family: $Light-text;
+        line-height: 22px;
+    }
+}
+
+.whyIndiaCntr {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 740px;
+    padding-top: 90px;
+    padding-bottom: 25%;
+    background-position: center bottom;
+    &.home_adjust {
+        background-size: inherit;
+        min-height: 0;
+        padding-bottom: 430px;
+        background-color: #db5134;
+        padding-top: 70px;
+    }
+}
+
+.whyIndiaBox {
+    font-family: $Light-text;
+    text-align: center;
+    h2 {
+        color: $light-color;
+        font: 42px $Black-text;
+        padding-bottom: 15px;
+    }
+    p {
+        padding-bottom: 10px;
+        color: $light-color;
+        line-height: 22px;
+    }
+}
+
+.breadcrumbCntr {
+    .breadcrumb {
+        padding: 15px 0;
+        margin: 0;
+        border-radius: 0;
+        background-color: transparent;
+        > li {
+            + li {
+                &:before {
+                    color: $nonary-color10;
+                    content: " > ";
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .healthBox {
+        .content {
+            padding: 30px 35px;
+        }
+    }
+    .bannerCntr {
+        .bannerBox {
+            .bannerSearch {
+                padding-top: 80px;
+            }
+        }
+    }
+    .miraclesHappenBox {
+        margin-top: -60px;
+        margin-bottom: -60px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .healthcareCntr {
+        padding-top: 15px;
+        .healthBox {
+            .media {
+                &:before {
+                    border-right: 15px solid transparent;
+                }
+                &.left {
+                    &:before {
+                        border-left: 15px solid transparent;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .content {
+                padding: 20px 15px;
+            }
+        }
+    }
+    .whyIndiaCntr {
+        background-size: cover;
+        min-height: inherit;
+        padding-top: 30px;
+        padding-bottom: 40%;
+    }
+    .miraclesHappenBox {
+        margin-top: -15px;
+        margin-bottom: -15px;
+        padding-bottom: 0px;
+        .media {
+            min-height: 150px;
+        }
+        .tab-content {
+            padding-top: 30px;
+            min-height: inherit;
+        }
+        .nav-tabs {
+            li {
+                padding: 0 15px;
+            }
+        }
+        .seeOther {
+            padding-bottom: 15px;
+        }
+    }
+    .knowmoreBox {
+        padding: 30px 30px 0;
+        margin-bottom: 0;
+    }
+    .getcareCntr {
+        background-size: cover;
+        min-height: inherit;
+        padding-top: 40px;
+        padding-bottom: 40%;
+        /*background-position: left bottom;*/
+        .caredBox {
+            padding: 20px 0 30px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .getcareCntr {
+        position: relative;
+        background-size: center top;
+        &.getcare_adjust {
+            background-size: cover;
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .miraclesHappenBox {
+        margin-top: -15px;
+        margin-bottom: -15px;
+        padding: 15px 0 0;
+        background-size: 100%;
+        .media {
+            min-height: 115px;
+            margin-top: 0;
+        }
+        .tab-content {
+            padding-top: 0px;
+            min-height: inherit;
+            .case-study {
+                .icon-holder {
+                    margin-left: -32px;
+                }
+                .text {
+                    padding: 0 15px;
+                }
+            }
+        }
+        .nav-tabs {
+            li {
+                width: 100%;
+            }
+        }
+        .seeOther {
+            padding-bottom: 15px;
+        }
+    }
+    .virtualtoarBox .media .various {
+        margin-top: -24px !important;
+        margin-left: -24px !important;
+    }
+    .knowmoreBox {
+        padding: 15px;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        .bottom-link {
+            li {
+                width: 100%;
+                a {
+                    border-left: 0;
+                    padding: 10px 5px;
+                    /*border-bottom: 1px solid #959595;*/
+                }
+                &:last-child {
+                    a {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+    .healthcareCntr {
+        padding-top: 30px;
+        .healthBox {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+    .getcareCntr {
+        background-size: cover;
+        min-height: inherit;
+        padding-top: 30px;
+        padding-bottom: 50%;
+        .caredBox {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+    .whyIndiaCntr {
+        background-size: cover;
+        min-height: inherit;
+        padding-top: 30px;
+        padding-bottom: 50%;
+        .whyIndiaBox {
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .dataInfo {
+            li {
+                /*margin-right: 0;*/
+                color: $light-color;
+                text-align: center;
+                /*width: 50%;
+                float: left;*/
+                /*height: 129px;*/
+                margin: 0 10px;
+                height: 80px;
+                .info {
+                    font: 16px "Montserrat-Light";
+                    text-align: center;
+                    /*margin-left: 15px;*/
+                    display: block;
+                }
+                .count {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .healthcareCntr {
+        padding-top: 0px;
+        .healthBox {
+            .content {
+                text-align: center;
+            }
+        }
+    }
+    .getcareCntr {
+        background-position: center center;
+        background-color: #fff;
+        padding-bottom: 0;
+        .imgBox {
+            display: block;
+        }
+        &.getcare_adjust {
+            padding-bottom: 0 !important;
+            min-height: 300px !important;
+        }
+    }
+}

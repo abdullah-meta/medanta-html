@@ -1,0 +1,1249 @@
+.detailCntr {
+    .detail {
+        min-height: 299px;
+    }
+    &.bannerBg {
+        background-size: cover;
+        background-position: center center;
+        height: 532px;
+    }
+    &.emergencyCntr {
+        height: 599px;
+    }
+    &.patientCntr {
+        height: 640px;
+    }
+}
+
+.detail {
+    &.mainbanner-detail {
+        &.trauma-care {
+            min-height: 405px;
+        }
+    }
+}
+
+.aboutDesease {
+    &.traumaAbout {
+        padding: 60px 20px 20px;
+        .levelStep {
+            .tab-content {
+                .close {
+                    right: 30px;
+                    top: 20px;
+                }
+            }
+            .tab-pane {
+                /*padding-bottom: 0;*/
+            }
+        }
+    }
+}
+
+.mainBanner-overlap {
+    &.emergency-overlap {
+        padding-top: 104px;
+        margin-top: -599px;
+        &.fly_doctes {
+            padding-bottom: 60px;
+            margin-top: -573px;
+        }
+    }
+    &.patients-title {
+        .big-title {
+            /* padding-top: 180px;*/
+            &.small-title {
+                font-size: 50px;
+                padding-top: 0;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+.levelStep {
+    border-top: 1px solid #bbbbbb;
+    position: relative;
+    padding-top: 55px;
+    margin-top: 43px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:before {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -7px;
+        margin-top: -5px;
+        content: '';
+        width: 10px;
+        height: 9px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #bbbbbb;
+        border-left: 1px solid #bbbbbb;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        z-index: 10;
+    }
+    .title5 {
+        color: $primary-color;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+.level-num {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #a8a8a8;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    .num {
+        font-size: 80px;
+        background-color: #fff;
+        display: inline-block;
+        line-height: 75px;
+        margin-top: -20px;
+        padding: 0 10px;
+        color: $secondary-color;
+    }
+}
+
+.carePrograms {
+    .programs {
+        list-style: none;
+        li {
+            display: inline-block;
+            text-align: left;
+            /*padding: 0 30px;*/
+            padding: 0 20px;
+            position: relative;
+            vertical-align: top;
+            &.active {
+                .program-type {
+                    text-decoration: none;
+                    color: #333;
+                }
+                &:before {
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    margin-top: 10px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffffff;
+                    border-top: 1px solid #bbbbbb;
+                    border-left: 1px solid #bbbbbb;
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    z-index: 10;
+                }
+            }
+            a {
+                display: block;
+                color: $primary-color;
+                text-decoration: underline;
+                &:hover {
+                    color: #333;
+                }
+                .media {
+                    display: block;
+                    img {
+                        display: inline-block;
+                    }
+                }
+                .program-type {
+                    display: block;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &.offrtreat {
+            li {
+                &.active {
+                    .contening {}
+                }
+                .contening {
+                    display: none;
+                }
+            }
+        }
+    }
+    .list-style3 {
+        padding-left: 32px;
+        margin-bottom: 0;
+    }
+}
+
+.miraclesHappenBox {
+    &.patient {
+        margin-bottom: 0;
+        padding-bottom: 0px;
+        padding-top: 76px;
+        margin-top: -145px;
+        h2 {
+            font-size: 43px;
+        }
+        .casestudy-tab {
+            margin: 0 70px;
+            padding: 0;
+        }
+        .case-study {
+            .text {
+                p {
+                    color: $light-color;
+                    font: 22px $Light-text;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.border-img-l-r.patient {
+    &:before {
+        height: 85%;
+    }
+    &:after {
+        height: 85%;
+    }
+}
+
+.medantaService {
+    padding-top: 70px;
+    &.editing_service {
+        .casestudy-tab {
+            .nav-tabs {
+                li {
+                    a {
+                        color: #db5134;
+                    }
+                    .mediaWrapper {
+                        width: 162px;
+                        height: 162px;
+                        .media {
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            background: #000;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: #000;
+                        }
+                        .media {
+                            transform: none;
+                            -webkit-transform: none;
+                            img {
+                                opacity: 0.9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .casestudy-tab {
+        .nav-tabs {
+            .owl-wrapper-outer {
+                margin-bottom: -1px;
+            }
+            li {
+                min-height: 250px;
+                position: relative;
+                a {
+                    white-space: normal;
+                    padding: 25px 11px;
+                    font: 14px $Regular-text;
+                }
+                .hover-cls {
+                    display: none;
+                }
+                .normal-cls {
+                    display: block;
+                }
+                &:hover {
+                    .media {
+                        display: block !important;
+                    }
+                    .icon-holder {
+                        .icon-big {
+                            &.icon-90 {
+                                &.service {
+                                    background-position: -90px -180px;
+                                }
+                            }
+                            &.icon-75 {
+                                &.managment {
+                                    background-position: -225px -75px;
+                                }
+                                &.doctor {
+                                    background-position: -300px -75px;
+                                }
+                                &.treatment {
+                                    background-position: -375px -75px;
+                                }
+                                &.service {
+                                    background-position: -525px -75px;
+                                }
+                            }
+                            &.icon-65 {
+                                &.technology {
+                                    background-position: -65px 0px;
+                                }
+                            }
+                        }
+                    }
+                    /*.hover-cls {
+                        display: block;
+                    }
+                    .normal-cls {
+                        display: none;
+                    }*/
+                }
+                &.active {
+                    a:before {
+                        display: none;
+                    }
+                    a:after {
+                        display: none;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 100%;
+                        margin-top: -10px;
+                        margin-left: -10px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #ffffff;
+                        border-top: 1px solid transparent;
+                        border-left: 1px solid transparent;
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        z-index: 10;
+                    }
+                    .media {
+                        display: block !important;
+                        -moz-transform: scale(1.2);
+                        -webkit-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+                        transform: scale(1.2);
+                    }
+                    .icon-holder {
+                        .icon-big {
+                            &.icon-90 {
+                                &.service {
+                                    background-position: -90px -180px;
+                                }
+                            }
+                            &.icon-75 {
+                                &.managment {
+                                    background-position: -225px -75px;
+                                }
+                                &.doctor {
+                                    background-position: -300px -75px;
+                                }
+                                &.treatment {
+                                    background-position: -375px -75px;
+                                }
+                                &.service {
+                                    background-position: -525px -75px;
+                                }
+                            }
+                            &.icon-65 {
+                                &.technology {
+                                    background-position: -65px 0px;
+                                }
+                            }
+                        }
+                    }
+                    /*.hover-cls {
+                        display: block;
+                    }
+                    .normal-cls {
+                        display: none;
+                    }*/
+                }
+            }
+            .owl-wrapper-outer {
+                .owl-item {
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+    .service {
+        .big-title {
+            font-size: 42px;
+            text-align: center;
+            font-family: $Black-text;
+        }
+        .mediaWrapper {
+            display: inline-block;
+            width: 137px;
+            height: 137px;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            position: relative;
+            .icon-holder-cus {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -45px;
+                margin-top: -45px;
+            }
+        }
+        .media {
+            width: 137px;
+            height: 137px;
+            border-radius: 50%;
+            display: none;
+            -moz-transition: all 0.5s ease-in-out 0s;
+            -ms-transition: all 0.5s ease-in-out 0s;
+            -o-transition: all 0.5s ease-in-out 0s;
+            -webkit-transition: all 0.5s ease-in-out 0s;
+            transition: all 0.5s ease-in-out 0s;
+            img {
+                width: 137px;
+                height: 137px;
+                border-radius: 50%;
+            }
+        }
+        .icon-holder {
+            .icon-big {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                &.icon-90 {
+                    margin-left: -45px;
+                    margin-top: -45px;
+                }
+                &.icon-75 {
+                    margin-left: -37px;
+                    margin-top: -37px;
+                }
+                &.icon-65 {
+                    margin-left: -33px;
+                    margin-top: -33px;
+                }
+            }
+        }
+        .text {
+            display: block;
+            margin-top: 25px;
+        }
+    }
+    .serviceDetail {
+        background-color: $light-color;
+        padding: 45px 95px;
+        position: relative;
+        .carousel-inner {
+            img {
+                display: inline-block;
+            }
+            .innerMedia {
+                margin-bottom: 15px;
+            }
+            .innerContent {
+                padding: 0 30px;
+                border-right: 1px solid #999;
+                p {
+                    color: #999999;
+                    font: 12px $Light-text;
+                }
+            }
+        }
+        .numslide {
+            margin: 25px 0 0;
+            color: #999999;
+            strong {
+                color: #333;
+            }
+        }
+        .sliderBlock {
+            padding: 0 110px;
+            .carousel-control {
+                top: 0%;
+                margin-top: 0px;
+                &.left {
+                    margin-left: -120px;
+                }
+                &.right {
+                    margin-right: -120px;
+                }
+            }
+        }
+        .smallBorder {
+            padding-bottom: 34px;
+            margin-bottom: 7px;
+        }
+        /*table {
+            margin: 0 auto;
+            tr {
+                td {
+                    img {
+                        margin: 0 auto 5px auto;
+                    }
+                }
+            }
+        }*/
+    }
+    &.test_new {
+        padding-top: 0;
+        .service {
+            .casestudy-tab {
+                padding: 0 20px 0 0;
+                .nav-tabs {
+                    text-align: left;
+                    li {
+                        min-height: 120px;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        a {
+                            cursor: default;
+                            padding: 25px 11px;
+                            position: relative;
+                            &:hover {
+                                .mediaWrapper {
+                                    background-color: #f5f5f5;
+                                    -moz-transform: scale(1.2);
+                                    -webkit-transform: scale(1.2);
+                                    -ms-transform: scale(1.2);
+                                    -o-transform: scale(1.2);
+                                    transform: scale(1.2);
+                                    -webkit-transition: 0.8s;
+                                    /* For Safari 3.1 to 6.0 */
+                                    transition: 0.8s;
+                                }
+                                .text {
+                                    color: $secondary-text-color;
+                                }
+                            }
+                            .mediaWrapper {
+                                height: 87px;
+                                width: 87px;
+                                background-color: transparent;
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -44px;
+                                .icon-holder-cus {
+                                    margin-left: -25px;
+                                    margin-top: -25px;
+                                    height: 50px;
+                                    width: 50px;
+                                }
+                            }
+                            .text {
+                                display: inline-block;
+                                /*position: absolute;
+                                top: 50%;
+                                margin-top: -9px;*/
+                                margin-left: 10px;
+                                font-family: $Bold-text;
+                                font-size: 18px;
+                                color: $primary-text-color;
+                                padding-left: 100px;
+                                margin-bottom: 25px;
+                                .des_text {
+                                    font-size: 14px;
+                                    font-family: $Light-text;
+                                    display: block;
+                                    margin-top: 5px;
+                                    color: $primary-text-color !important;
+                                }
+                            }
+                            span {
+                                cursor: pointer;
+                            }
+                        }
+                        &.active {
+                            &:before {
+                                display: none;
+                            }
+                            a {
+                                color: $secondary-text-color;
+                                overflow: visible;
+                                .text {
+                                    color: $secondary-text-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.journeyCntr {
+    &.top-overlap {
+        margin-top: -402px;
+    }
+    .title {
+        padding-top: 125px;
+        padding-bottom: 40px;
+    }
+}
+
+.journeyBox {
+    background: url('../images/texure.jpg');
+    padding: 190px 110px 140px;
+    .journey {
+        position: relative;
+        clear: both;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            margin-left: 0px;
+            width: 50px;
+            height: 140px;
+            z-index: 10;
+        }
+        &:first-child {
+            &:before {
+                border-left: 1px dashed #999;
+                border-bottom: 1px dashed #999;
+                border-radius: 0px 0px 0px 50px;
+                top: auto;
+                bottom: 100%;
+                left: auto;
+                right: 50%;
+                height: 190px;
+            }
+        }
+        &.evenLast {
+            &:before {
+                border-right: 1px dashed #999;
+                border-top: 1px dashed #999;
+                border-radius: 0px 50px 0px 0px;
+            }
+        }
+        &.oddLast {
+            &:before {
+                border-left: 1px dashed #999;
+                border-top: 1px dashed #999;
+                border-radius: 50px 0px 0px 0px;
+                left: auto;
+                right: 50%;
+            }
+        }
+        .block {
+            position: relative;
+            &:last-child {
+                border: 1px dashed #999;
+                border-radius: 0 50px 50px 0;
+                padding: 60px 60px 30px;
+                border-left: 0;
+            }
+            .media {
+                position: absolute;
+                bottom: 100%;
+                margin-bottom: -53px;
+                left: 55px;
+                background: url('../images/texure.jpg');
+            }
+            .text {
+                .title3 {
+                    padding-bottom: 18px;
+                }
+                p {
+                    font-family: $Light-text;
+                    margin-bottom: 18px;
+                }
+            }
+            .contact {
+                display: inline-block;
+                position: absolute;
+                bottom: -25px;
+                background: url(../images/texure.jpg);
+                padding: 0 10px;
+                left: 50px;
+                font-family: $Light-text;
+                z-index: 50;
+            }
+        }
+        &:nth-child(even) {
+            margin-top: -1px;
+            margin-bottom: -1px;
+            float: left;
+            width: 100%;
+            .block {
+                &:last-child {
+                    border: 1px dashed #999;
+                    border-radius: 50px 0px 0px 50px;
+                    border-right: 0;
+                    border-left: 1px dashed #999;
+                }
+            }
+        }
+    }
+}
+
+.contact-info {
+    &.indicate {
+        background: url(../images/texure1.jpg);
+        h5 {
+            font: 22px $Light-text;
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+.mwbannerBox {
+    &.worried {
+        min-height: 643px;
+        padding-bottom: 70px;
+        background-position: center bottom;
+    }
+}
+
+.worriedContent {
+    padding-top: 330px;
+    .medium-title {
+        padding-bottom: 39px;
+        color: $light-color;
+    }
+    .title4 {
+        padding-bottom: 20px;
+        color: $light-color;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.7);
+        font: 14px $Light-text;
+        line-height: 22px;
+    }
+}
+
+.virtualtoarBox {
+    &.top-overlap {
+        margin-top: -50px;
+    }
+    &.sliderBlock {
+        .carousel-control {
+            z-index: 20;
+            &.left {
+                margin-left: 32px;
+            }
+            &.right {
+                margin-right: 32px;
+            }
+            &:hover {
+                &.left {
+                    .arrowleft1 {
+                        background-position: -105px -805px;
+                    }
+                }
+                &.right {
+                    .arrowright1 {
+                        background-position: -70px -805px;
+                    }
+                }
+            }
+        }
+    }
+    .media {
+        position: relative;
+        .overlay {
+            position: absolute;
+            display: block;
+            top: 0;
+            text-align: center;
+        }
+        .various {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -48px;
+            margin-left: -48px;
+        }
+        span.text {
+            color: #999;
+            display: block;
+            margin-top: 25px;
+        }
+    }
+}
+
+.moreService {
+    p {
+        font-family: $Light-text;
+    }
+}
+
+.evacuateBox {
+    .evacuate {
+        position: relative;
+        min-height: 161px;
+        background-color: #dedede;
+        padding: 21px 120px;
+        .left {
+            float: left;
+            width: 161px;
+            margin-right: 34px;
+        }
+        .right {
+            float: left;
+            width: 645px;
+            padding-left: 32px;
+            border-left: 1px solid #fff;
+        }
+    }
+    .icon-holder {
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            &.icon-80 {
+                margin-left: -40px;
+                margin-top: -40px;
+            }
+        }
+    }
+}
+
+.evacuateBtn {
+    margin-top: 35px;
+    margin-bottom: 4px;
+}
+
+.media {
+    &.evacuateImg {
+        height: 161px;
+        width: 161px;
+        border-radius: 50%;
+        position: relative;
+        background-color: #000;
+        img {
+            height: 161px;
+            width: 161px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+    }
+}
+
+.internationalService {
+    position: relative;
+    .service {
+        padding: 48px 0px;
+        .serviceList {
+            float: left;
+            width: 49.5%;
+            border-left: 1px solid #cbcbcb;
+            padding-left: 90px;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+    }
+}
+
+.serviceList {
+    list-style: none;
+    margin-bottom: 0;
+    li {
+        margin-bottom: 22px;
+        .iconText {
+            position: relative;
+            min-height: 50px;
+            padding: 10px 0 10px 63px;
+            line-height: 30px;
+            font-family: "Montserrat-Bold";
+            color: $primary-color;
+            .icon {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                &.icon-50 {
+                    margin-top: -25px;
+                }
+            }
+            .img-icon {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                margin-top: -22px;
+            }
+        }
+        .title5 {
+            padding-right: 90px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .medantaService {
+        .serviceDetail {
+            padding: 45px 30px;
+            .sliderBlock {
+                padding: 0 30px;
+                .carousel-control {
+                    &.left {
+                        margin-left: -45px;
+                    }
+                    &.right {
+                        margin-right: -45px;
+                    }
+                }
+            }
+        }
+    }
+    .evacuateBox {
+        .evacuate {
+            padding: 21px 50px;
+            .right {
+                width: 600px;
+            }
+        }
+    }
+    .mainBanner-overlap.patients-title {
+        .big-title {
+            /*padding-top: 130px;*/
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .aboutDesease {
+        &.traumaAbout {
+            padding: 15px 15px 0;
+        }
+    }
+    .detailCntr{
+        &.patientCntr {
+            height: 465px;
+        }
+    }
+    .mainBanner-overlap{
+        &.patients-title {
+            .big-title {
+                font-size: 32px;
+                padding-top: 180px;
+            }
+        }
+    }
+    .miraclesHappenBox{
+        &.patient {
+            padding-top: 15px;
+            padding-bottom: 0;
+            margin-top: -100px;
+            h2 {
+                font-size: 22px;
+                padding-top: 0;
+                padding-bottom: 0px;
+
+            }
+            .casestudy-tab {
+                margin: 0 30px;
+            }
+            .case-study{
+                .text {
+                    p {
+                        font: 14px $Light-text;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .medantaService {
+        padding-top: 30px;
+        .service {
+            .big-title {
+                font-size: 26px;
+            }
+        }
+        .serviceDetail {
+            .carousel-inner {
+                .item {
+                    > div {
+                        float: none;
+                        display: inline-block;
+                        margin-bottom: 20px;
+                        width: auto;
+                        max-width: 175px;
+                        vertical-align: top;
+                    }
+                    .innerContent {
+                        border-right: 0;
+                    }
+                }
+            }
+            .sliderBlock {
+                .carousel-control {
+                    top: 40%;
+                    &.left {
+                        margin-left: -45px;
+                    }
+                    &.right {
+                        margin-right: -45px;
+                    }
+                }
+            }
+            /*table {
+                width: 228px !important;
+                tr {
+                    td {
+                        text-align: center;
+                        display: block;
+                        margin-top: 15px;
+                    }
+                }
+            }*/
+        }
+    }
+    .contact-info {
+        &.indicate {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .worriedContent {
+        padding-top: 50px;
+        .medium-title {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+    }
+    .mwbannerBox.worried {
+        height: 500px;
+    }
+    .virtualtoarBox {
+        .media {
+            .various {
+                margin-top: -45px;
+                margin-left: -65px;
+                .icon {
+                    &.icon-95 {
+                        background-size: 500px;
+                        height: 48px;
+                        width: 48px;
+                        &.play-btn {
+                            background-position: 0 -236px;
+                        }
+                    }
+                }
+            }
+        }
+        .moreService {
+            padding: 15px !important;
+        }
+    }
+    .internationalService {
+        .service {
+            .serviceList {
+                width: 100%;
+                border-left: 0;
+                padding: 15px 15px 0;
+                border-top: 1px solid #cbcbcb;
+                &:first-child {
+                    border-top: 0;
+                    padding-top: 0;
+                }
+                li {
+                    .title5 {
+                        padding-right: 0px;
+                        text-align: left !important;
+                    }
+                }
+            }
+        }
+    }
+    .evacuateBox {
+        .evacuate {
+            padding: 21px 15px;
+            .left {
+                width: 100%;
+                .media.evacuateImg {
+                    margin: 0 auto;
+                }
+            }
+            .right {
+                width: 100%;
+                padding-left: 0px;
+                border-left: 0;
+            }
+        }
+    }
+    .journeyBox {
+        padding: 190px 30px 140px;
+    }
+    .responsive-tabs-container {
+        .accordion-link {
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            background-color: transparent;
+            border-radius: 3px;
+            border: 0;
+            color: #333;
+            text-align: center;
+            text-decoration: underline;
+            i {
+                margin: auto;
+                /*display: block;*/
+            }
+            .media {
+                display: block;
+                text-align: center;
+                padding-bottom: 10px;
+                img {
+                    display: inline-block;
+                }
+            }
+            &.selected {
+                text-decoration: none;
+            }
+        }
+        .tab-content {
+            padding: 0;
+            border: 0;
+            &:before {
+                display: none;
+            }
+            .close {
+                /*display: none;*/
+                display: block;
+            }
+            .tab-pane {
+                border: 1px solid #dddddd;
+                /*padding: 15px !important;*/
+                padding: 25px 15px;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    margin-top: -10px;
+                    margin-left: -10px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background-color: #ffffff;
+                    border-top: 1px solid #dddddd;
+                    border-left: 1px solid #dddddd;
+                    -moz-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    -o-transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .carePrograms {
+        .programs {
+            li.active {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .journeyCntr {
+        .title {
+            padding-top: 40px;
+        }
+        .medium-title {
+            font-size: 30px;
+        }
+    }
+    .journeyBox {
+        padding: 120px 30px 40px;
+        .journey {
+            .block {
+                &:last-child {
+                    border: 1px dashed #999;
+                    border-radius: 50px 0px 0px 50px;
+                    padding: 50px 30px 100px;
+                    border-left: 1px dashed #999;
+                    border-right: 0;
+                    border-top: 0;
+                    border-bottom: 0;
+                }
+                .contact {
+                    position: static;
+                    a{
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .text {
+                    .title3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &:nth-child(even) {
+                .block {
+                    &:last-child {
+                        border: 1px dashed #999;
+                        border-radius: 50px 0px 0px 50px;
+                        padding: 50px 30px 100px;
+                        border-left: 1px dashed #999;
+                        border-right: 0;
+                        border-top: 0;
+                        border-bottom: 0;
+                    }
+                }
+            }
+            &.evenLast:before,
+            &.oddLast:before,
+            &:first-child:before {
+                display: none;
+            }
+        }
+    }
+    .contact-info {
+        &.indicate {
+            a {
+                display: block;
+            }
+            h5 {
+                font-size: 18px;
+            }
+        }
+    }
+    .mwbannerBox.worried {
+        height: 400px;
+        min-height: 400px;
+    }
+}
+
+@media (max-width:480px) {
+    .mainBanner-overlap.patients-title {
+        .big-title {
+            padding-top: 140px;
+        }
+    }
+}

@@ -1,0 +1,1557 @@
+.mainBanner-overlap {
+    margin-top: -532px;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 400;
+    padding-top: 150px;
+    &.faq {
+        margin-top: -310px;
+        padding-top: 113px;
+        .title4 {
+            font: 24px $Light-text;
+            color: $light-color;
+            padding-bottom: 10px;
+        }
+        .title1 {
+            font: 42px $Bold-text;
+            color: $light-color;
+        }
+    }
+}
+
+.pd-t_cus {
+    padding-top: 121px;
+}
+
+.detailCntr {
+    .detail {
+        min-height: 299px;
+    }
+    &.disease,
+    &.cyberknifeCntr,
+    &.instituteCntr,
+    &.instituteCntr {
+        background-size: cover;
+        background-position: center center;
+        height: 532px;
+    }
+}
+
+.detail {
+    .title {
+        color: $light-color;
+        font: 36px $Bold-text;
+        padding-bottom: 20px;
+    }
+    .title6 {
+        color: $light-color;
+        padding-bottom: 7px;
+        font: 16px $Light-text;
+    }
+    &.mainbanner-detail {
+        min-height: 208px;
+    }
+}
+
+.faq_table {
+    width: 100%;
+    tr {
+        font-family: $Light-text;
+        td {
+            width: 75%;
+        }
+    }
+}
+
+.aboutDesease {
+    background-color: $light-color;
+    padding: 64px 0 0;
+    h2 {
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 19px;
+    }
+    .tab-pane {
+        padding-bottom: 50px;
+    }
+    .text {
+        /*padding: 0 35px;*/
+        padding: 0 25px;
+        &.show-content {
+            height: auto;
+            overflow: visible;
+            .shadow {
+                display: none;
+            }
+        }
+        p {
+            font: 14px $Light-text;
+            line-height: 22px;
+            padding-bottom: 22px;
+        }
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+.expand {
+    .text {
+        position: relative;
+        /*max-height: 110px;
+        min-height: 80px;*/
+        /*max-height: 70px;*/
+        max-height: none;
+        min-height: 70px;
+        overflow: hidden;
+        &.down {
+            max-height: none;
+            overflow: hidden;
+            height: auto;
+            .shadow {
+                display: none;
+            }
+        }
+    }
+}
+
+.multislide {
+    .col-sm-9 {
+        padding: 0 3px;
+    }
+    .col-sm-3 {
+        padding: 0 3px;
+    }
+    .flexslider {
+        margin: 0;
+        border: 0;
+    }
+    .carousel {
+        .flex-viewport {
+            height: 408px !important;
+            li {
+                margin: 0 0 10px;
+            }
+        }
+        .flex-prev {
+            top: 20px;
+            bottom: auto;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: 0 -75px 50px -50px #fff inset;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    &.grayshadow {
+        box-shadow: 0 -120px 50px -70px #f6f6f6 inset;
+    }
+}
+
+.showMore .show-btn {
+    position: relative;
+    display: inline-block;
+    &.up {
+        &:before {
+            background-position: -150px 0;
+        }
+    }
+    &:before {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        margin-right: -20px;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: url('../images/sprite.png') no-repeat;
+        background-size: 1000px;
+        background-position: -90px 0;
+    }
+}
+
+.diseaseTab {
+    .wrap {
+        display: table;
+        width: 100%;
+        padding-top: 4px;
+        .leftpannel {
+            display: table-cell;
+            width: 25.6%;
+            vertical-align: top;
+        }
+        .rightpannel {
+            display: table-cell;
+            width: 74.4%;
+            padding: 43px 40px 47px;
+            vertical-align: top;
+            .expand {
+                .text {
+                    position: relative;
+                    /*min-height: 150px;*/
+                    /*min-height: 130px;
+                    max-height: 130px;*/
+                    min-height: 100px;
+                    max-height: 100px;
+                    overflow: hidden;
+                    padding-left: 0px;
+                    padding-right: 100px;
+                    &.down {
+                        max-height: none;
+                    }
+                    p {
+                        line-height: 24px;
+                    }
+                }
+                .showMore {
+                    padding-left: 190px;
+                }
+            }
+            h3 {
+                font: 14px $Bold-text;
+                padding-bottom: 11px;
+            }
+        }
+    }
+    .shadow {
+        box-shadow: 0 -120px 50px -70px #f6f6f6 inset;
+    }
+    .nav-tabs {
+        border-bottom: 0;
+        li {
+            width: 100%;
+            a,
+            a:focus {
+                border: 0;
+                margin: 0;
+                padding: 33px 10px 33px 127px;
+                border-bottom: 1px solid #dcdcdc;
+                color: $secondary-color;
+                font: 14px $Bold-text;
+                background-color: transparent;
+            }
+            &.active {
+                a {
+                    border: 0;
+                    border-bottom: 1px solid #dcdcdc;
+                    color: $primary-text-color;
+                    background-color: #f6f6f6;
+                }
+            }
+        }
+    }
+}
+
+.custom-accor-main {
+    list-style: none;
+    &.panel-group .panel {
+        overflow: visible;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        &.panel+.panel {
+            margin-top: 0;
+        }
+    }
+    .panel-heading {
+        padding: 10px 0;
+    }
+    .custom-accor {
+        height: auto !important;
+        width: 910px;
+        position: absolute;
+        background: rgb(255, 255, 255);
+        z-index: 10;
+        left: 0;
+        margin-top: 15px;
+        transition: none;
+        box-shadow: 0 6px 20px -10px #999;
+        z-index: 88888;
+        .panel-body {
+            padding: 50px;
+            border: 1px solid #ddd;
+            box-shadow: 0 6px 20px -10px #999;
+        }
+        .pos {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            opacity: 1;
+        }
+    }
+    .panel-title {
+        font-size: 14px;
+        a {
+            position: relative;
+            color: #666666;
+            text-decoration: underline;
+            font-family: $Bold-text;
+            &.collapsed {
+                &:before {
+                    display: none;
+                }
+            }
+            &:before {
+                position: absolute;
+                left: 50%;
+                margin-left: -10px;
+                top: 100%;
+                margin-top: 18px;
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: #ffffff;
+                border-top: 1px solid #dddddd;
+                border-left: 1px solid #dddddd;
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                z-index: 99999;
+                transition: none;
+            }
+        }
+    }
+}
+
+.diagnoseBox {
+    padding: 29px 130px 10px;
+    background-color: #eaeaea;
+    .icon-holder {
+        padding-bottom: 14px;
+        &.virtual-position_new {		
+            padding-bottom: 0px;
+        }
+    }
+    h3 {
+        color: $primary-text-color;
+        font: 26px $Bold-text;
+        text-align: center;
+        padding-bottom: 22px;
+    }
+    h4 {
+        color: $primary-text-color;
+        font: 14px $Regular-text;
+        text-align: center;
+        line-height: 22px;
+        padding-bottom: 34px;
+    }
+    .list-style1 {
+        /*padding-left: 15px;*/
+        padding-left: 30px;
+        li {
+            padding-right: 30px;
+            font-family: $Bold-text;
+            a {
+                color: $primary-color;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &.dia_edit {
+        h4 {
+            text-align: left;
+        }
+    }
+}
+
+.treatmentBox {
+    width: 100%;
+    float: left;
+    &.care {
+        .treatedbanner {
+            padding-top: 125px;
+            padding-bottom: 190px;
+            .content {
+                h2 {
+                    padding-bottom: 12px;
+                }
+                p {
+                    font: 14px $Light-text;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+.treatedbanner {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 547px;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    .overlay {
+        position: absolute;
+        left: 0;
+        display: block;
+        top: 0;
+    }
+    .content {
+        position: relative;
+        z-index: 20;
+        padding: 0 110px 20px;
+        text-align: center;
+        h2 {
+            color: $light-color;
+            font: 36px $Bold-text;
+            padding-bottom: 20px;
+        }
+        h3 {
+            color: $light-color;
+            font: 26px $Bold-text;
+            padding-bottom: 16px;
+        }
+        p {
+            color: $light-color;
+            font: 14px $Regular-text;
+            line-height: 22px;
+        }
+        .icon-holder {
+            padding-bottom: 10px;
+        }
+    }
+    .pagescroll-menu {
+        .navbar-nav {
+            li {
+                padding: 0 29px;
+            }
+        }
+    }
+}
+
+.overlap {
+    margin-top: -180px;
+    margin-bottom: -85px;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 400;
+}
+
+.treatment-list {
+    position: relative;
+    padding: 72px 130px 53px;
+    .treatment-info {
+        /*margin-top: 20px;*/
+    }
+    &.faqlist {
+        padding: 45px 100px;
+    }
+    h3 {
+        color: $primary-text-color;
+        font: 18px $Bold-text;
+        padding-bottom: 0px;
+        cursor: pointer;
+        position: relative;
+        line-height: 18px;
+        &:before {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -7px;
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: url('../images/sprite.png') no-repeat;
+            background-size: 1000px;
+            background-position: -90px 0;
+        }
+        a {
+            color: $primary-text-color;
+            display: block;
+            position: relative;
+            z-index: 100;
+            &:hover {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+        span.top-info {
+            display: block;
+            font: 14px/22px $Light-text;
+            padding-top: 7px;
+        }
+    }
+    ul.list-style4 {
+        li {
+            &.active {
+                h3 {
+                    &:before {
+                        background-position: -150px 0;
+                    }
+                    /*                    span.top-info {
+                        display: none;
+                    }
+*/
+                }
+            }
+            &.panel {
+                margin-bottom: 0;
+                padding-bottom: 56px;
+                box-shadow: none;
+                background-color: transparent;
+                &:after {
+                    position: absolute;
+                    left: 33px;
+                    top: auto;
+                    bottom: 28px;
+                    content: '';
+                    width: 96%;
+                    height: 1px;
+                    background: #cdcdcd;
+                    border: 0;
+                    border-radius: 0;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                    &:after {
+                        display: none;
+                    }
+                }
+                p {
+                    display: block;
+                    font: 14px/22px $Light-text;
+                    padding-top: 7px;
+                }
+                .treatment-info {
+                    min-height: 33px;
+                    height: 33px;
+                    padding-right: 20px;
+                    &.collapse {
+                        /*height: 32px !important;*/
+                        overflow: hidden;
+                        display: block;
+                        position: relative;
+                        /*max-width: 600px;*/
+                        /*&:before {
+                            content: "....";
+                            bottom: 0;
+                            right: 0;
+                            position: absolute;
+                        }*/
+                        p {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            /*max-width: 600px;*/
+                            max-width: 230px;
+                            white-space: nowrap;
+                            position: relative;
+                        }
+                        ul {
+                            padding-left: 0;
+                            li {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                /*max-width: 600px;*/
+                                max-width: 230px;
+                                white-space: nowrap;
+                                position: relative;
+                                padding-left: 0;
+                            }
+                        }
+                        &.in {
+                            /*height: auto !important;*/
+                            max-width: 100%;
+                            &:before {
+                                display: none;
+                            }
+                            p {
+                                overflow: visible;
+                                max-width: 100%;
+                                text-overflow: none;
+                                white-space: normal;
+                                width: 100%;
+                            }
+                            ul {
+                                padding-left: 17px;
+                                li {
+                                    overflow: visible;
+                                    max-width: 100%;
+                                    text-overflow: none;
+                                    white-space: normal;
+                                    padding-left: 8px;
+                                }
+                            }
+                        }
+                    }
+                    &.collapsing {
+                        /*height: 32px !important;*/
+                        overflow: hidden;
+                        display: block;
+                        position: relative;
+                        max-width: 100%;
+                        p {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 100%;
+                            white-space: normal;
+                            position: relative;
+                        }
+                        &.in {
+                            /*height: auto !important;*/
+                            max-width: 100%;
+                            &:before {
+                                display: none;
+                            }
+                            p {
+                                overflow: visible;
+                                max-width: 100%;
+                                text-overflow: none;
+                                white-space: normal;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inner {
+        border-bottom: 1px solid #cdcdcd;
+        padding: 0 0px 24px;
+        margin-bottom: 27px;
+        -o-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        p,
+        li {
+            font: 14px $Light-text;
+            line-height: 22px;
+        }
+    }
+    ul {
+        > li {
+            &:last-child {
+                .inner {
+                    border-bottom: 0px;
+                    padding: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.contact-doctor {
+    border-top: 1px solid #dddddd;
+    padding: 60px 100px 90px;
+    h3 {
+        color: $primary-text-color;
+        font: 20px $Bold-text;
+        padding-bottom: 24px;
+        position: relative;
+        line-height: 20px;
+        text-align: center;
+    }
+    p {
+        font: 14px $Light-text;
+        line-height: 22px;
+    }
+}
+
+.experienceBox {
+    background-color: $light-color;
+    padding: 49px 139px;
+    .icon-holder {
+        padding-bottom: 16px;
+    }
+    h3 {
+        color: $primary-text-color;
+        font: 26px $Bold-text;
+    }
+    p {
+        color: $light-color;
+        font: 14px $Regular-text;
+        line-height: 22px;
+    }
+}
+
+.sliderBlock {
+    .numslide {
+        margin-right: 15px;
+        margin-top: -5px;
+        font-size: 13px;
+        strong {
+            font-size: 16px;
+        }
+    }
+    .mw-slider {
+        position: relative;
+        padding: 30px 15px 30px 138px;
+        margin: 12px 0;
+        /*min-height: 187px;*/
+        background-color: #fbfbfb;
+        border: 1px solid #d3d3d3;
+        height: 220px;
+        .media {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            left: 15px;
+            top: 30px;
+            img {
+                border-radius: 50%;
+                width: 90px;
+                height: 90px;
+            }
+        }
+        .text {
+            .name {
+                font: 16px $Secondary-black;
+                color: $primary-text-color;
+                padding-bottom: 3px;
+            }
+            .desination {
+                font: 14px $Regular-text;
+                color: $quinary-color;
+                border-bottom: 1px solid #e3e3e3;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .division {
+                font: 14px $Regular-text;
+                color: $primary-text-color;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                min-height: 70px;
+            }
+            .viewprofile {
+                position: absolute;
+                bottom: 15px;
+                a {
+                    font: 14px $Light-text;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .carousel-control {
+        background: none !important;
+        width: 35px;
+        height: 35px;
+        top: 50%;
+        bottom: auto;
+        margin-top: -10px;
+        opacity: 1;
+        text-shadow: none;
+        &.left {
+            margin-left: -10px;
+        }
+        &.right {
+            margin-right: -10px;
+        }
+        &:hover,
+        &.active {
+            .icon-35 {
+                &.arrowleft {
+                    background-position: -105px -805px;
+                }
+                &.arrowright {
+                    background-position: -70px -805px;
+                }
+            }
+        }
+    }
+}
+
+.numslide {
+    margin-top: -5px;
+    font-size: 13px;
+    strong {
+        font-size: 16px;
+    }
+}
+
+.gettreatedBox {
+    border-top: 1px solid #e5e5e5;
+    padding: 40px 75px 45px;
+    h3 {
+        color: $primary-text-color;
+        font: 26px $Bold-text;
+        padding-bottom: 20px;
+        max-width: 555px;
+        margin: 0 auto;
+    }
+    p {
+        color: $light-color;
+        font: 14px $Regular-text;
+        line-height: 22px;
+    }
+    .icon-holder {
+        padding-bottom: 13px;
+    }
+    ul.blocks {
+        li {
+            padding-top: 20px;
+        }
+    }
+}
+
+.technologiesBox {
+    background-color: $light-color;
+    padding: 42px 116px 36px;
+    h3 {
+        color: $primary-text-color;
+        font: 26px $Bold-text;
+        text-align: center;
+        padding-bottom: 31px;
+    }
+    p,
+    li {
+        color: $primary-text-color;
+        font: 14px $Regular-text;
+        line-height: 22px;
+    }
+    li {
+        a {
+            color: $primary-text-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.successBox {
+    float: left;
+    width: 100%;
+    padding-top: 133px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    h3 {
+        color: $light-color;
+        font: 28px $Bold-text;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    p {
+        color: $light-color;
+        font: 14px $Regular-text;
+        line-height: 22px;
+        padding-bottom: 15px;
+    }
+    .carousel {
+        .numslide {
+            color: $light-color;
+            top: -33px;
+        }
+        .item {
+            background-size: cover;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            .mw-slider {
+                padding: 177px 120px 143px;
+                .media {
+                    position: static;
+                    text-align: center;
+                    margin-top: 30px;
+                    padding-right: 112px;
+                    &:first-child {
+                        margin-top: 24px;
+                    }
+                }
+                .text {
+                    position: relative;
+                    padding-left: 30px;
+                    &:before {
+                        position: absolute;
+                        left: 30px;
+                        top: -30px;
+                        content: '';
+                        width: 30px;
+                        height: 30px;
+                        background: url('../images/sprite.png') no-repeat;
+                        background-size: 1000px;
+                        background-position: -90px -360px;
+                    }
+                    h5 {
+                        color: $light-color;
+                        font: 18px $Bold-text;
+                        line-height: 22px;
+                        padding-top: 20px;
+                    }
+                    p {
+                        color: #b1b1b1;
+                        font: 14px $Regular-text;
+                        line-height: 22px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            .slidewrap {
+                position: relative;
+                z-index: 200;
+            }
+        }
+        .carousel-control {
+            z-index: 300;
+            margin-top: -17px;
+            width: 35px;
+            height: 35px;
+            &.left {
+                margin-left: 12px;
+            }
+            &.right {
+                margin-right: 12px;
+            }
+            &:hover,
+            &.active {
+                .icon-35 {
+                    &.arrowleft {
+                        background-position: -105px -805px;
+                    }
+                    &.arrowright {
+                        background-position: -70px -805px;
+                    }
+                }
+            }
+        }
+    }
+    .contact-info {
+        ul.info {
+            padding-bottom: 25px;
+            float: left;
+            width: 100%;
+            li {
+                float: left;
+                list-style: none;
+                /*width: 50%;*/
+                width: 100%; /*done as per req*/
+                border-left: 1px solid #e69585;
+                text-align: center;
+                &:first-child {
+                    border-left: 0;
+                }
+                a {
+                    color: $light-color;
+                }
+                h5 {
+                    font: 22px $Light-text;
+                    color: $light-color;
+                }
+                h4 {
+                    font: 22px $Bold-text;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+.contact-info {
+    &.faq {
+        ul.info {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            li {
+                border-left: 1px solid #ccc;
+                a {
+                    color: $primary-text-color;
+                }
+                h5 {
+                    font: 22px $Light-text;
+                    color: $primary-text-color;
+                }
+                h4 {
+                    font: 22px $Bold-text;
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+    ul.info {
+        padding-bottom: 25px;
+        float: left;
+        width: 100%;
+        li {
+            float: left;
+            list-style: none;
+            width: 50%;
+            border-left: 1px solid #e69585;
+            text-align: center;
+            &:first-child {
+                border-left: 0;
+            }
+            a {
+                color: $light-color;
+            }
+            h5 {
+                font: 22px $Light-text;
+                color: $light-color;
+            }
+            h4 {
+                font: 22px $Bold-text;
+                color: $light-color;
+            }
+        }
+    }
+    &.callingus {
+        ul.info {
+            li {
+                width: auto;
+                float: none;
+            }
+        }
+    }
+}
+
+.aboutFaq {
+    position: relative;
+    padding: 72px 120px;
+    h3 {
+        font: 24px $Bold-text;
+        color: $primary-text-color;
+        padding-bottom: 25px;
+    }
+    p {
+        font: 14px $Light-text;
+        line-height: 22px;
+        padding-bottom: 0px;
+    }
+}
+
+.faqbanner {
+    height: 310px;
+    .title {
+        padding-top: 113px;
+        .bannert-title {
+            color: $light-color;
+            &.small-font {
+                font: 24px $Light-text;
+                padding-bottom: 10px;
+            }
+            &.big-font {
+                font: 42px $Bold-text;
+            }
+        }
+    }
+}
+
+.pagescroll-menu {
+    .navbar-collapse {
+        .icon {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .custom-accor-main {
+        .custom-accor {
+            width: 850px;
+        }
+    }
+    .aboutFaq {
+        padding: 40px 30px;
+    }
+    .faqbanner {
+        .title {
+            padding-top: 40px;
+        }
+    }
+    .treatment-list.faqlist {
+        padding: 40px 30px;
+    }
+    .overlap {
+        margin-top: -80px;
+        margin-bottom: -50px;
+    }
+    .detailCntr {
+        .detail {
+            min-height: 130px;
+        }
+        &.disease,
+        &.instituteCntr,
+        &.cyberknifeCntr {
+            .detail {
+                padding: 0px 0 0;
+            }
+        }
+    }
+    .aboutDesease {
+        padding: 30px 0 0;
+    }
+    .diseaseTab {
+        .nav-tabs {
+            li {
+                a,
+                a:focus {
+                    padding: 20px 15px;
+                }
+            }
+        }
+        .wrap {
+            .rightpannel {
+                .expand {
+                    .text {
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .diagnoseBox {
+        padding: 15px 60px;
+    }
+    .treatedbanner {
+        padding-top: 100px;
+        min-height: 455px;
+        .treatmentBox.care & {
+            padding-bottom: 90px;
+            padding-top: 120px;
+        }
+    }
+    .treatment-list {
+        padding: 40px;
+    }
+    .treatment-list {
+        .inner {
+            padding: 0 0px 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .contact-doctor {
+        padding: 40px 30px;
+    }
+    .treatedbanner {
+        .content {
+            padding: 0 30px;
+        }
+    }
+    /*.treatmentBox {
+        &.care {
+            .treatedbanner {
+                padding-top: 120px;
+            }
+        }
+    }*/
+    .experienceBox {
+        padding: 40px 45px;
+    }
+    .sliderBlock {
+        .mw-slider {
+            padding: 15px 15px 5px 85px;
+            margin: 10px 0;
+            min-height: 200px;
+            .media {
+                width: 60px;
+                height: 60px;
+                top: 15px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .text {
+                .division {
+                    padding-bottom: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .gettreatedBox {
+        padding: 40px 30px;
+    }
+    .technologiesBox {
+        padding: 40px 30px;
+    }
+    .successBox {
+        padding-top: 110px;
+        .carousel {
+            .item {
+                .mw-slider {
+                    padding: 80px 60px;
+                    .media {
+                        padding-right: 15px;
+                    }
+                    .text {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .pd-t_cus {
+        padding-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .mainBanner-overlap.faq {
+        padding-top: 73px;
+    }
+    .diagnoseBox {
+        padding: 15px 30px;
+    }
+    .custom-accor-main {
+        .custom-accor {
+            width: 690px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .diagnoseBox {
+        padding: 15px;
+    }
+    .diseaseTab {
+        .shadow {
+            box-shadow: 0 -75px 50px -50px #fff inset;
+        }
+        /*.wrap {
+            .rightpannel {
+                .text {
+                    max-height: 130px;
+                }
+            }
+        }*/
+    }
+    .detailCntr {
+        .detail {
+            .title {
+                font-size: 24px;
+            }
+        }
+        &.for-mob-Cntr {
+            height: 410px;
+        }
+    }
+    .detail {
+        .title {
+            font: 24px $Bold-text;
+        }
+        &.mainbanner-detail {
+            min-height: auto;
+        }
+    }
+    .detailCntr {
+        .detail {
+            min-height: 130px;
+        }
+    }
+    .mainBanner-overlap {
+        margin-top: -532px;
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 400;
+        padding-top: 150px;
+        &.faq {
+            margin-top: -532px;
+            padding-top: 290px;
+            .title4 {
+                font: 20px $Light-text;
+            }
+            .title1 {
+                font: 21px $Bold-text;
+            }
+        }
+        &.mob-padding {
+            padding-top: 80px;
+        }
+    }
+    .pagescroll-menu {
+        .navbar-collapse {
+            background-color: rgba(0, 0, 0, 0.7);
+            height: auto;
+            position: fixed;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100% !important;
+            padding-top: 150px;
+            z-index: 999;
+            .navbar-nav {
+                text-align: center;
+                border-bottom: 0;
+                padding: 30px;
+                float: none;
+                background-color: #124f64;
+                margin: 0;
+            }
+            .icon {
+                display: block;
+                &.icon-15 {
+                    &.crossWhite {
+                        position: absolute;
+                        top: 115px;
+                        background-position: -270px 0;
+                        background-size: 2000px;
+                        height: 30px;
+                        width: 30px;
+                        right: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .aboutDesease {
+        h2 {
+            font-size: 22px;
+            padding: 0 15px 19px;
+        }
+        .text {
+            padding: 0 15px;
+        }
+    }
+    .expand {
+        .text {
+            /*height: 200px;*/
+            max-height: none;
+            height: 130px;
+        }
+    }
+    .diseaseTab {
+        .wrap {
+            display: block;
+            .leftpannel {
+                display: block;
+                width: 100%;
+                .panel-group {
+                    margin-bottom: 0;
+                    .panel {
+                        border-radius: 0;
+                        box-shadow: none;
+                        border: 0;
+                        border-bottom: 1px solid #ddd;
+                        +.panel {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .panel-default {
+                    >.panel-heading {
+                        background-color: #f6f6f6;
+                        border-color: transparent;
+                        border-radius: 0;
+                        padding: 0;
+                    }
+                    .panel-body {
+                        border-top: 0 !important;
+                    }
+                }
+                .panel-title {
+                    >a {
+                        display: block;
+                        padding: 15px;
+                        line-height: 30px;
+                        color: #e67158;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .showMore {
+                    text-align: center;
+                }
+            }
+            .rightpannel {
+                display: none;
+            }
+        }
+    }
+    .overlap {
+        margin-top: -40px;
+        margin-bottom: -40px;
+    }
+    .treatedbanner {
+        padding-top: 30px;
+        min-height: 410px;
+        height: auto;
+        padding-bottom: 70px;
+        .content {
+            padding: 0;
+            h3 {
+                font-size: 22px;
+                padding-bottom: 10px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+    .treatment-list {
+        padding: 40px 20px;
+        ul.list-style4 {
+            li.panel {
+                .treatment-info.collapse {
+                    /*max-width: 150px;*/
+                    p {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        &ul.list-style4 {
+            li.panel {
+                .treatment-info.collapsing {
+                    /*max-width: 100%;*/
+                    p {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        /*&ul.list-style4 {
+            li.panel {
+                .treatment-info.in {
+                    p {
+                        width: auto;
+                    }
+                }
+            }
+        }*/
+    }
+    .treatmentBox.care {
+        .treatedbanner {
+            padding-top: 110px;
+        }
+    }
+    .experienceBox {
+        padding: 30px 0px;
+        h3 {
+            font-size: 22px;
+        }
+        .carousel-inner {
+            background-color: #eaeaea;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: 1px solid #ddd;
+            .item {
+                > div {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .gettreatedBox,
+    .technologiesBox {
+        h3 {
+            font-size: 22px;
+        }
+    }
+    .technologiesBox {
+        padding: 20px 15px;
+    }
+    .successBox {
+        padding-top: 60px;
+        .carousel {
+            .item {
+                .mw-slider {
+                    padding: 30px 50px;
+                    .text {
+                        margin-top: 45px;
+                        &:before {
+                            left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-info {
+            ul.info {
+                li {
+                    width: 100%;
+                    border-left: 0;
+                    border-bottom: 1px solid #e69585;
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    &:last-child {
+                        border-bottom: 0;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .contact-info.faq {
+        padding: 15px 0 !important;
+        ul.info {
+            li {
+                width: 100%;
+                border-left: 0;
+                border-bottom: 1px solid #d3d3d3;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                &:last-child {
+                    border-bottom: 0;
+                    margin-bottom: 0px;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                h5 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .faqbanner {
+        height: 250px;
+        position: relative;
+    }
+    .treatment-list {
+        h3 {
+            /*padding-right: 20px;*/
+            padding-right: 0;
+            a {
+                padding-right: 20px;
+                word-break: break-all;
+            }
+        }
+    }
+    .treatment-list.faqlist {
+        padding: 40px 20px;
+    }
+    .sliderBlock {
+        .carousel-control {
+            &.left {
+                margin-left: -10px;
+            }
+            &.right {
+                margin-right: -10px;
+            }
+        }
+    }
+    .custom-accor-main {
+        .custom-accor {
+            position: relative;
+            width: 100%;
+            .panel-body {
+                padding: 20px 25px 20px 15px;
+            }
+        }
+        li.panel {
+            height: auto !important;
+            padding-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .treatedbanner {
+        /*height: 500px;*/
+        height: auto;
+    }
+}

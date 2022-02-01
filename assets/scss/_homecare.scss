@@ -1,0 +1,481 @@
+.request-homecare-form {
+    background-color: $light-color;
+    padding: 40px;
+    box-shadow: 9px 0 19px rgba(0, 0, 0, 0.15);
+}
+.bg-cover {
+    background-size: cover;
+}
+
+.stay-home-img {
+    padding: 20px 0 15px;
+}
+
+.form-field-box {
+    border: 1px solid $quaternary-color;
+    padding: 8px 10px;
+    background-color: $light-color;
+    position: relative;
+    label {
+        font-weight: normal;
+        font-family: $Secondary-regular;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $quinary-color;
+    }
+    .form-control {
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        height: 20px;
+        font-size: 16px;
+        font-family: $Secondary-regular;
+        padding: 0px;
+    }    
+}
+.gettreatedBox {
+    &.home-care-program {
+        border-top: none;
+        padding: 30px 0;
+        .blocks {
+            &.three-blocks {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                margin-top: -30px;
+                li {
+                    width: 33.32%;
+                    padding: 30px 15px 1px;
+                    display: block;
+                    p {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.list-covids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+    &.dblock {
+        display: block;
+    }
+    li {
+        position: relative;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        p {
+            position: relative;
+            padding-left: 17px;
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                display: block;
+                border-radius: (50%);
+                background-color: $secondary-color;
+                position: absolute;
+                left: 0px;
+                top: 7px;
+            }
+        }        
+    }
+    &.lightCircle {
+        li {       
+            p {              
+                color: $light-color;  
+                &:before {
+                    background-color: $light-color;
+                }
+            }
+        }
+    }
+}
+.covidpriceBox {
+    padding-top: 40px;
+    .covidprice-ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+        .covidprice-li {
+            width: 25%;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
+    &.new-covidprice-changes {
+        .covidprice-col {
+            .covidprice {
+                background-color: #dcdcdc;
+                h4 {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+.covidprice-col {
+    background-color: $light-color;
+    box-shadow: 9px 0 19px rgba(0, 0, 0, 0.15);
+    padding: 40px 20px;
+    border-radius: 35px;
+    // border-radius: 50px 0px 50px 0px;
+    height: 100%;
+    .covidprice {
+        background-color: $secondary-color;
+        padding: 8px 0px 8px 20px;
+        margin-bottom: 20px;
+        border-radius: 0 0 40px 0px;
+        position: relative;
+        margin-left: -20px;
+        h4 {
+            color: $light-color;
+        }
+        i {
+            font-size: 90%;
+        }
+    }
+    .list-covids {
+        justify-content: flex-start;
+        li {            
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.covid-condition-rule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px 30px;
+    p {
+        color: $light-color;
+    }
+    .covid-condition-left {
+        border-right: 1px solid $light-color;
+        padding-right: 20px;
+        width: calc(100% - 400px);
+    }
+    .covid-condition-right {
+        padding-left: 20px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        p {
+            font-size: 22px;
+        }
+    }
+    .numbers {
+        color: $light-color;
+        font-family: $Bold-text;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+.covid-social-list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -10px;
+        li {
+            padding: 0 10px;
+            margin-bottom: 5px;
+        }
+        a {
+            color: $light-color;
+            position: relative;
+            font-size: 12px;
+            line-height: 18px;
+            padding-left: 15px;
+            display: inline-block;
+            word-break: break-word;
+            i {
+                position: absolute;
+                left: 0px;
+                top: 4px;
+            }
+        }
+    }
+}
+
+.bg-teal { background-color: #00a185 !important; }
+.bg-dodger { background-color: $dodgerblue !important; }
+.bg-darkcyan { background-color: $darkcyan !important; }
+.bg-crimson { background-color: $crimson !important; }
+.bg-octonary { background-color: $octonary-color !important; }
+
+.mainBanner-overlap {
+    &.homeCareOverlap {
+        margin-top: -675px;
+    }
+}
+
+// custom select
+
+.select-input {
+    position: relative;
+    .custom-select-list {
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+        width: 100%;
+        top: 100%;
+        margin-top: 9px;
+        left: 0;
+        border: 1px solid $quaternary-color;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 138px;
+        overflow: auto;
+        .list-item {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+    }
+    .form-control[disabled], 
+    .form-control[readonly], 
+    fieldset[disabled] 
+    .form-control {
+        cursor: default;
+        background-color: transparent;
+    }
+}
+
+.custom-select {
+    position: relative;
+    .error {
+        margin-top: 8px;
+        left: -10px;
+    }
+    .iconStyle {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        color: $secondary-color;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+}
+
+.custom-select .error {
+    margin-top: 8px;
+    left: -10px;
+}
+
+.newvideoBox {
+    .media {
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: block;
+    }
+    .play-btns-new {
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.termConditions {
+    h3 {
+        font-size: 20px;
+        color: #db5134;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Lato-Regular;
+        margin-bottom: 15px;
+    }
+}
+
+.marqueeBox {
+    padding: 0;
+    background-color: #db5134;
+    p {
+        color: #fff;
+        font-size: 15px;
+    }
+    .top-covid-info {
+        a {
+            font-size: 15px;
+            color: #fff;
+            // animation: covidfadeIn 1s infinite alternate;
+            // -moz-animation: covidfadeIn 1s infinite alternate;
+            // -webkit-animation: covidfadeIn 1s infinite alternate;
+        }
+    }    
+    &.marquee-gray {
+        background-color: #eaeaea;
+        p {
+            color: #606164;
+            a {
+                color: #606164;
+                &:hover {
+                    color: rgb(219, 81, 52);
+                }
+            }
+        }
+    }
+}
+
+.marquee-text {
+    overflow: hidden;
+    p {
+        display: inline-block;
+        width: max-content;        
+        padding-left: 100%;        
+        will-change: transform;
+        animation: marqueetext 25s linear infinite;
+        white-space: nowrap;
+        &:hover {
+            animation-play-state: paused
+        }
+    }
+}
+    
+  
+@keyframes marqueetext {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@-moz-keyframes marqueetext {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@-webkit-keyframes marqueetext {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@keyframes covidfadeIn { 
+    from { opacity: 0; } 
+}
+
+@-moz-keyframes covidfadeIn {
+    from { opacity: 0; } 
+}
+@-webkit-keyframes covidfadeIn {
+    from { opacity: 0; } 
+}
+
+
+@media(max-width: 1199px){
+    .covidpriceBox {
+        .covidprice-ul {
+            margin: 0 -10px;
+            .covidprice-li {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .request-homecare-form {
+        padding: 25px 20px;
+    }
+    .covidpriceBox {
+        .covidprice-ul {
+            .covidprice-li {
+                width: 33.33%;
+            }
+        }
+    }
+    .covid-condition-rule {
+        display: block;
+        text-align: center;
+        .covid-condition-left {
+            width: 100%;
+            padding-right: 0px;
+            padding-bottom: 20px;
+            border-right: none;
+        }
+        .covid-condition-right {
+            padding-left: 0px;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .gettreatedBox {
+        &.home-care-program {
+            .blocks.three-blocks {
+                li {
+                    width: 50%;
+                    margin-bottom: 0px;
+                }
+            } 
+        }
+    }
+    .covidpriceBox {
+        .covidprice-ul {
+            .covidprice-li {
+                width: 50%;
+            }
+        }
+    }
+    .main-homecare-banner {
+        min-height: inherit !important;
+    }
+
+    .mainBanner-overlap {
+        &.dayCareOverlap {
+            &.homeCareOverlap {
+                margin-top: -655px;
+            }
+        } 
+    }
+    .covid-social-list {
+        ul {
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    
+    .covidpriceBox {
+        .covidprice-ul {
+            .covidprice-li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 479px) {
+    .list-covids {
+        justify-content: flex-start;
+    }
+    
+}
+
+

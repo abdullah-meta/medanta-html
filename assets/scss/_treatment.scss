@@ -1,0 +1,818 @@
+.medantaModal1 {
+    .modal-content {
+        padding: 40px 100px;
+        border-radius: 0;
+        .modal-header {
+            border-bottom: 0;
+            padding: 0;
+            text-align: center;
+            padding: 0 0 10px;
+        }
+        .modal-body {
+            font: 14px/22px $Light-text;
+            padding: 0;
+        }
+        .modal-footer {
+            padding: 15px 0 0;
+            border-top: 1px solid #d2d2d2;
+        }
+        .close {
+            position: absolute;
+            opacity: 1;
+            right: 29px;
+            top: 29px;
+        }
+    }
+}
+
+.disclaimer {
+    p {
+        font: 11px/18px $Light-text;
+        color: $quinary-color;
+        strong {
+            color: $primary-color;
+        }
+    }
+}
+
+.estimate {
+    text-align: center;
+    padding-top: 30px;
+    .title5 {
+        font-family: $Regular-text;
+    }
+    ul {
+        list-style: none;
+    }
+}
+
+.estimateLabel {
+    padding: 15px 0;
+    .label {
+        color: $primary-text-color;
+        vertical-align: middle;
+        font-size: 14px;
+        display: inline-block;
+        padding: 5px 13px;
+    }
+    .selectType {
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: 1px solid $primary-text-color;
+        a {
+            color: $quinary-color;
+            position: relative;
+            padding-right: 20px;
+            min-width: 90px;
+            line-height: 20px;
+            &:before {
+                height: 10px;
+                width: 10px;
+                background-position: -20px -110px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                text-indent: -9999px;
+                background-image: url('../images/sprite.png');
+                background-size: 1000px;
+                content: '';
+                position: absolute;
+                right: 0%;
+                top: 50%;
+                margin-top: -5px;
+            }
+        }
+    }
+    .nice-select {
+        border-radius: 0;
+        height: 25px;
+        line-height: 20px;
+        padding-left: 10px;
+        padding-right: 18px;
+        border: 0;
+        min-width: 90px;
+        background: none;
+        &:after {
+            margin-top: -5px;
+        }
+        .list {
+            .option {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+.lastTotal {
+    display: inline-block;
+    padding: 12px 0;
+    border: 1px solid #b7b7b7;
+    background-color: #f6f6f6;
+    li {
+        display: inline-block;
+        padding: 0 28px;
+        border-left: 1px solid #ddd;
+        vertical-align: middle;
+        .selectType {
+            a {
+                color: #333333;
+                display: block;
+                text-align: left;
+            }
+        }
+        &:first-child {
+            border-left: 0;
+        }
+        .totalVal {
+            font: 30px $Light-text;
+            i {
+                margin: 0 5px 0 0;
+                font-size: 24px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.mainbanner-detail {
+    &.alltest {
+        min-height: 315px;
+        .title {
+            padding-bottom: 10px;
+        }
+        .title6 {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.alltestSearch {
+    .testSearch {
+        margin: 16px auto 18px;
+        max-width: 500px;
+    }
+}
+
+.testSearch {
+    position: relative;
+    .testInput {
+        height: 34px;
+        border-bottom: 1px solid #6e6e6e;
+        padding-right: 20px;
+        width: 100%;
+        font-family: $Light-text;
+    }
+    .testSubmit {
+        position: absolute;
+        background-color: #fff;
+        border: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -8px;
+    }
+}
+
+.commontestBox {
+    padding: 0 68px 50px;
+    .or {
+        border-bottom: 0;
+        span {
+            background-color: transparent;
+            border: 1px solid #b9b9b9;
+            color: #333;
+            font-family: $Regular-text;
+        }
+    }
+}
+
+.testType {
+    background-color: #fff;
+    padding: 0px 15px;
+    .testBlock {
+        border-right: 1px solid #c1c1c1;
+        &:last-child {
+            border-right: 0;
+        }
+        .type {
+            padding: 30px 15px 0;
+            min-height: 285px;
+            background: #dedede;
+            overflow: hidden;
+            .icon {
+                margin-bottom: 6px;
+            }
+            .title5 {
+                padding-bottom: 14px;
+            }
+            p {
+                font: 13px/18px $Light-text;
+            }
+        }
+    }
+}
+
+.allTestBox {
+    background: #fff;
+}
+
+.testNameList {
+    list-style: none;
+    margin: 0 -15px 0;
+    padding: 23px 0 2px;
+    float: left;
+    background: #fff;
+    min-height: 440px;
+    &.testColumn{
+        li {
+            width: 100%;
+            padding: 0 15px 10px;
+            &:nth-child(4n) {
+                border-right: 0;
+            }
+        }    
+    }
+    li {
+        float: left;
+        width: 25%;
+        border-right: 0;
+        padding: 0 28px 10px;
+        font: 14px/24px $Regular-text;
+        &:nth-child(4n) {
+            border-right: 0;
+        }
+        &.active {
+            a {
+                color: #333;
+            }
+        }
+    }
+}
+
+.testContent {
+    padding: 0 30px;
+    position: relative;
+    clear: both;
+    float: left;
+    width: 100%;
+    .close {
+        position: absolute;
+        right: 28px;
+        top: 22px;
+        opacity: 1;
+        z-index: 1000;
+    }
+}
+
+.testPane {
+    position: relative;
+    border-top: 1px solid #bbbbbb;
+    margin-top: 31px;
+    padding-top: 45px;
+    &:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        margin-left: -8px;
+        margin-top: -8px;
+        background-color: #fff;
+        border-bottom: 1px solid #bbbbbb;
+        border-right: 1px solid #bbbbbb;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .title3 {
+        padding-bottom: 55px;
+    }
+    .close {
+        position: absolute;
+        right: 28px;
+        top: 22px;
+        opacity: 1;
+        z-index: 1000;
+    }
+    .content {
+        .title6 {
+            font-size: 14px;
+            padding-bottom: 13px;
+        }
+        p {
+            padding-bottom: 13px;
+        }
+    }
+}
+
+.testDisclaimer {
+    padding: 0 30px;
+}
+
+.bannerbg1Box {
+    &.banner-height4 {
+        height: 254px;
+        .banner-heading {
+            padding: 60px 0 20px;
+            .big-bold {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+.mwbannerBox.meet-patients {
+    height: 496px;
+    margin-bottom: 14px;
+}
+
+.story-meet-patient {
+    padding: 103px 125px 95px;
+    .media {
+        min-height: 250px;
+    }
+    h3 {
+        color: #ffffff;
+        font-size: 24px;
+        padding-bottom: 12px;
+        line-height: 30px;
+    }
+    p {
+        color: #b1b1b1;
+        line-height: 22px;
+        font: 14px/22px $Light-text;
+    }
+    .icon-holder {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -47px;
+        margin-top: -47px;
+    }
+}
+
+.isotope-cover {
+    &.storyVideo {
+        .img-cover {
+            position: relative;
+            .overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: block;
+            }
+            .icon-holder {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -36px;
+                margin-left: -36px;
+                .icon {
+                    background-size: 800px;
+                    &.icon-95 {
+                        height: 76px;
+                        width: 76px;
+                        &.play-btn {
+                            background-position: 0 -380px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.fullwidth {
+        .item {
+            width: 100%;
+            overflow: hidden;
+            margin: 0px 0 30px;
+            position: relative;
+            padding-left: 361px;
+            background-color: #fff;
+            box-shadow: 0 3px 5px -5px #000;
+            min-height: 204px;
+            .img-cover {
+                position: absolute;
+                width: 361px;
+                height: 204px;
+                left: 0;
+                top: 50%;
+                margin-top: -102px;
+                overflow: hidden;
+                float: left;
+            }
+            .news-info {
+                padding: 33px 30px 5px;
+                box-shadow: none;
+                a.headtext {
+                    min-height: 0;
+                    margin-bottom: 12px;
+                    display: block;
+                    font-family: $Bold-text;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #333333;
+                }
+                p {
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.requestCall {
+    .meetPatient {
+        background-color: #d2d2d2;
+        padding: 27px 0;
+    }
+    .icon {
+        vertical-align: middle;
+    }
+    .title4 {
+        font-size: 22px;
+    }
+    a {
+        color: #333;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .call {
+        list-style: none;
+        text-align: center;
+        padding: 30px 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            font: 22px $Light-text;
+            padding: 0 18px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.blocks {
+    &.four-blocks {
+        &.dayCare {
+            .CTA {
+                width: 24.5%;
+                a {
+                    color: $primary-text-color;
+                }
+            }
+        }
+    }
+    &.dialysis {
+        .CTA {
+            text-align: left;
+            p {
+                a {
+                    font-family: $Bold-text;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.detailCntr {
+    &.daycareBanner {
+        height: 599px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.mainBanner-overlap {
+    &.dayCareOverlap {
+        margin-top: -599px;
+        padding-top: 130px;
+        .detail {
+            .title {
+                padding-bottom: 6px;
+            }
+            .title6 {
+                line-height: 24px;
+                padding-bottom: 13px;
+            }
+            &.mainbanner-detail {
+                min-height: 314px;
+            }
+        }
+    }
+}
+
+.getAppointment {
+    width: 100%;
+    float: left;
+}
+
+.careCenter {
+    .ph {
+        color: $primary-text-color;
+        font: 22px $Light-text;
+        .icon {
+            background-size: 1160px;
+            &.icon-15 {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
+
+.achieveBox {
+    padding: 55px 30px;
+    .icon-holder {
+        padding-bottom: 15px;
+    }
+    .title3 {
+        padding-bottom: 20px;
+    }
+    .achieveHead p {		
+        font: 14px "Montserrat-Light";		
+        line-height: 22px; 
+    }
+    .treatment-list {
+        padding: 20px 95px 53px;
+        ul.list-style4 {
+            > li {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .medantaModal1 {
+        .modal-lg {
+            width: 1140px;
+            margin-top: 200px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .commontestBox {
+        padding: 0 30px 50px;
+    }
+    .story-meet-patient {
+        padding: 60px;
+    }
+    .isotope-cover {
+        &.fullwidth {
+            .item {
+                .img-cover {
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .testNameList {
+        li {
+            width: 33%;
+            &:nth-child(4n) {
+                border-right: 1px solid #ccc;
+            }
+            &:nth-child(3n) {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .commontestBox {
+        padding: 0 30px 30px;
+    }
+    .testType {
+        /*padding: 30px;*/
+        .testBlock {
+            border-right: 0;
+            border-bottom: 1px solid #c1c1c1;
+            padding: 0;
+            clear: both;
+            &:last-child {
+                border-right: 0;
+                border-bottom: 0;
+            }
+            .type {
+                padding: 30px 0px 30px 40px;
+                min-height: 0;
+                position: relative;
+                .iconMobile {
+                    margin-bottom: 6px;
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+    .story-meet-patient {
+        padding: 30px 30px 30px;
+    }
+    .isotope-cover {
+        &.fullwidth {
+            .item {
+                padding-left: 0;
+                .img-cover {
+                    left: auto;
+                    position: relative;
+                    top: auto;
+                    margin: 0 0 30px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .requestCall {
+        .meetPatient {
+            background-color: #d2d2d2;
+            padding: 15px 0;
+        }
+        .call {
+            padding: 10px 0;
+            li {
+                display: block;
+                padding: 10px 18px;
+                font-size: 18px;
+                border-bottom: 1px solid $quaternary-color;
+                &:last-child {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+            }
+        }
+        .title4 {
+            font-size: 18px;
+            line-height: 26px;
+            span {
+                display: block;
+            }
+        }
+    }
+    .testNameList {
+        li {
+            width: 100%;
+            border-right: 0;
+            border-bottom: 1px solid $quaternary-color;
+            padding: 0;
+            &:nth-child(3n),
+            &:nth-child(4n) {
+                border-right: 0;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            a {
+                display: block;
+                padding: 10px;
+            }
+        }
+    }
+    .testContent {
+        padding: 0 10px;
+        .media {
+            margin-bottom: 15px;
+        }
+    }
+    .responsive-tabs-container {
+        .tab-content {
+            .testPane {
+                margin-top: 0;
+                &:before {
+                    left: 40px;
+                    margin-left: 0px;
+                    background-color: #fff;
+                    border-top: 0;
+                    border-left: 0;
+                    border-bottom: 1px solid #bbbbbb;
+                    border-right: 1px solid #bbbbbb;
+                    -moz-transform: rotate(225deg);
+                    -ms-transform: rotate(225deg);
+                    -o-transform: rotate(225deg);
+                    -webkit-transform: rotate(225deg);
+                    transform: rotate(225deg);
+                }
+                .close {
+                    right: 10px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+    .medantaModal1 .modal-content {
+        padding: 30px;
+    }
+    .blocks {
+        &.four-blocks {
+            &.dayCare {
+                margin: 0 15px;
+                .CTA {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .arrowList {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .achieveHead {
+        padding: 0 15px;
+    }
+    .careCenter {
+        .ph {
+            font-size: 18px;
+        }
+    }
+    .testPane {
+        .title3 {
+            padding-bottom: 10px;
+        }
+    }
+    .achieveBox {
+        .treatment-list {
+            padding: 20px 20px 0px;
+        }
+    }
+    .allTestBox {
+        .testContent {
+            .testPane {
+                margin-top: 15px;
+            }
+            .accordion-link {
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .story-meet-patient {
+        padding: 30px 30px 30px;
+        .media {
+            min-height: 150px;
+        }
+    }
+    .achieveBox {
+        padding: 30px 15px;
+    }
+    .alltestSearch {
+        .testSearch {
+            .testSubmit {
+                right: 15px;
+            }
+        }
+    }
+    .testDisclaimer {
+        padding: 0 15px;
+    }
+    .medantaModal1 {
+        .modal-content {
+            .close {
+                position: absolute;
+                opacity: 1;
+                right: 10px;
+                top: 5px;
+            }
+        }
+    }
+    .lastTotal {
+        li {
+            .totalVal {
+                font: 20px "Montserrat-Light";
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mwbannerBox.meet-patients {
+        height: 550px;
+    }
+    .story-meet-patient {
+        padding: 15px;
+        .media {
+            min-height: 150px;
+        }
+    }
+    .commontestBox {
+        padding: 0 15px 30px;
+    }
+    .lastTotal {
+        li {
+            display: block;
+            border: 0;
+        }
+    }
+}

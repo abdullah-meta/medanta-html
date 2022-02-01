@@ -1,0 +1,158 @@
+.banner-height532 {
+    height: 532px;
+}
+
+.mg-t-n20 {
+    margin-top: -20px;
+}
+.pd-lr50i {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.mg-n-t50i {
+    margin-top: -50px !important;
+}
+
+.no-border-bottom {
+    border-bottom: none !important;
+}
+
+.width-160i {
+    max-width: 160px !important;
+}
+
+.banner-detail {
+    padding-top: 119px;
+    h1.title {
+        color: #ffffff;
+        font-size: 36px;
+        font-family: $Bold-text;
+        line-height: 24px;
+        padding-bottom: 18px;
+    }
+    .banner_para {
+        color: #ffffff;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: $Light-text;
+    }
+}
+
+.top-overlap88 {
+    margin-top: -88px;
+    position: relative;
+    z-index: 100;
+}
+
+.campus-design {
+    padding: 69px 132px 47px 132px;
+    h2 {
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.readmore-anchor {
+    display: block;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.space-care {
+    padding: 45px 132px 0 132px;
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .care-para1 {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*.adjust-pad1 {
+    padding-left: 45px !important;
+    padding-right: 135px !important;
+}
+
+.adjust-pad2 {
+    padding-left: 120px !important;
+}
+
+.adjust-pad3 {
+    padding-left: 150px !important;
+    padding-right: 10px !important;
+}
+
+.adjust-pad4 {
+    padding-left: 45px !important;
+
+}
+
+.adjust-pad5 {
+    padding-left: 120px !important;
+    padding-right: 80px !important;
+}
+.adjust-pad6 {
+    padding-left: 120px !important;
+    padding-right: 0 !important;
+}*/
+
+@media only screen and (max-width: 1199px) {
+    /*.adjust-pad2, .adjust-pad5 {
+        padding-left: 30px !important;
+    }
+    .adjust-pad3 {
+        padding-left: 90px !important;
+    }
+    .adjust-pad6 {
+        padding-left: 40px !important;
+    }*/
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .width-100-percent {
+        max-width: 100% !important;
+    }
+    .campus-design {
+        padding: 69px 72px 47px 72px;
+    }
+    .space-care {
+        padding: 45px 72px 0 72px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .campus-design {
+        padding: 39px 20px 37px 20px;
+        h2 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .space-care {
+        padding: 35px 20px 0 20px;
+        h3 {
+            line-height: 20px;
+        }
+    }
+    .carousel-control {
+        &.mg-t0i {
+            margin-top: 0 !important;
+        }
+    }
+    .pd-x-b0 {
+        padding-bottom: 0 !important;
+    }
+    .pd-lr50i {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

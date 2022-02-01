@@ -1,0 +1,498 @@
+.innercontentCntr.critical_careCntr {
+    .banner_para { 
+        color: $light-color;
+        margin-bottom: 22px;
+    }
+}
+
+.special_pd {
+    padding: 30px 60px !important;
+}
+
+.custom_margin {
+    margin-top: -562px!important;
+}
+
+.pd-custom {
+    padding-left: 55px !important;
+}
+
+.special-ccu {
+    .listed_services {
+        .diagnoseBox {
+            .explained-care {
+                display: block;
+                font-family: $Light-text;
+                text-align: left;
+                padding-right: 10px;
+                margin-top: 0;
+            }
+            .specialized-clinics {
+                li {
+                    text-align: left;
+                    a {
+                        span {
+                            text-decoration: underline;
+                            /*max-width: 110px;*/
+                            display: block;
+                        }
+                    }
+                }
+                li.active {
+                    &:before {
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -70px;
+                        top: 100%;
+                        margin-top: 24px;
+                        content: '';
+                        width: 13px;
+                        height: 13px;
+                        background-color: #ffffff;
+                        border-top: 1px solid #dddddd;
+                        border-left: 1px solid #dddddd;
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        z-index: 10;
+                        display: inline-block;
+                        background-image: none;
+                    }
+                    a {
+                        &:before {
+                            /*display: none;*/
+                        }
+                        span {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .padding-all50 {
+        .play-video-div {
+            img {
+                margin: 0 auto;
+            }
+        }
+        .para-img {
+            padding: 0 30px !important;
+            margin-left: -15px;
+            font-family: $Regular-text;
+        }
+    }
+}
+
+.protocols_care {
+    padding: 0 100px 30px;
+    h4 {
+        font-family: $Bold-text;
+    }
+    .listed_services {
+        .diagnoseBox {
+            .protocol-list {
+                li {
+                    /*height: auto !important;*/
+                    /*margin-bottom: 0;*/
+                    a {
+                        text-decoration: none;
+                        span {
+                            display: block;
+                            text-align: left;
+                            text-decoration: underline;
+                            &.explained-care {
+                                display: block;
+                                font-family: "Montserrat-Light";
+                                text-align: left;
+                                padding-right: 10px;
+                                margin-top: 0;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.planned_infra {
+    padding: 40px 100px 50px 100px;
+    h4 {
+        font-family: $Bold-text;
+    }
+    .listed_services {
+        .diagnoseBox {
+            .list-style1 {
+                li {
+                    /*margin-bottom: 0;*/
+                    height: auto !important;
+                }
+                .explained-care {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+.type_ccu {
+    padding: 0 100px 50px 100px;
+    h2 {
+        font-size: 24px;
+        font-family: $Bold-text;
+        margin-bottom: 40px;
+        padding-top: 50px;
+    }
+    h4 {
+        font-family: $Bold-text;
+        margin-bottom: 25px;
+    }
+    p {
+        padding: 0 100px 0 30px;
+    }
+    .listed_services {
+        .diagnoseBox {
+            .list-style1 {
+                li {
+                    height: auto !important;
+                }
+            }
+        }
+    }
+}
+
+.cus-pos {
+    margin-top: -72px;
+    z-index: -1
+}
+
+
+/*bootstrap slider (carousel)*/
+
+.cls_vertical {
+    height: 400px;
+    width: 886px;
+    margin: 0 auto;
+    /*background-color: $light-color;*/
+    .carousel-inner_vertical {
+        width: 710px;
+        float: left;
+        margin-right: 8px;
+        &.virtualBlackBg {
+            position: relative;
+            &:before{
+                background-color: rgba(0, 0, 0, 0.5);
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 45px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+        }
+        &::before {		
+            background-color: rgba(0, 0, 0, 0.5);		
+            content: '';		
+            position: absolute;		
+            bottom: 0;		
+            height: 45px;		
+            left: 0;		
+            width: 100%;		
+            z-index: 1; 
+        }
+    }
+    .list-group_vertical {
+        height: 400px;
+        width: 168px;
+        float: right;
+        li {
+            height: 95px;
+            width: 168px;
+            margin-bottom: 7px;
+            padding: 0;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*bootstrap slider (carousel)*/
+
+@media only screen and (max-width: 1199px) {
+    .special-ccu {
+        .listed_services {
+            .diagnoseBox {
+                .specialized-clinics {
+                    li {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .type_ccu {
+        padding: 0 30px 50px 30px;
+    }
+    .planned_infra {
+        padding: 50px 30px;
+    }
+    .protocols_care {
+        padding: 0 30px 30pxs;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /*.special-ccu {
+        .listed_services {
+            .diagnoseBox {
+                .explained-care {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }*/
+    .silder-wrap {
+        max-width: 700px;
+        .ninja-slider {
+            width: 510px !important;
+        }
+        .thumbnail-slider {
+            width: 170px !important;
+        }
+    }
+    .pd-custom {
+        padding-left: 15px !important;
+    }
+    .cls_vertical {
+        width: 680px;
+        height: 315px;
+        .carousel-inner_vertical {
+            width: 540px;
+            img {
+                height: 315px;
+            }
+        }
+        .list-group_vertical {
+            width: 130px;
+            height: 315px;
+            li {
+                width: 130px;
+                height: 75px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .special-ccu {
+        .listed_services {
+            .diagnoseBox {
+                .explained-care {
+                    margin: 18px auto 0 auto;
+                    width: auto;
+                    padding-right: 0px;
+                }
+                .specialized-clinics {
+                    li {
+                        a {
+                            span {
+                                max-width: none;
+                                min-width: 210px !important;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    li.active {
+                        &:before {
+                            /*display: none;*/
+                        }
+                    }
+                }
+            }
+        }
+        .padding-all50 {
+            padding: 35px 20px 10px !important;
+        }
+    }
+    .protocols_care {
+        padding: 0 20px 20px;
+        .listed_services {
+            .diagnoseBox {
+                .protocol-list {
+                    li {
+                        margin-bottom: 20px !important;
+                        a {
+                            span {
+                                margin: 0 auto;
+                                max-width: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .planned_infra {
+        /*padding: 50px 20px;*/
+        padding: 30px 20px 0;
+        .listed_services {
+            .diagnoseBox {
+                .list-style1 {
+                    li {
+                        margin-bottom: 20px;
+                        a {
+                            text-align: left;
+                            display: block;
+                        }
+                    }
+                    .explained-care {
+                        width: 100% !important;
+                        text-align: left;
+                        padding-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+    .type_ccu {
+        .listed_services {
+            .diagnoseBox {
+                .list-style1 {
+                    li {
+                        padding: 0 0 0 20px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+    .type_ccu {
+        padding: 0 20px 50px 20px;
+        p {
+            padding: 0 20px;
+        }
+    }
+    .silder-wrap {
+        max-width: 420px;
+        .ninja-slider {
+            width: 320px !important;
+            height: 300px !important;
+        }
+        .thumbnail-slider {
+            width: 90px !important;
+            height: 300px !important;
+        }
+    }
+    .virtual-position {
+        top: auto;
+        bottom: 25%;
+    }
+    .pd-custom {
+        padding-left: 0 !important;
+    }
+    .cls_vertical {
+        /*width: 405px;*/
+        width: 100%;
+        /*height: 220px;*/
+        height: auto;
+        .carousel-inner_vertical {
+            /*width: 310px;*/
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 5px;
+            img {
+                /*height: 220px;*/
+                height: auto;
+            }
+        }
+        .list-group_vertical {
+            /*width: 87px;
+            height: 220px;*/
+            width: 100%;
+            height: auto;
+            li {
+                /*width: 98px;
+                height: 52px;*/
+                width: 24%;
+                height: auto;
+                float: left;
+                margin-right: 1.3%;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.cus-pos {
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+    .special-ccu {
+        .listed_services {
+            .diagnoseBox {
+                .explained-care {
+                    width: auto;
+                }
+            }
+        }
+        .padding-all50 {
+            padding: 30px;
+            .para-img {
+                padding: 0 !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+    .silder-wrap {
+        max-width: 260px;
+        .ninja-slider {
+            width: 190px !important;
+            height: 200px !important;
+        }
+        .thumbnail-slider {
+            width: 60px !important;
+            height: 200px !important;
+        }
+    }
+    .type_ccu {
+        padding: 0 10px 50px 10px;
+    }
+    .virtual-position {
+        /*top: 15%;*/
+        bottom: 27%;
+    }
+    /*.cls_vertical {
+        width: 250px;
+        height: 110px;
+        .carousel-inner_vertical {
+            width: 180px;
+            margin-right: 5px;
+            img {
+                height: 110px;
+            }
+        }
+        .list-group_vertical {
+            width: 65px;
+            height: 110px;
+            li {
+                width: 68px;
+                height: 34px;
+            }
+        }
+    }*/
+}
+@media only screen and (max-width: 360px) {		
+      .virtual-position {		
+        bottom: 30%; 
+    } 
+}

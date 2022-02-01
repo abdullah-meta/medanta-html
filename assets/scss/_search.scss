@@ -1,0 +1,403 @@
+/* Global */
+.result-content {
+    padding: 10px 0;
+    .result-content-line {
+        color: $dark-color;
+        font-weight: 100;
+        font-size: 14px;
+        letter-spacing: 1px;
+        .badge-custom {
+            padding: 5px 6px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            background-color: $silver2;
+            margin-left: 10px;
+        }
+    }
+}
+
+.search-navbar {
+    margin-top: 50px;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+    margin-bottom: 8px; 
+    .navbar-nav {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        float: none;
+        li {
+            float: none;
+            display: inline-block;
+            padding: 0 17px;
+            a {
+                color: $quinary-color;
+                border: 0;
+                padding: 22px 0 21px;
+                margin-right: 0px;
+                position: relative;
+                &:hover {
+                    color: $secondary-color;
+                    background-color: transparent;
+                }
+                &:focus {
+                    color: $quinary-color;
+                    background-color: transparent;
+                    border: 0;
+                }
+            }
+            &.active {
+                a {
+                    color: $secondary-color;
+                    background-color: transparent;
+                    border: 0;
+                    font-family: $Bold-text;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -8px;
+                        width: 0;
+                        height: 0px;
+                        bottom: -1px;
+                        height: 0px;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 8px solid #db5134;
+                        z-index: 100;
+                    }
+                    &:focus {
+                        color: $secondary-color;
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-page-pagination {
+    margin-bottom: 30px;
+}
+
+.search-results {
+    margin-bottom: 60px;
+    .faq {
+        padding-top: 85px;
+    }
+    .search-bar {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 55px;
+        padding: 0 70px;
+        .ailmentsearch {
+            justify-content: center;
+            justify-items: center;
+            margin: 0 auto;
+            max-width: 37%;
+            .ailmentInput {
+                color: $dark-color;
+            }
+            .search-magni-icon {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                border: 0;
+                background: none;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .search-find {
+        margin: 13px 0;
+    }
+
+    .resultBox {
+        padding: 0;
+        .result-download-btn {
+            padding: 0px 196px;
+            a {
+                span {
+                    font-weight: 700;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .ailment-info {
+            padding: 40px 196px;
+            .result-data {
+                li {
+                    line-height: 30px;
+                }
+            }
+        }
+        .search-resultbg {
+            background-color: $light-color;
+            &:nth-child(even) {
+                background-color: $decimal-color2;
+            }
+        }
+        .totalresult {
+            margin: 0 196px;
+            font-family: "MontserratRG";
+            line-height: 18px;
+            overflow: hidden;
+            border-bottom: none;
+            padding-bottom: 0;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    display: inline;
+                }
+            }
+        }
+    }
+    .tpa-insurance {
+        padding: 20px 196px;
+        .row-flex {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .margin-btm {
+              margin-bottom: 50px;
+          }
+          .content-height {
+            height: 100%;
+            padding: 20px 20px 10px;
+          }
+        .tpa-form-box {
+            text-align: center;
+            border: 1px solid $nonary-color;
+            padding: 35px 20px 25px 20px;
+            .logo-image {
+                background-color: $light-color;
+                width: 100%;
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .brand-name {
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                margin: 12px 0;
+            }
+            .brand-form-download {
+                font-size: 14px;
+                font-weight: 300;
+                span {
+                    font-weight: 600;
+                    font-size: 11px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    
+} 
+
+@media only screen and (max-width: 991px) {
+    .search-results {
+        .search-bar {
+            width: 100%;
+            padding: 0 80px;
+            .ailmentsearch {
+                max-width: 63%;
+            }
+        }
+        .resultBox {
+            .result-download-btn {
+                padding: 20px 80px;
+            }
+            .totalresult {
+                margin: 0 80px;
+                ul {
+                    li {
+                        padding: 0px 10px;
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .ailment-info {
+                padding: 20px 80px;
+            }
+        }
+        .tpa-insurance {
+            padding: 20px 80px;
+            .row-flex {
+                display: block;
+            }
+            .margin-btm {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .result-content {
+        padding: 4px 0;
+        .result-content-line {
+            font-size: 13px;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .search-results {
+        margin-bottom: 0;
+        .faq {
+            padding-top: 320px;
+            .title1 {
+                font: 26px "Montserrat-Bold"
+            }
+        }
+        .search-bar {
+            width: 100%;
+            padding: 0 60px;
+            .ailmentsearch {
+                max-width: 100%;
+            }
+        }
+        .resultBox {
+            .result-download-btn {
+                padding: 20px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .totalresult {
+                margin: 0 20px;
+                ul {
+                    li {
+                        span {
+                            font-size: 14px;
+                        }
+                        &:first-child {
+                            width: 100%;
+                            text-align: left;
+    
+                        }
+                    }
+                }
+            }
+            .ailment-info {
+                padding: 20px 20px;
+            }
+        }
+        .tpa-insurance {
+            padding: 20px 20px;
+        }
+    }
+    .result-content {
+        .result-content-line {
+            font-size: 12px;
+        }
+    }
+    .search-navbar {
+        margin-top: 50px;
+        border-bottom: 0px solid #eee;
+        margin-bottom: 0;
+        padding: 0 60px;
+        .navbar-nav {
+            border-bottom: 0px solid rgba(255, 255, 255, 0.4);
+            li {
+                display: block;
+                a {
+                    padding: 5px 21px;
+                    &:hover {
+                        color: $secondary-color;
+                        background-color: transparent;
+                    }
+                    &:focus {
+                        color: $quinary-color;
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+                &.active {
+                    a {
+                        &:after {
+                            content: none;
+                        }
+                        &:focus {
+                            color: $secondary-color;
+                            background-color: transparent;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .collapse-tab-menu {
+            display: flex!important;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            a {
+                display: inline-block;
+                width: 100%;
+                text-align: left;
+                border-bottom: 1px solid $darkslategray-100;
+                padding-bottom: 10px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 97%;
+                top: 42%;
+                margin-top: -5px;
+                height: 10px;
+                width: 10px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                text-indent: -9999px;
+                background-image: url(../images/sprite.png);
+                background-size: 1000px;
+                background-position: 0px -110px;
+            }
+            .dropdown-menu {
+                width: 100%;
+                li {
+                    a {
+                        color: $quinary-color;
+                        border: 0;
+                        margin-right: 0px;
+                        position: relative;
+                        padding: 10px 10px;
+                        &:hover {
+                            color: $secondary-color;
+                            background-color: transparent;
+                        }
+                        &:focus {
+                            color: $quinary-color;
+                            background-color: transparent;
+                            border: 0;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: $secondary-color;
+                            background-color: transparent;
+                            border: 0;
+                            font-family: $Bold-text;
+                            &:after {
+                                content: none;
+                            }
+                            &:focus {
+                                color: $secondary-color;
+                                background-color: transparent;
+                                border: 0;
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

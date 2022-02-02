@@ -43890,6 +43890,18 @@ hr.borderNonary {
   padding-bottom: 50px;
 }
 
+.succeess-video-slider .slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-bottom: 2px;
+  padding-top: 3px;
+}
+
+.succeess-video-slider .slick-slide {
+  height: inherit !important;
+}
+
 .succeess-video-slider .slick-dots li {
   width: 10px;
   height: 10px;
@@ -43954,12 +43966,14 @@ hr.borderNonary {
   display: flex;
   margin: auto;
   border-radius: 50%;
-  max-width: 137px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 25px;
 }
 
 .treat-widget .widget-icon img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .treat-widget span {
@@ -44005,6 +44019,17 @@ hr.borderNonary {
   margin-right: -28px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .treat-slider .slick-arrow.slick-next {
+    margin-right: 0;
+    right: 0;
+  }
+  .treat-slider .slick-arrow.slick-prev {
+    left: 0;
+    right: auto;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .card-type-video .card-video iframe {
     height: 150px;
@@ -44030,32 +44055,11 @@ hr.borderNonary {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .treat-slider .slick-arrow.slick-next {
-    margin-right: 0;
-    right: 0;
-  }
-  .treat-slider .slick-arrow.slick-prev {
-    left: 0;
-    right: auto;
-  }
 }
 
 @media only screen and (min-width: 992px) {
-  .landing-video-boxes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .landing-video-boxes .single-video-box {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-    width: 33.33333%;
-    max-width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
+  .slick-dots {
+    display: none;
   }
 }
 /*# sourceMappingURL=MW_master.css.map */

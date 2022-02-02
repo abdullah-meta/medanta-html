@@ -215,15 +215,24 @@
 
 // New
 .succeess-video-slider{
-    
-    .slick-dots li{
-        width: 10px;
-        height: 10px;
-         button:before{
-            background: #db5134;
+    .slick-track{
+        display: flex!important;
+        padding-bottom: 2px;
+        padding-top: 3px;
+    }
+    .slick-slide{
+        height: inherit !important;
+    }
+    .slick-dots{
+        li{
             width: 10px;
             height: 10px;
-            border-radius: 500px;
+             button:before{
+                background: #db5134;
+                width: 10px;
+                height: 10px;
+                border-radius: 500px;
+            }
         }
     }
     .slick-list{
@@ -290,10 +299,11 @@
         display: flex;
         margin: auto;
         border-radius: 50%;
-        max-width: 137px;
+        // max-width: 137px;
+        justify-content: center;
         margin-bottom: 25px;
         img{
-            width: 100%;
+            max-width: 100%;
         }
     }
     span{
@@ -338,7 +348,19 @@
 
 
 @media only screen and (max-width: 1199px) {
-   
+   // Abdullah
+   .treat-slider{
+        .slick-arrow{
+            &.slick-next{
+                margin-right: 0;
+                right: 0;
+            }
+            &.slick-prev{
+                left: 0;
+                right: auto;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -349,6 +371,7 @@
             }
         }
     }
+     
 }
 
 @media only screen and (max-width: 767px) {
@@ -372,6 +395,7 @@
             }
         }
     }
+    // Delete this one
     .landing-video-boxes{
         display: flex;
     }
@@ -381,32 +405,11 @@
         padding-right: 30px;
     }    
 
-    // Abdullah
-    .treat-slider{
-        .slick-arrow{
-            &.slick-next{
-                margin-right: 0;
-                right: 0;
-            }
-            &.slick-prev{
-                left: 0;
-                right: auto;
-            }
-        }
-    }
+   
 }
 // Abdullah
 @media only screen and (min-width: 992px) {
-    .landing-video-boxes{
-        display: flex;
-        margin-left: -10px;
-        margin-right: -10px;
-        .single-video-box{
-            flex: 0 0 auto;
-            width: 33.33333%;
-            max-width: 100%;
-            padding-right:10px;
-            padding-left: 10px;
-        }
+    .slick-dots{
+        display: none;
     }
 }

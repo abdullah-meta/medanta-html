@@ -1548,6 +1548,13 @@ $('.treat-slider').slick({
                 }
             },
             {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
                 breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
@@ -1557,31 +1564,30 @@ $('.treat-slider').slick({
         ]
     });
 
-    const suceessVideoSlider =  $('.succeess-video-slider.slick-initialized')
     var suceessVideoSliderConfig = {
-        slidesToShow:1,
-        slidesToScroll: 1,
+        slidesToShow:3,
+        slidesToScroll: 3,
         arrows: false,
         dots:true,
-        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
         }
-    window.onresize = function (){
-        // $(".succeess-video-slider.slick-initialized").slick('reinit');
-        // $(".succeess-video-slider:not(.slick-initialized)").slick(suceessVideoSliderConfig);
-        if($(window).width() > 991 && !suceessVideoSlider.hasClass('slick-initialized')){
-            $('.succeess-video-slider.slick-initialized').slick("unslick");
-        }else if(!$('.succeess-video-slider').hasClass("slick-initialized")){
-            $('.succeess-video-slider').slick(suceessVideoSliderConfig);
-        }
-    };
-    window.onload = function (){
-        if($(window).width() > 991 && !suceessVideoSlider.hasClass('slick-initialized')){
-            $('.succeess-video-slider.slick-initialized').slick("unslick");
-        }else if(!$('.succeess-video-slider').hasClass("slick-initialized")){
-            $('.succeess-video-slider').slick(suceessVideoSliderConfig);
-        }
-    };
 
+        $('.succeess-video-slider').slick(suceessVideoSliderConfig)
     </script>
 </body>
 

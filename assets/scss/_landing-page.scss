@@ -29,7 +29,7 @@
         }
     }
     .consult-slider {
-        box-shadow: 0px 0px 5px rgba(0,0, 0, .15);
+        box-shadow: 0px 0px 5px rgba(0,0, 0,.15);
         background-color: #ffffff;
         height: 100%;
         border-radius: 5px;
@@ -105,7 +105,7 @@
 }
 .cutting-edge-list {       
     .cutting-edge-col {
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, .15);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0 , .15);
         background-color: #ffffff;
         height: 100%;
         border-radius: 5px;
@@ -131,6 +131,9 @@
 
 .voted-recovery-box {
     padding: 50px 0px;
+    .media {
+        margin-top: 6px;
+    }
     .voted-best-list {    
         li {
             &:last-child {
@@ -209,19 +212,21 @@
 }
 
 .suceess-video-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0px;
 }
 
-// New
 .succeess-video-slider{
+    .single-video-col {
+        padding: 0 10px;
+        height: 100%;
+    }
     .slick-track{
-        display: flex!important;
+        display: flex;
         padding-bottom: 2px;
         padding-top: 3px;
     }
     .slick-slide{
-        height: inherit !important;
+        height: inherit;
     }
     .slick-dots{
         li{
@@ -231,20 +236,11 @@
                 background: #db5134;
                 width: 10px;
                 height: 10px;
-                border-radius: 500px;
+                border-radius: 50%;
             }
         }
-    }
-    .slick-list{
-        margin: 0 -10px;
-    }
-    .slick-slide{
-        >div{
-            margin:0 10px;
-        }
-    }
+    }    
 }
-
 
 .card-type-video {
     background: #fff;
@@ -285,80 +281,124 @@
 //     }
 // }
 
-// --->> ABDULLLAH
-.treat-section {
-    padding-top: 50px ;
-    padding-bottom: 50px ;
-    color: #333333;
+.inner-boxes {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    p {
+        font-family: $Light-text;
+    }
 }
 
-.treat-widget{
-    text-align: center;
-    color: #333333;
-    .widget-icon{
-        display: flex;
-        margin: auto;
-        border-radius: 50%;
-        // max-width: 137px;
-        justify-content: center;
-        margin-bottom: 25px;
-        img{
-            max-width: 100%;
+.landing-banner-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: url('../images/landing/cardiacBanner-1.png');
+    padding: 40px 0px 10px;    
+    textarea {
+        &.form-control {
+            resize: none;
+            height: 40px;
         }
     }
-    span{
-        display: block;
+    .request-homecare-form {
+        padding: 25px 20px;
     }
-}
-.treat-slider{
-    .slick-arrow{
-        z-index: 1;
-        height: 52px;
-        width: 52px;
-        transform-origin: center;
-        transform-box: fill;
-        font-size:3.2rem;
-        &:before{
-            -webkit-transform: rotate(-90deg);;
-            transform: rotate(-90deg);;
-            -webkit-transform: rotate(-90deg);;
-            transform-box:fill-box;
-            transform-origin:center ;
-            font-size: inherit;
-            display: block;
-            content: "\e913";
-            font-family: "icomoon";
-            color: #db5134;
+    .detail.mainbanner-detail {
+        min-height: inherit;
+        margin-left: 370px;
+        padding-top: 40px;
+        p {
+            color: #fff;
+            margin-bottom: 20px;
         }
-        &.slick-prev {
-            right: 100%;
-            left: auto;
-            &:before{
-                -webkit-transform: rotate(90deg);;
-                transform: rotate(90deg);;
-                -webkit-transform: rotate(90deg);;
+        .list-covids {
+            li {
+                p {
+                    margin-bottom: 0px;
+                }
             }
         }
-        &.slick-next{
-            margin-right:-28px;
+    }
+}
+
+
+.treat-section {
+    padding: 50px 0px;
+    color: #333333;
+    .treat-slider-inner {
+        padding: 0 45px;
+    }
+    .treat-widget{
+        text-align: center;
+        color: #333333;
+        display: block;
+        padding: 0 10px;
+        cursor: default;
+        .widget-icon{
+            border-radius: 50%;
+            margin-bottom: 15px;
+            img{
+                max-width: 100%;
+                border-radius: 50%;
+                margin: auto;
+            }
+        }
+        span{
+            display: block;
+        }
+    }
+    .treat-slider{
+        .slick-arrow{
+            z-index: 1;
+            height: 52px;
+            width: 37px;              
+            &:before{                                                
+                font-family: "icomoon";
+                color: #db5134;
+                font-size: 45px;                            
+            }
+            &.slick-prev {
+                right: auto;
+                left: -40px;
+                &:before{
+                    content: "\e919";
+                }
+            }
+            &.slick-next{
+                left: auto;
+                right: -40px;
+                &:before {                    
+                    content: "\e918";
+                }
+            }
+        }
+    }
+    .treat-widgets{
+        [class^="col-"]{
+            margin-bottom: 20px;
         }
     }
 }
 
+
+
+
+
+@media only screen and (max-width: 1279px) {
+    .landing-banner-box {
+        .detail.mainbanner-detail {
+            margin-left: 405px;
+        }
+    }
+}
 
 
 @media only screen and (max-width: 1199px) {
-   // Abdullah
-   .treat-slider{
-        .slick-arrow{
-            &.slick-next{
-                margin-right: 0;
-                right: 0;
-            }
-            &.slick-prev{
-                left: 0;
-                right: auto;
-            }
+    .landing-banner-box {
+        background-position: -70px;
+        .detail.mainbanner-detail {
+            margin-left: 345px;
         }
     }
 }
@@ -371,21 +411,51 @@
             }
         }
     }
-     
+
+    .treat-section {
+        padding: 40px 0px;
+    }
+
+    .suceess-video-section {
+        padding: 40px 0 45px;
+        .slick-dots {
+            bottom: -35px;
+        }
+    }
+
+    .cutting-edge-box {
+        padding: 40px 0px;
+    }
+    .consult-cardiac-box {
+        padding: 40px 0px;
+    }
+    .voted-recovery-box {
+        padding: 40px 0;
+        .media {
+            margin-top: 0px;
+            margin-bottom: 20px;
+            img {
+                margin: auto;
+            }
+        }
+    }
+    .get-call-box {
+        padding: 40px 0px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
 
-    .experienceBox {
-        &.sliderBlock {
-            &.landing-cardiac {
-                padding: 40px 20px;
-                .carousel-inner {
-                    background-color: transparent;
-                }
-            }
-        }
-    }
+    // .experienceBox {
+    //     &.sliderBlock {
+    //         &.landing-cardiac {
+    //             padding: 40px 20px;
+    //             .carousel-inner {
+    //                 background-color: transparent;
+    //             }
+    //         }
+    //     }
+    // }
 
 
     .card-type-video{
@@ -395,21 +465,90 @@
             }
         }
     }
-    // Delete this one
-    .landing-video-boxes{
-        display: flex;
-    }
+    // .landing-video-boxes{
+    //     display: block;
+    // }
+
+    // .suceess-video-section {
+    //     padding-left: 30px;
+    //     padding-right: 30px;
+    // }   
+
 
     .suceess-video-section {
-        padding-left: 30px;
-        padding-right: 30px;
-    }    
-
-   
-}
-// Abdullah
-@media only screen and (min-width: 992px) {
-    .slick-dots{
-        display: none;
+        padding: 30px 0 35px;
     }
+
+    .treat-section {
+        padding: 30px 0px;
+    }
+    
+    .inner-boxes {
+        max-width: 100%;
+        .title2 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .voted-recovery-box {
+        padding: 30px 0;
+        .title2 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .get-call-box {
+        padding: 30px 0px;
+    }
+
+    .list-flex-3 {
+        li {
+            width: 100%;
+        }
+    }
+    .cutting-edge-box {
+        padding: 30px 0px;
+    }
+    
+    .consult-cardiac-box {
+        padding: 30px 0px 40px;
+        .consult-slider {
+            .text {
+                padding-right: 0px;
+                padding-left: 15px;
+                .desination {
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 374px) {
+    .consult-cardiac-box {
+        .consult-slider {
+            .media {
+                width: 70px;
+                height: 70px;
+            }
+            .text {
+                width: calc(100% - 70px);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .suceess-video-section {
+        .slick-dots{
+            display: none;
+        }
+        .slick-dotted.slick-slider {
+            margin-bottom: 0px;
+        }
+    }  
 }

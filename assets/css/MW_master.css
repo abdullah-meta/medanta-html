@@ -43700,113 +43700,77 @@ hr.borderNonary {
   margin-bottom: 0px;
 }
 
-.suceess-video-section {
+.treat-section {
   padding: 60px 140px;
   color: #333333;
 }
 
-.section-title {
-  margin-bottom: 30px;
-}
-
-.section-title h2 {
-  color: #333;
-  font: 42px "Montserrat-Black";
-  padding-bottom: 0;
+.treat-widget {
   text-align: center;
+  color: #333333;
 }
 
-.section-title h3 {
-  font: 26px "Montserrat-Bold";
-}
-
-.card-type-video {
-  background: #fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  height: 100%;
-}
-
-.card-type-video .card-video iframe {
-  height: 200px;
-}
-
-.card-type-video .card-details {
-  padding: 15px 20px 20px;
-}
-
-.card-type-video .card-details h4 {
-  color: #333;
-  font-size: 14px;
-  font-family: "Montserrat-SemiBold";
-  padding: 0;
-  display: inline-block;
-  text-align: left;
-  line-height: 1.4;
-}
-
-.landing-video-boxes {
-  margin-left: -10px;
-  margin-right: -10px;
+.treat-widget .widget-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: -20px;
+  margin: auto;
+  border-radius: 50%;
+  max-width: 137px;
+  margin-bottom: 25px;
 }
 
-.landing-video-boxes [class^="col-"] {
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+.treat-widget .widget-icon img {
+  width: 100%;
 }
 
-@media only screen and (max-width: 1199px) {
-  .suceess-video-section {
-    padding: 50px 60px;
-  }
+.treat-widget span {
+  display: block;
 }
 
-@media only screen and (max-width: 991px) {
-  .card-type-video .card-video iframe {
-    height: 150px;
-  }
+.treat-slider .slick-arrow {
+  z-index: 1;
+  height: 52px;
+  width: 52px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill;
+  font-size: 3.2rem;
+}
+
+.treat-slider .slick-arrow:before {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  font-size: inherit;
+  display: block;
+  content: "\e913";
+  font-family: "icomoon";
+  color: #db5134;
+}
+
+.treat-slider .slick-arrow.slick-prev {
+  right: 100%;
+  left: auto;
+}
+
+.treat-slider .slick-arrow.slick-prev:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+.treat-slider .slick-arrow.slick-next {
+  margin-right: -28px;
 }
 
 @media only screen and (max-width: 767px) {
-  .card-type-video .card-video iframe {
-    height: 200px;
-  }
-  .landing-video-boxes {
-    display: block;
-  }
-  .suceess-video-section {
-    padding: 50px 40px;
-  }
-  .section-title {
-    margin-bottom: 15px;
-  }
-  .section-title h2 {
-    font-size: 30px;
-  }
-  .section-title h3 {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .suceess-video-section {
-    padding: 50px 20px;
-  }
-  .section-title h2 {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .section-title h2 {
-    font-size: 25px;
+  .treat-section {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 /*# sourceMappingURL=MW_master.css.map */

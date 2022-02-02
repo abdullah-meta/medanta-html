@@ -1,21 +1,287 @@
-.voted-best-list {
-    max-width: 535px;
-    margin: auto;
+.list-flex-3 {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     li {
-        &:last-child {
-            margin-bottom: 0px;
+        width: 50%;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+} 
+
+.consult-cardiac-box {
+    padding: 50px 0px;
+    background-color: #db5134;
+    h3, p {
+        color: #fff;
+    }
+    .consult-row {
+        .consult-col {
+            height: 100%;
+            padding: 0px 8px;
+        }
+    }
+    .slick-track {
+        display: flex;
+        .slick-slide {
+            float: none;
+            height: auto;
+        }
+    }
+    .consult-slider {
+        box-shadow: 0px 0px 5px rgba(0,0, 0, .15);
+        background-color: #ffffff;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .media {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 10px;
+            width: calc(100% - 100px);
+            .name {
+                font: 16px "Lato-Black";
+                color: #333333;
+                padding-bottom: 8px;
+            }
+            .desination {
+                font: 14px "Montserrat-Light";
+                line-height: 22px;
+                color: #666;                
+            }
+        }
+    }
+}
+
+.slider-dot-list {
+    .slick-dots {
+        bottom: -35px;
+        li {
+            width: auto;
+            height: auto;
+            margin: 0 4px;
+            button {
+                width: 10px;
+                height: 10px;
+                opacity: 1;
+                text-indent: -99999px;
+                padding: 0px;
+                &:before {
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;
+                    opacity: 1;
+                }
+                &:hover {
+                    &:before {
+                        background-color: #000;
+                    }
+                }
+            }
+            &.slick-active {
+                button {
+                    &:before {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cutting-edge-box {
+    padding: 50px 0px;   
+}
+.cutting-edge-list {       
+    .cutting-edge-col {
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, .15);
+        background-color: #ffffff;
+        height: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        .cutting-top {
+            padding: 15px 20px;
+            background-color: #db5134;
+            h4 {
+                color: #fff;     
+                text-align: center;           
+            }
+        }
+        .cutting-bottom {
+            padding: 20px 20px 25px;
+            p {
+                font: 14px "Montserrat-Light";
+                line-height: 24px;
+            }
         }
     }
 }
 
 
-// --->> ABDULLLAH
-.treat-section {
-    padding: 60px 140px;
-    color: #333333;
+.voted-recovery-box {
+    padding: 50px 0px;
+    .voted-best-list {    
+        li {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
 }
 
-// --->> ABDULLLAH-2
+.get-call-box {
+    background-color: #45474b;
+    padding: 50px 0px;
+    text-align: center;
+    .btn-big {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: $Semibold-text;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+
+
+
+
+// .landing-cardiac {
+//     &.sliderBlock {
+//         .carousel-control {
+//             &.left {
+//                 left: -20px;
+//             }
+//             &.right {
+//                 right: -20px;
+//             }
+//         }
+//         .mw-slider {
+//             height: 165px;
+//             .text {
+//                 .division {
+//                     min-height: inherit;
+//                     padding-bottom: 0px;
+//                     margin-bottom: 0px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.gettreatedBox {
+    &.home-care-program {
+        .blocks {
+            &.three-blocks {
+
+            }
+            &.four-block {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                margin-top: -30px;
+                li {
+                    width: 24.9%;
+                    padding: 30px 15px 1px;
+                    display: block;
+                }
+            }
+        }
+        &.landing-getter {
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.suceess-video-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+// New
+.succeess-video-slider{
+    
+    .slick-dots li{
+        width: 10px;
+        height: 10px;
+         button:before{
+            background: #db5134;
+            width: 10px;
+            height: 10px;
+            border-radius: 500px;
+        }
+    }
+    .slick-list{
+        margin: 0 -10px;
+    }
+    .slick-slide{
+        >div{
+            margin:0 10px;
+        }
+    }
+}
+
+
+.card-type-video {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    .card-video {
+        iframe{
+            height: 200px;
+        }
+    }
+    .card-details {
+        padding: 15px 20px 20px;
+        h4 {
+            color: #333;
+            font-size: 14px;
+            font-family: $Semibold-text;
+            padding: 0;
+            // margin-bottom: 10px;
+            display: inline-block;
+            text-align: left;
+            line-height: 1.4;
+        }
+    }
+}
+// .landing-video-boxes{
+//     margin-left: -10px;
+//     margin-right: -10px;
+//     display: flex;
+//     margin-bottom: -20px;
+//     [class^="col-"]{
+//         margin-bottom: 20px;
+//         padding-left: 10px;
+//         padding-right: 10px;
+//     }
+// }
+
+// --->> ABDULLLAH
+.treat-section {
+    padding-top: 50px ;
+    padding-bottom: 50px ;
+    color: #333333;
+}
 
 .treat-widget{
     text-align: center;
@@ -70,15 +336,77 @@
 }
 
 
-@media only screen and (max-width: 767px) {
-    .treat-section {
-        padding-left:40px;
-        padding-right:40px;
+
+@media only screen and (max-width: 1199px) {
+   
+}
+
+@media only screen and (max-width: 991px) {
+    .card-type-video{
+        .card-video{
+            iframe{
+                height: 150px;
+            }
+        }
     }
 }
-@media only screen and (max-width: 575px) {
 
+@media only screen and (max-width: 767px) {
+
+    .experienceBox {
+        &.sliderBlock {
+            &.landing-cardiac {
+                padding: 40px 20px;
+                .carousel-inner {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+
+    .card-type-video{
+        .card-video{
+            iframe{
+                height: 200px;
+            }
+        }
+    }
+    .landing-video-boxes{
+        display: flex;
+    }
+
+    .suceess-video-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }    
+
+    // Abdullah
+    .treat-slider{
+        .slick-arrow{
+            &.slick-next{
+                margin-right: 0;
+                right: 0;
+            }
+            &.slick-prev{
+                left: 0;
+                right: auto;
+            }
+        }
+    }
 }
-@media only screen and (max-width: 479px) {
-    
+// Abdullah
+@media only screen and (min-width: 992px) {
+    .landing-video-boxes{
+        display: flex;
+        margin-left: -10px;
+        margin-right: -10px;
+        .single-video-box{
+            flex: 0 0 auto;
+            width: 33.33333%;
+            max-width: 100%;
+            padding-right:10px;
+            padding-left: 10px;
+        }
+    }
 }

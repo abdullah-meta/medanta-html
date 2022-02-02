@@ -43691,17 +43691,255 @@ hr.borderNonary {
   }
 }
 
-.voted-best-list {
-  max-width: 535px;
-  margin: auto;
+.list-flex-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
 }
 
-.voted-best-list li:last-child {
+.list-flex-3 li {
+  width: 50%;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.consult-cardiac-box {
+  padding: 50px 0px;
+  background-color: #db5134;
+}
+
+.consult-cardiac-box h3, .consult-cardiac-box p {
+  color: #fff;
+}
+
+.consult-cardiac-box .consult-row .consult-col {
+  height: 100%;
+  padding: 0px 8px;
+}
+
+.consult-cardiac-box .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.consult-cardiac-box .slick-track .slick-slide {
+  float: none;
+  height: auto;
+}
+
+.consult-cardiac-box .consult-slider {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.consult-cardiac-box .consult-slider .media {
+  width: 100px;
+  height: 100px;
+}
+
+.consult-cardiac-box .consult-slider .media img {
+  width: 100%;
+  height: 100%;
+}
+
+.consult-cardiac-box .consult-slider .text {
+  padding-left: 20px;
+  padding-right: 10px;
+  width: calc(100% - 100px);
+}
+
+.consult-cardiac-box .consult-slider .text .name {
+  font: 16px "Lato-Black";
+  color: #333333;
+  padding-bottom: 8px;
+}
+
+.consult-cardiac-box .consult-slider .text .desination {
+  font: 14px "Montserrat-Light";
+  line-height: 22px;
+  color: #666;
+}
+
+.slider-dot-list .slick-dots {
+  bottom: -35px;
+}
+
+.slider-dot-list .slick-dots li {
+  width: auto;
+  height: auto;
+  margin: 0 4px;
+}
+
+.slider-dot-list .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  text-indent: -99999px;
+  padding: 0px;
+}
+
+.slider-dot-list .slick-dots li button:before {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.slider-dot-list .slick-dots li button:hover:before {
+  background-color: #000;
+}
+
+.slider-dot-list .slick-dots li.slick-active button:before {
+  background-color: #fff;
+}
+
+.cutting-edge-box {
+  padding: 50px 0px;
+}
+
+.cutting-edge-list .cutting-edge-col {
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cutting-edge-list .cutting-edge-col .cutting-top {
+  padding: 15px 20px;
+  background-color: #db5134;
+}
+
+.cutting-edge-list .cutting-edge-col .cutting-top h4 {
+  color: #fff;
+  text-align: center;
+}
+
+.cutting-edge-list .cutting-edge-col .cutting-bottom {
+  padding: 20px 20px 25px;
+}
+
+.cutting-edge-list .cutting-edge-col .cutting-bottom p {
+  font: 14px "Montserrat-Light";
+  line-height: 24px;
+}
+
+.voted-recovery-box {
+  padding: 50px 0px;
+}
+
+.voted-recovery-box .voted-best-list li:last-child {
   margin-bottom: 0px;
 }
 
+.get-call-box {
+  background-color: #45474b;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.get-call-box .btn-big {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Montserrat-SemiBold";
+}
+
+.get-call-box .btn-big:focus {
+  outline: none;
+}
+
+.gettreatedBox.home-care-program .blocks.four-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+  margin-top: -30px;
+}
+
+.gettreatedBox.home-care-program .blocks.four-block li {
+  width: 24.9%;
+  padding: 30px 15px 1px;
+  display: block;
+}
+
+.gettreatedBox.home-care-program.landing-getter {
+  padding-bottom: 0px;
+}
+
+.suceess-video-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.succeess-video-slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+}
+
+.succeess-video-slider .slick-dots li button:before {
+  background: #db5134;
+  width: 10px;
+  height: 10px;
+  border-radius: 500px;
+}
+
+.succeess-video-slider .slick-list {
+  margin: 0 -10px;
+}
+
+.succeess-video-slider .slick-slide > div {
+  margin: 0 10px;
+}
+
+.card-type-video {
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.card-type-video .card-video iframe {
+  height: 200px;
+}
+
+.card-type-video .card-details {
+  padding: 15px 20px 20px;
+}
+
+.card-type-video .card-details h4 {
+  color: #333;
+  font-size: 14px;
+  font-family: "Montserrat-SemiBold";
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  line-height: 1.4;
+}
+
 .treat-section {
-  padding: 60px 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: #333333;
 }
 
@@ -43767,10 +44005,57 @@ hr.borderNonary {
   margin-right: -28px;
 }
 
+@media only screen and (max-width: 991px) {
+  .card-type-video .card-video iframe {
+    height: 150px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
-  .treat-section {
-    padding-left: 40px;
-    padding-right: 40px;
+  .experienceBox.sliderBlock.landing-cardiac {
+    padding: 40px 20px;
+  }
+  .experienceBox.sliderBlock.landing-cardiac .carousel-inner {
+    background-color: transparent;
+  }
+  .card-type-video .card-video iframe {
+    height: 200px;
+  }
+  .landing-video-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .suceess-video-section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .treat-slider .slick-arrow.slick-next {
+    margin-right: 0;
+    right: 0;
+  }
+  .treat-slider .slick-arrow.slick-prev {
+    left: 0;
+    right: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .landing-video-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .landing-video-boxes .single-video-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 33.33333%;
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 /*# sourceMappingURL=MW_master.css.map */
